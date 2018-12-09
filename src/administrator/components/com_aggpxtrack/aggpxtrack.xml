@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.5" type="component" method="upgrade">
+    <name>com_aggpxtrack</name>
+	<author>Astrid Günther</author>
+	<creationDate>##DATE##</creationDate>
+	<copyright>(C) ##YEAR## Astrid Günther. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@astrid-guenther.de</authorEmail>
+	<authorUrl>www.astrid-guenther.de</authorUrl>
+	<version>##VERSION##</version>
+    <description>COM_AGGPXTRACK_XML_DESCRIPTION</description>
+	<scriptfile>script.php</scriptfile>
+
+	<files folder="components/com_aggpxtrack">
+		##FRONTEND_COMPONENT_FILES##
+	</files>
+	<languages folder="language">
+		##FRONTEND_LANGUAGE_FILES##
+	</languages>
+
+	<administration>
+        <files folder="administrator/components/com_aggpxtrack">
+			##BACKEND_COMPONENT_FILES##
+        </files>
+		<languages folder="administrator/language">
+			##BACKEND_LANGUAGE_FILES##
+		</languages>
+    </administration>
+
+    <media destination="com_aggpxtrack" folder="media/com_aggpxtrack">
+		##MEDIA_FILES##
+    </media>
+</extension>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="plugin" version="3.8.0" group="fields" method="upgrade">
+	<name>plg_fields_aggpxtrack</name>
+	<author>Astrid Günther</author>
+	<creationDate>2018-12-09</creationDate>
+	<copyright>(C) 2018 Astrid Günther. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@astrid-guenther.de</authorEmail>
+	<authorUrl>www.astrid-guenther.de</authorUrl>
+	<version>1.0.94</version>
+	<description>PLG_FIELDS_AGGPXTRACK_XML_DESCRIPTION</description>
+	<files>
+		<file>aggpxtrack.xml</file>
+<file plugin="aggpxtrack">aggpxtrack.php</file>
+<folder>tmpl</folder>
+<folder>forms</folder>
+<folder>field</folder>
+<folder>layouts</folder>
+<folder>params</folder>
+<file>CHANGES.txt</file>
+	</files>
+	<languages folder="administrator/language">
+		<language tag="de-DE">de-DE/de-DE.plg_fields_aggpxtrack.ini</language>
+<language tag="de-DE">de-DE/de-DE.plg_fields_aggpxtrack.sys.ini</language>
+<language tag="en-GB">en-GB/en-GB.plg_fields_aggpxtrack.sys.ini</language>
+<language tag="en-GB">en-GB/en-GB.plg_fields_aggpxtrack.ini</language>
+<language tag="it-IT">it-IT/it-IT.plg_fields_aggpxtrack.sys.ini</language>
+<language tag="it-IT">it-IT/it-IT.plg_fields_aggpxtrack.ini</language>
+	</languages>
+
+	<!-- Media files -->
+    <media folder="media/plg_fields_aggpxtrack" destination="plg_fields_aggpxtrack">
+		<folder>GoogleMutant</folder>
+<folder>Leaflet.awesome-markers</folder>
+<folder>fonts</folder>
+<folder>leaflet-easyPrint</folder>
+<folder>leaflet-gpx</folder>
+<folder>Leaflet.fullscreen</folder>
+<folder>d3</folder>
+<folder>js</folder>
+<folder>leaflet</folder>
+<folder>leaflet-panel-layers</folder>
+<folder>L.Control.Locate</folder>
+<folder>Leaflet.Elevation-master</folder>
+<folder>leaflet-omnivore</folder>
+	</media>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="directory"
+					type="folderlist"
+					label="PLG_FIELDS_AGGPXTRACK_PARAMS_DIRECTORY_LABEL"
+					description="PLG_FIELDS_AGGPXTRACK_PARAMS_DIRECTORY_DESC"
+					directory="images"
+					hide_none="true"
+					recursive="true"
+				/>
+				<field
+					name="preview"
+					type="hidden"
+					label="PLG_FIELDS_AGGPXTRACK_PARAMS_kPREVIEW_LABEL"
+					description="PLG_FIELDS_AGGPXTRACK_PARAMS_PREVIEW_DESC"
+					class="btn-group"
+					default="false"
+					>
+					<option value="false">JNO</option>
+				</field>
+				<field
+					name="image_class"
+					type="textarea"
+					label="PLG_FIELDS_AGGPXTRACK_PARAMS_IMAGE_CLASS_LABEL"
+					description="PLG_FIELDS_AGGPXTRACK_PARAMS_IMAGE_CLASS_DESC"
+					size="40"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

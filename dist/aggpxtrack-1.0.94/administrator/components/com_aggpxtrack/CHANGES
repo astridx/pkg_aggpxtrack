@@ -1,0 +1,22 @@
+/**
+ * @subpackage  Aggpxtrack
+ *
+ * @copyright   Copyright (C) 2018 Astrid Günther All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ */
+com_aggpxtrack Changelog
+-----------------
+
+v1.01
+ - Leaflet updated to v1.1.0
+ - Fixed errors in iframe after update to Joomla! 3.7.3
+v1.02
+ - Category view
+v1.03
+ - Frontend editing
+ - GPX informations
+ - Downloadlink
+
+todo
+- marker änderbar machen
+- Klasse zu gpx downloadlink

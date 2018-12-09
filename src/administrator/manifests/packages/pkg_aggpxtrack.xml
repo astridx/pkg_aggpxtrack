@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="1.0" method="upgrade">
+	<name>pkg_aggpxtrack</name>
+	<packagename>aggpxtrack</packagename>
+	<creationDate>##DATE##</creationDate>
+	<packager>Astrid Günther</packager>
+	<copyright>(C) ##YEAR## Astrid Günther. All rights reserved.</copyright>
+	<packageremail>info@astrid-guenther.de</packageremail>
+	<packagerurl>www.astrid-guenther.de</packagerurl>
+	<author>Astrid Günther</author>
+	<authorEmail>info@astrid-guenther.de</authorEmail>
+	<authorUrl>www.astrid-guenther.de</authorUrl>
+	<version>##VERSION##</version>
+	<license>GNU General Public License version 2 or later</license>
+	<description>PKG_AGGPXTRACK_XML_DESCRIPTION</description>
+	<scriptfile>script.php</scriptfile>
+	<files>
+		<!-- The id for each extension is the element stored in the DB -->
+		<file type="component" id="com_aggpxtrack">com_aggpxtrack.zip</file>
+		<file type="plugin" id="aggpxtrack" group="fields">plg_fields_aggpxtrack.zip</file>
+		<file type="plugin" id="aggpxtrackinstaller" group="installer">plg_installer_aggpxtrackinstaller.zip</file>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.pkg_aggpxtrack.sys.ini</language>
+	</languages>
+	<updateservers>
+		<!-- Note: No spaces or linebreaks allowed between the server tags -->
+		<server type="extension" name="Aggpxtrack Update Site">https://raw.githubusercontent.com/astridx/pkg_aggptrack/master/aggpxtrack-update.xml</server>
+	</updateservers>
+</extension>

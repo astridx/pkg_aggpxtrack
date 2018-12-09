@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.5" type="component" method="upgrade">
+    <name>com_aggpxtrack</name>
+	<author>Astrid Günther</author>
+	<creationDate>2018-12-09</creationDate>
+	<copyright>(C) 2018 Astrid Günther. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@astrid-guenther.de</authorEmail>
+	<authorUrl>www.astrid-guenther.de</authorUrl>
+	<version>1.0.94</version>
+    <description>COM_AGGPXTRACK_XML_DESCRIPTION</description>
+	<scriptfile>script.php</scriptfile>
+
+	<files folder="components/com_aggpxtrack">
+		<file>aggpxtrack.php</file>
+	</files>
+	<languages folder="language">
+		<language tag="de-DE">de-DE/de-DE.com_aggpxtrack.sys.ini</language>
+<language tag="en-GB">en-GB/en-GB.com_aggpxtrack.sys.ini</language>
+<language tag="it-IT">it-IT/it-IT.com_aggpxtrack.sys.ini</language>
+	</languages>
+
+	<administration>
+        <files folder="administrator/components/com_aggpxtrack">
+			<file>CHANGES</file>
+<folder>controllers</folder>
+<file>controller.php</file>
+<folder>models</folder>
+<file>aggpxtrack.xml</file>
+<file>aggpxtrack.php</file>
+<file>script.php</file>
+<file>config.xml</file>
+<folder>views</folder>
+        </files>
+		<languages folder="administrator/language">
+			<language tag="de-DE">de-DE/de-DE.com_aggpxtrack.sys.ini</language>
+<language tag="de-DE">de-DE/de-DE.com_aggpxtrack.ini</language>
+<language tag="en-GB">en-GB/en-GB.com_aggpxtrack.sys.ini</language>
+<language tag="en-GB">en-GB/en-GB.com_aggpxtrack.ini</language>
+<language tag="it-IT">it-IT/it-IT.com_aggpxtrack.ini</language>
+<language tag="it-IT">it-IT/it-IT.com_aggpxtrack.sys.ini</language>
+		</languages>
+    </administration>
+
+    <media destination="com_aggpxtrack" folder="media/com_aggpxtrack">
+		<folder>gpxfiles</folder>
+<folder>js</folder>
+<folder>images</folder>
+    </media>
+</extension>
