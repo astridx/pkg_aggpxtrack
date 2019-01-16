@@ -41,19 +41,7 @@ class PlgInstallerAggpxtrackInstaller extends JPlugin
 	 */
 	public function onInstallerBeforePackageDownload(&$url)
 	{
-		// Are we trying to update our extension?
-		if (strpos($url, $this->baseUrl) !== 0)
-		{
-			return true;
-		}
 
-		$component = JComponentHelper::getComponent($this->extension);
-		$access = $component->params->get('update_credentials_access', '');
-
-		$file = str_replace($this->baseUrl, '', $url);
-
-		$url = "www.astrid-guenther.de/updates/aggpxtrack/" . $access . "/" . $file;
-
-		return true;
+	    return true;
 	}
 }

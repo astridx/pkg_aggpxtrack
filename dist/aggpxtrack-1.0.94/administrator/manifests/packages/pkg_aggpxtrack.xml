@@ -2,9 +2,9 @@
 <extension type="package" version="1.0" method="upgrade">
 	<name>pkg_aggpxtrack</name>
 	<packagename>aggpxtrack</packagename>
-	<creationDate>2018-12-09</creationDate>
+	<creationDate>2019-01-16</creationDate>
 	<packager>Astrid Günther</packager>
-	<copyright>(C) 2018 Astrid Günther. All rights reserved.</copyright>
+	<copyright>(C) 2019 Astrid Günther. All rights reserved.</copyright>
 	<packageremail>info@astrid-guenther.de</packageremail>
 	<packagerurl>www.astrid-guenther.de</packagerurl>
 	<author>Astrid Günther</author>
@@ -25,6 +25,6 @@
 	</languages>
 	<updateservers>
 		<!-- Note: No spaces or linebreaks allowed between the server tags -->
-		<server type="extension" name="Aggpxtrack Update Site">https://raw.githubusercontent.com/astridx/pkg_aggptrack/master/aggpxtrack-update.xml</server>
+		<server type="extension" name="Aggpxtrack Update Site">https://raw.githubusercontent.com/astridx/pkg_aggpxtrack/master/aggpxtrack-update.xml</server>
 	</updateservers>
 </extension>

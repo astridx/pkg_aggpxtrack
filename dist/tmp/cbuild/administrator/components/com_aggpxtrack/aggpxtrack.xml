@@ -7,7 +7,7 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>info@astrid-guenther.de</authorEmail>
 	<authorUrl>www.astrid-guenther.de</authorUrl>
-	<version>1.0.95</version>
+	<version>1.1.0</version>
     <description>COM_AGGPXTRACK_XML_DESCRIPTION</description>
 	<scriptfile>script.php</scriptfile>
 

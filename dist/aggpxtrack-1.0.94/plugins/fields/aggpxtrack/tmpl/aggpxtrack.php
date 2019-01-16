@@ -85,7 +85,7 @@ if ($fieldParams->get('show_panelLayers', 0))
 if ($fieldParams->get('maptype', 'osm') == 'google')
 {
 	$document->addScript('https://maps.googleapis.com/maps/api/js?key=' . $fieldParams->get('googlekey', ''));
-	$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/GoogleMutant/GoogleMutant0.6.4.js');
+	$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/GoogleMutant/Leaflet.GoogleMutant.js');
 }
 
 $document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/js/aggpxtrack.js');
@@ -172,7 +172,12 @@ foreach ($value as $path)
 	$skriptstring .= " data-kilometer_point_radius='" . $fieldParams->get('kilometer_point_radius', '10') . "' ";
 	$skriptstring .= " data-show_currentposition='" . $fieldParams->get('show_currentposition', 0) . "' ";
 	$skriptstring .= " data-currentposition_position='" . $fieldParams->get('currentposition_position', 'topleft') . "' ";
-	$skriptstring .= " data-scale='" . count($fieldParams->get('scale')) . "' ";
+	
+	if (null !== $fieldParams->get('scale'))
+	{
+		$skriptstring .= " data-scale='" . count($fieldParams->get('scale')) . "' ";
+	}
+	
 	$skriptstring .= " data-scale-metric='" . in_array('metric', $fieldParams->get('scale', $defaultArray)) . "' ";
 	$skriptstring .= " data-scale-imperial='" . in_array('imperial', $fieldParams->get('scale', $defaultArray)) . "' ";
 
