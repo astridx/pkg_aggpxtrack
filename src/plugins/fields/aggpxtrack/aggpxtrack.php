@@ -18,7 +18,7 @@ JLoader::import('components.com_fields.libraries.fieldsplugin', JPATH_ADMINISTRA
  * @since  3.7.0
  */
 class PlgFieldsAggpxtrack extends FieldsPlugin
-	{
+{
 
 	/**
 	 * Constructor
