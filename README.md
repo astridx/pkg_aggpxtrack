@@ -6,40 +6,40 @@
 Please activate the plugin via `Extension | Plugins` before you use it. 
 If you do not find the plugin entry, you can search it via the search field.
 
-b1
+![b1](https://user-images.githubusercontent.com/9974686/51280066-0263b100-19df-11e9-8113-647e1429ae3d.png)
 
 2. Allow the upload of GPX-Files
 Open `Global Configuration` and click in the left side menu `Media`. 
 After that add `,GPX,gpx` to the field `Legal Extensions (File Types)` and 
 `,text/xml` to the field `Legal MIME Types`.
 
-b6
+![b6](https://user-images.githubusercontent.com/9974686/51280072-0394de00-19df-11e9-941b-e07c43ad80f7.png)
 
 3. Open the menu `Content | Articles` and select in the left side menu `fields`. 
 After that click `new` in toolbar on the top.
 
-b2
+![b2](https://user-images.githubusercontent.com/9974686/51280067-02fc4780-19df-11e9-909b-3533a3bf3af7.png)
 
 4. Now you can create the field
 At least you have to fill the title and you have to select the type `aggpxtrack`. 
 At the end you have to click the toolbar button `save and close`.
 
-b3
+![b3](https://user-images.githubusercontent.com/9974686/51280068-02fc4780-19df-11e9-8cfc-9b864ac974e2.png)
 
 5. Open the menu `Content | Articles` and select in the left sidebar `articles`.
 Click on one article for editing this article. 
 
-b4
+![b4](https://user-images.githubusercontent.com/9974686/51280069-02fc4780-19df-11e9-996b-418aeae76fbd.png)
 
 6. Open the fields tab and select a GPX-Track 
 If you not allready have uploaded a GPX file, 
 you can upload a GPX-Track into the media manager of your website.
 
-b5
+![b5](https://user-images.githubusercontent.com/9974686/51280071-02fc4780-19df-11e9-9cf5-1bd7f76e8ba6.png)
 
 7. See your GPX-Track in the front end
 
-b7
+![b7](https://user-images.githubusercontent.com/9974686/51280074-0394de00-19df-11e9-8ca9-edd81e0d0fd2.png)
 
 # Options
 
