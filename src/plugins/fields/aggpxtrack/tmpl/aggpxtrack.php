@@ -30,6 +30,7 @@ $buffer = '';
 // Include skripts/styles to the header
 $document = JFactory::getDocument();
 $document->addStyleSheet(JURI::root(true) . '/media/plg_fields_aggpxtrack/leaflet/leaflet.css');
+$document->addStyleSheet(JURI::root(true) . '/media/plg_fields_aggpxtrack/css/style.css');
 $document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/leaflet/leaflet.js');
 $document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/leaflet-gpx/gpx.js');
 
