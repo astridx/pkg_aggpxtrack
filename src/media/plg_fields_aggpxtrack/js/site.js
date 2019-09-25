@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			if (curr_page.indexOf("?") > -1) {
 				next_page = curr_page.replace("&aggpxtrackshow=1", "");
 			} else {
-				next_page = curr_page.replace("&aggpxtrackshow=1", "");
+				next_page = curr_page.replace("?aggpxtrackshow=1", "");
 			}
 
 			window.location = next_page;
