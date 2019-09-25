@@ -123,6 +123,15 @@ This extension is currently not used.
 ## What is a gpxtrack?
 It is a file in the format GPX or [GPS Exchange Format](https://en.wikipedia.org/wiki/GPS_Exchange_Format)
 
+## Is it possible to display the map within an article?
+Yes, it is.  
+You can add the Custom field with the help of a editor button in your articel:  
+![Articles  Edit   test   Administration](https://user-images.githubusercontent.com/9974686/65605715-e2db4a00-dfa9-11e9-8f0c-d7ccbc5006e6.png)
+To prevent the map from appearing automatically in front of or behind the article, 
+you must turn off Automatic Viewing. 
+How to do it shows you the next picture.
+![Articles  Edit Field   test   Administration](https://user-images.githubusercontent.com/9974686/65605716-e373e080-dfa9-11e9-8ba4-6dc6f4cb98f9.png)
+
 # Support and New Features
 
 This Joomla! Extension is a simple feature. But it is most likely, that your requirements are 
