@@ -157,7 +157,7 @@ class AggpxtrackModelGpxtrackList extends JModelLegacy
 
 		// Sortiert nach Datum
 		$date = array();
-		
+
 		foreach ($images as $key => $row)
 		{
 			$date[$key]    = $row->date;

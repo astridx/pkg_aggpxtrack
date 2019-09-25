@@ -150,9 +150,9 @@ class AggpxtrackControllerFile extends JControllerLegacy
 			{
 				// There are some errors in the plugins
 				$app->enqueueMessage(
-						JText::plural('COM_AGGPXTRACK_ERROR_BEFORE_SAVE', count($errors = $object_file->getErrors()), implode('<br />', $errors)),
-						'warning'
-						);
+					JText::plural('COM_AGGPXTRACK_ERROR_BEFORE_SAVE', count($errors = $object_file->getErrors()), implode('<br />', $errors)),
+					'warning'
+				);
 
 				return false;
 			}

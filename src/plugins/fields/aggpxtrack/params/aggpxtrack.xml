@@ -1098,6 +1098,19 @@
 					/>
 				</form>
 			</field>
+			<field type="spacer" name="panelHideButton" hr="true" />
+
+			<field
+				name="show_inactivefirst"
+				type="radio"
+				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_INACTIVEFIRST_LABEL"
+				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_INACTIVEFIRST_DESC"
+				class="btn-group btn-group-yesno switcher"
+				default="0"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
 
 		</fieldset>
 	</fields>

@@ -44,7 +44,7 @@ class Com_AggpxtrackInstallerScript
 	 */
 	public function uninstall($parent)
 	{
-		echo '<p>' . JText::_('COM_AGADVENT_UNINSTALL_TEXT') . '</p>';
+		echo '<p>' . JText::_('COM_AGGPXTRACK_UNINSTALL_TEXT') . '</p>';
 
 		return true;
 	}
