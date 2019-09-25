@@ -105,7 +105,9 @@ If you activate the elevation profile, you will see additional options.
 
 ## More Options
 You can also show KML overlays, enable live tracking, and switch to 
-front end full-screen mode.
+front end full-screen mode or add a button so that the user can decide if 
+he wants to view the map or not. 
+The latter is useful if privacy is important to you.
 
 # All parts of this extension
 
