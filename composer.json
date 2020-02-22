@@ -1,7 +1,7 @@
 {
-    "name": "astrid/plg_fields_agosmmapwithmarker",
+    "name": "astrid/plg_fields_aggpxtrack",
     "require": {
-        "joomla-projects/jorobo": "^0.7.0"
+        "astridx/jorobo": "0.8.*"
     },
     "authors": [
         {
