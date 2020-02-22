@@ -10,14 +10,14 @@
 
 defined('_JEXEC') or die;
 
-JLoader::import('components.com_fields.libraries.fieldsplugin', JPATH_ADMINISTRATOR);
+use Joomla\CMS\Form\FormHelper;
 
 /**
  * Fields Aggpxtrack Plugin
  *
  * @since  3.7.0
  */
-class PlgFieldsAggpxtrack extends FieldsPlugin
+class PlgFieldsAggpxtrack extends \Joomla\Component\Fields\Administrator\Plugin\FieldsPlugin
 {
 
 	/**
@@ -31,6 +31,7 @@ class PlgFieldsAggpxtrack extends FieldsPlugin
 	public function __construct(& $subject, $config)
 	{
 		parent::__construct($subject, $config);
-		JFormHelper::addFieldPath(__DIR__ . '/field');
+
+		FormHelper::addFieldPath(__DIR__ . '/field');
 	}
 }

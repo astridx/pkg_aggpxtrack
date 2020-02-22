@@ -10,13 +10,14 @@
 
 defined('JPATH_PLATFORM') or die;
 
-jimport('joomla.form.fields.media');
+use Joomla\CMS\Form\Field\MediaField;
+
 /**
  * Provides a modal media selector including upload mechanism
  *
  * @since  1.6
  */
-class JFormFieldAggpxtrack extends JFormFieldMedia
+class JFormFieldAggpxtrack extends MediaField
 {
 	/**
 	 * The form field type.
