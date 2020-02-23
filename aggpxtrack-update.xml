@@ -14,6 +14,7 @@
         <tags>
             <tag>stable</tag>
         </tags>
+		<changelogurl>https://raw.githubusercontent.com/astridx/pkg_aggpxtrack/4.0/changelog.xml</changelogurl>
         <maintainer>Astrid Günther</maintainer>
         <maintainerurl>https://astrid-guenther.de</maintainerurl>
         <targetplatform name="joomla" version="4.*"/>
@@ -32,6 +33,7 @@
         <tags>
             <tag>stable</tag>
         </tags>
+		<changelogurl>https://raw.githubusercontent.com/astridx/pkg_aggpxtrack/4.0/changelog.xml</changelogurl>
         <maintainer>Astrid Günther</maintainer>
         <maintainerurl>https://astrid-guenther.de</maintainerurl>
         <targetplatform name="joomla" version="4.*"/>
