@@ -18,4 +18,15 @@
 			<item>Leafelt 1.6.0 - Stable version, released on November 17, 2019</item>
 		</note>
 	</changelog>
+	<changelog>
+		<element>pkg_aggpxtrack</element>
+		<type>package</type>
+		<version>2.0.2</version>
+		<change>
+			<item>Add Sample Data</item>
+		</change>
+		<note>
+			<item>Sample Data are now in folder image/plg_fields_aggpxtrack/</item>
+		</note>
+	</changelog>
 </changelogs>
