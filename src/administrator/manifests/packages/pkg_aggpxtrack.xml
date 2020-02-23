@@ -20,5 +20,5 @@
 	<updateservers>
 		<server type="extension" name="Aggpxtrack Update Site">https://raw.githubusercontent.com/astridx/pkg_aggpxtrack/4.0/aggpxtrack-update.xml</server>
 	</updateservers>
-	<changelogurl>https://raw.githubusercontent.com/astridx/boilerplate/pkg_aggpxtrack/4.0/changelog.xml</changelogurl>
+	<changelogurl>https://raw.githubusercontent.com/astridx/pkg_aggpxtrack/4.0/changelog.xml</changelogurl>
 </extension>
