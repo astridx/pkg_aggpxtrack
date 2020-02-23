@@ -12,16 +12,11 @@
 	<authorUrl>www.astrid-guenther.de</authorUrl>
 	<version>##VERSION##</version>
 	<license>GNU General Public License version 2 or later</license>
-	<description>PKG_AGGPXTRACK_XML_DESCRIPTION</description>
+	<description>The Aggpxtrack package includes the Aggpxtrack field.</description>
 	<scriptfile>script.php</scriptfile>
 	<files>
 		<file type="plugin" id="aggpxtrack" group="fields">plg_fields_aggpxtrack.zip</file>
 	</files>
-	<languages folder="language">
-		<language tag="en-GB">pkg_aggpxtrack.sys.ini</language>
-		<language tag="de-DE">pkg_aggpxtrack.sys.ini</language>
-		<language tag="it-IT">pkg_aggpxtrack.sys.ini</language>
-	</languages>
 	<updateservers>
 		<server type="extension" name="Aggpxtrack Update Site">https://raw.githubusercontent.com/astridx/pkg_aggpxtrack/4.0/aggpxtrack-update.xml</server>
 	</updateservers>

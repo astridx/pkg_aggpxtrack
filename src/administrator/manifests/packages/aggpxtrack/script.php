@@ -24,7 +24,7 @@ class Pkg_AggpxtrackInstallerScript extends JInstallerScript
 	 */
 	public function __construct()
 	{
-		$this->minimumJoomla = '4.0.0';
+		$this->minimumJoomla = '4.0.0-beta1-dev';
 		$this->minimumPhp    = JOOMLA_MINIMUM_PHP;
 	}
 }
