@@ -1,0 +1,21 @@
+<changelogs>
+	<changelog>
+		<element>pkg_aggpxtrack</element>
+		<type>package</type>
+		<version>2.0.0</version>
+		<note>
+			<item>Initial Version for Joomla Version 4</item>
+		</note>
+	</changelog>
+	<changelog>
+		<element>pkg_aggpxtrack</element>
+		<type>package</type>
+		<version>2.0.1</version>
+		<change>
+			<item>Update Leaflet Version</item>
+		</change>
+		<note>
+			<item>Leafelt 1.6.0 - Stable version, released on November 17, 2019</item>
+		</note>
+	</changelog>
+</changelogs>

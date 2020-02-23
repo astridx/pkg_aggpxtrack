@@ -15,14 +15,15 @@
 	<description>PKG_AGGPXTRACK_XML_DESCRIPTION</description>
 	<scriptfile>script.php</scriptfile>
 	<files>
-		<!-- The id for each extension is the element stored in the DB -->
 		<file type="plugin" id="aggpxtrack" group="fields">plg_fields_aggpxtrack.zip</file>
 	</files>
 	<languages folder="language">
 		<language tag="en-GB">pkg_aggpxtrack.sys.ini</language>
+		<language tag="de-DE">pkg_aggpxtrack.sys.ini</language>
+		<language tag="it-IT">pkg_aggpxtrack.sys.ini</language>
 	</languages>
 	<updateservers>
-		<!-- Note: No spaces or linebreaks allowed between the server tags -->
-		<server type="extension" name="Aggpxtrack Update Site">https://raw.githubusercontent.com/astridx/pkg_aggpxtrack/master/aggpxtrack-update.xml</server>
+		<server type="extension" name="Aggpxtrack Update Site">https://raw.githubusercontent.com/astridx/pkg_aggpxtrack/4.0/aggpxtrack-update.xml</server>
 	</updateservers>
+	<changelogurl>https://raw.githubusercontent.com/astridx/boilerplate/pkg_aggpxtrack/4.0/changelog.xml</changelogurl>
 </extension>

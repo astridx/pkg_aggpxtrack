@@ -15,12 +15,9 @@
 	<languages folder="administrator/language">
 		##LANGUAGE_FILES##
 	</languages>
-
-	<!-- Media files -->
     <media folder="media/plg_fields_aggpxtrack" destination="plg_fields_aggpxtrack">
 		##MEDIA_FILES##
 	</media>
-
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
@@ -33,6 +30,7 @@
 					hide_none="true"
 					recursive="true"
 				/>
+
 				<field
 					name="preview"
 					type="hidden"
@@ -43,6 +41,7 @@
 					>
 					<option value="false">JNO</option>
 				</field>
+
 				<field
 					name="image_class"
 					type="textarea"
