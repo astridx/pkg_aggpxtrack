@@ -186,6 +186,7 @@ else
 		$skriptstring .= " data-kilometer_point_radius='" . $fieldParams->get('kilometer_point_radius', '10') . "' ";
 		$skriptstring .= " data-show_currentposition='" . $fieldParams->get('show_currentposition', 0) . "' ";
 		$skriptstring .= " data-currentposition_position='" . $fieldParams->get('currentposition_position', 'topleft') . "' ";
+		$skriptstring .= " data-currentposition_initialZoomLevel='" . $fieldParams->get('currentposition_initialZoomLevel', '17') . "' ";
 
 		if (null !== $fieldParams->get('scale'))
 		{

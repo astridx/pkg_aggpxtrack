@@ -871,13 +871,43 @@
 				<option value="1">JYES</option>
 				<option value="0">JNO</option>
 			</field>
+
+			<field
+				type="list"
+				name="currentposition_initialZoomLevel"
+				label="PLG_FIELDS_AGGPXTRACK_PARAMS_CURRENTPOSITION_INTITILZOOM_LABEL"
+				description="PLG_FIELDS_AGGPXTRACK_PARAMS_CURRENTPOSITION_INTITILZOOM_DESC"
+				default="17"
+				showon="show_currentposition:1"
+			>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+			</field>
+
 			<field
 				type="list"
 				name="currentposition_position"
 				default="topleft"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_CURRENTPOSITION_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_CURRENTPOSITION_DESC"
-				showon="show_fullscreencontrol:1"
+				showon="show_currentposition:1"
 			>
 				<option value="bottomleft">PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_POSITION_BOTTOMLEFT</option>
 				<option value="bottomright">PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_POSITION_BOTTOMRIGHT</option>
