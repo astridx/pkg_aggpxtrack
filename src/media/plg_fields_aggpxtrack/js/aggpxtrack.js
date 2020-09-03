@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		var kilometer_point_radius = element.getAttribute('data-kilometer_point_radius');
 		var show_currentposition = element.getAttribute('data-show_currentposition');
 		var currentposition_position = element.getAttribute('data-currentposition_position');
+		var currentposition_initialZoomLevel = element.getAttribute('data-currentposition_initialZoomLevel');
 		var scale = element.getAttribute('data-scale');
 		var scale_metric = element.getAttribute('data-scale-metric');
 		var scale_imperial = element.getAttribute('data-scale-imperial');
@@ -296,6 +297,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		{
 			L.control.locate({
 				position: currentposition_position,
+				initialZoomLevel: currentposition_initialZoomLevel,
 				strings: {
 					'title': Joomla.JText._('PLG_AGGPXTRACK_CURRENTPOSITION_STRING'),
 				},
