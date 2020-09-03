@@ -140,7 +140,7 @@ else
 			$skriptstring .= " data-omnivore_iconcolor='" . $fieldParams->get('omnivore_iconcolor', '#ffffff') . "' ";
 			$skriptstring .= " data-omnivore_spin='" . $fieldParams->get('omnivore_spin', 'false') . "' ";
 			$skriptstring .= " data-omnivore_extraclasses='" . $fieldParams->get('omnivore_extraclasses', '') . "' ";
-			$skriptstring .= " data-omnivore_file='" . JURI::base() . "images/com_aggpxtrack/" . $fieldParams->get('omnivore_file', '') . "' ";
+			$skriptstring .= " data-omnivore_file='" . JURI::base() . "images/" . $fieldParams->get('omnivore_file', '') . "' ";
 		}
 
 		$skriptstring .= " data-show_fullscreencontrol='" . $fieldParams->get('show_fullscreencontrol', 0) . "' ";

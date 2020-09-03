@@ -935,7 +935,7 @@
 				default=""
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_OMNIVORE_FILE_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_OMNIVORE_FILE_DESC"
-				directory="images/com_aggpxtrack"
+				directory="images"
 				filter="kml"
 				exclude=""
 				stripext=""
