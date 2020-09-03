@@ -40,34 +40,6 @@ class Pkg_AggpxtrackInstallerScript extends JInstallerScript
 	 */
 	public function postflight($type, $parent)
 	{
-		return $this->copyFiles();
-	}
-
-	/**
-	 * Method to rcopy files.
-	 *
-	 * @return  boolean
-	 *
-	 * @since   1.0.76
-	 */
-	public function copyFiles()
-	{
-		$mode = 0755;
-		$path = JPATH_SITE . "/images/com_aggpxtrack/";
-		JFolder::create($path, $mode);
-
-		$pathsearch = JPATH_SITE . "/media/plg_fields_aggpxtrack/gpxfiles/";
-
-		$gpx_files = JFolder::files($pathsearch, '.gpx');
-
-		foreach ($gpx_files as $file)
-		{
-			if (!file_exists($path . $file))
-			{
-				JFile::copy($pathsearch . $file, $path . $file);
-			}
-		}
-
 		return true;
 	}
 }

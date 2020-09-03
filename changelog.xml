@@ -29,4 +29,15 @@
 			<item>Sample Data are now in folder image/plg_fields_aggpxtrack/</item>
 		</note>
 	</changelog>
+	<changelog>
+		<element>pkg_aggpxtrack</element>
+		<type>package</type>
+		<version>2.0.2</version>
+		<change>
+			<item>Add initial zoom to locate plugin</item>
+		</change>
+		<note>
+			<item>See https://github.com/domoritz/leaflet-locatecontrol#possible-options and https://wiki.openstreetmap.org/wiki/Zoom_levels</item>
+		</note>
+	</changelog>
 </changelogs>

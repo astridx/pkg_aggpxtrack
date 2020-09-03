@@ -57,4 +57,23 @@
         <maintainerurl>https://astrid-guenther.de</maintainerurl>
         <targetplatform name="joomla" version="4.*"/>
     </update>
+    <update>
+        <name>pkg_aggpxtrack</name>
+        <description>pkg_aggpxtrack</description>
+        <element>pkg_aggpxtrack</element>
+        <type>package</type>
+        <client>site</client>
+        <version>2.0.3</version>
+        <infourl title="aggpxtrack">https://github.com/astridx/pkg_aggpxtrack/blob/v2.0.3/README.md</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/astridx/pkg_aggpxtrack/releases/download/v2.0.3/pkg-aggpxtrack-2.0.3.zip</downloadurl>
+        </downloads>
+        <tags>
+            <tag>stable</tag>
+        </tags>
+		<changelogurl>https://raw.githubusercontent.com/astridx/pkg_aggpxtrack/4.0/changelog.xml</changelogurl>
+        <maintainer>Astrid Günther</maintainer>
+        <maintainerurl>https://astrid-guenther.de</maintainerurl>
+        <targetplatform name="joomla" version="4.*"/>
+    </update>
 </updates>
