@@ -298,6 +298,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			L.control.locate({
 				position: currentposition_position,
 				initialZoomLevel: currentposition_initialZoomLevel,
+				keepCurrentZoomLevel: true,
+				setView: 'always',
 				strings: {
 					'title': Joomla.JText._('PLG_AGGPXTRACK_CURRENTPOSITION_STRING'),
 				},
