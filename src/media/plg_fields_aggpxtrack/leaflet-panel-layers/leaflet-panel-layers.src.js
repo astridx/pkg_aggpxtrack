@@ -1,39 +1,26 @@
-/* 
- * Leaflet Panel Layers v1.2.2 - 2017-10-08 
- * 
- * Copyright 2017 Stefano Cudini 
- * stefano.cudini@gmail.com 
- * http://labs.easyblog.it/ 
- * 
- * Licensed under the MIT license. 
- * 
- * Demos: 
- * http://labs.easyblog.it/maps/leaflet-panel-layers/ 
- * 
- * Source: 
- * git@github.com:stefanocudini/leaflet-panel-layers.git 
- * 
+/**
+ * Leaflet Panel Layers v1.2.6 - 2019-08-11
+ *
+ * Copyright 2019 Stefano Cudini
+ * stefano.cudini@gmail.com
+ * http://labs.easyblog.it/
+ *
+ * Licensed under the MIT license.
+ *
+ * Demos:
+ * http://labs.easyblog.it/maps/leaflet-panel-layers/
+ *
+ * Source:
+ * git@github.com:stefanocudini/leaflet-panel-layers.git
+ *
  */
-/*
-	Name					Data passed		   Description
-
-	Managed Events:
-	 panel:selected			{layerDef}		   fired after moved and show markerLocation
-	 panel:unselected		{}			       fired after control was expanded
-
-	Public methods:
-	 addBaseLayer()			{panel item}       add new layer item definition to panel as baselayers
-	 addOverlay()           {panel item}       add new layer item definition to panel as overlay
-	 removeLayer()			{panel item}       remove layer item from panel
-	 configToControlLayers  {layerDef}         convert config from Control.PanelLayers to Control.Layers
-*/
 (function (factory) {
 if (typeof define === 'function' && define.amd) {
 	//AMD
 	define(['leaflet'], factory);
 } else if (typeof module !== 'undefined') {
-	 // Node/CommonJS
-	 module.exports = factory(require('leaflet'));
+	// Node/CommonJS
+	module.exports = factory(require('leaflet'));
 } else {
 	// Browser globals
 	if (typeof window.L === 'undefined')
@@ -48,6 +35,7 @@ L.Control.PanelLayers = L.Control.Layers.extend({
 
 	options: {
 		compact: false,
+		compactOffset: 0,
 		collapsed: false,
 		autoZIndex: true,
 		collapsibleGroups: false,
@@ -219,10 +207,11 @@ L.Control.PanelLayers = L.Control.Layers.extend({
 
 			self._onInputClick();
 
-			if (e.target.checked)
-				self.fire('panel:selected', e.target._layer)
-			else
-				self.fire('panel:unselected', e.target._layer)
+			if (e.target.checked) {
+				self.fire('panel:selected', e.target._layer);
+			} else {
+				self.fire('panel:unselected', e.target._layer);
+			}
 
 		}, this);
 
@@ -311,17 +300,19 @@ L.Control.PanelLayers = L.Control.Layers.extend({
 			groupdiv = L.DomUtil.create('div', this.className + '-group'),
 			grouplabel, grouptit, groupexp;
 
+		grouplabel = L.DomUtil.create('label', this.className + '-grouplabel', groupdiv);
+
 		if (this.options.collapsibleGroups) {
 
 			L.DomUtil.addClass(groupdiv, 'collapsible');
 
-			groupexp = L.DomUtil.create('i', this.className + '-icon', groupdiv);
+			groupexp = L.DomUtil.create('i', this.className + '-icon', grouplabel);
 			if (isCollapsed === true)
 				groupexp.innerHTML = ' + ';
 			else
 				groupexp.innerHTML = ' - ';
 
-			L.DomEvent.on(groupexp, 'click', function () {
+			L.DomEvent.on(grouplabel, 'click', function () {
 				if (L.DomUtil.hasClass(groupdiv, 'expanded')) {
 					L.DomUtil.removeClass(groupdiv, 'expanded');
 					groupexp.innerHTML = ' + ';
@@ -336,7 +327,6 @@ L.Control.PanelLayers = L.Control.Layers.extend({
 				L.DomUtil.addClass(groupdiv, 'expanded');
 		}
 
-		grouplabel = L.DomUtil.create('label', this.className + '-grouplabel', groupdiv);
 		grouptit = L.DomUtil.create('span', this.className + '-title', grouplabel);
 		grouptit.innerHTML = groupdata.name;
 
@@ -374,27 +364,21 @@ L.Control.PanelLayers = L.Control.Layers.extend({
 
 	_initLayout: function () {
 		var container = this._container = L.DomUtil.create('div', this.className);
-		
+
 		if(this.options.compact)
 			L.DomUtil.addClass(container, 'compact');
 
 		//Makes this work on IE10 Touch devices by stopping it from firing a mouseout event when the touch is released
 		container.setAttribute('aria-haspopup', true);
 
-		if (!L.Browser.touch) {
-			L.DomEvent
-				.disableClickPropagation(container)
-				.disableScrollPropagation(container);
-		} else
-			L.DomEvent.on(container, 'click', L.DomEvent.stopPropagation);
-
-		//FIX IE 11 drag problem
-		L.DomEvent.disableClickPropagation(container);
+		L.DomEvent
+			.disableClickPropagation(container)
+			.disableScrollPropagation(container);
 
 		if (this.options.className)
 			L.DomUtil.addClass(container, this.options.className);
 
-		this._form = L.DomUtil.create('form', this.className + '-list');
+		this._section = this._form = L.DomUtil.create('form', this.className + '-list');
 
 		this._updateHeight();
 
@@ -410,7 +394,7 @@ L.Control.PanelLayers = L.Control.Layers.extend({
 			}
 
 			this._map.on('click', this._collapse, this);
-			
+
 		} else {
 			this._expand();
 		}
@@ -419,7 +403,7 @@ L.Control.PanelLayers = L.Control.Layers.extend({
 		this._separator = L.DomUtil.create('div', this.className + '-separator', this._form);
 		this._overlaysList = L.DomUtil.create('div', this.className + '-overlays', this._form);
 
-		/* maybe useless 
+		/* maybe useless
 		if (!this.options.compact)
 			L.DomUtil.create('div', this.className + '-margin', this._form);*/
 
@@ -436,7 +420,7 @@ L.Control.PanelLayers = L.Control.Layers.extend({
 		h = h || this._map.getSize().y;
 
 		if (this.options.compact)
-			this._form.style.maxHeight = h + 'px';
+			this._form.style.maxHeight = (h - this.options.compactOffset) + 'px';
 		else
 			this._form.style.height = h + 'px';
 	},

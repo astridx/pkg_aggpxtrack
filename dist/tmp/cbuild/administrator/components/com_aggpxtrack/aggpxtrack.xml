@@ -2,12 +2,12 @@
 <extension version="3.5" type="component" method="upgrade">
     <name>com_aggpxtrack</name>
 	<author>Astrid Günther</author>
-	<creationDate>2020-09-05</creationDate>
-	<copyright>(C) 2020 Astrid Günther. All rights reserved.</copyright>
+	<creationDate>2021-02-26</creationDate>
+	<copyright>(C) 2021 Astrid Günther. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>info@astrid-guenther.de</authorEmail>
 	<authorUrl>www.astrid-guenther.de</authorUrl>
-	<version>1.1.6</version>
+	<version>1.1.7</version>
     <description>COM_AGGPXTRACK_XML_DESCRIPTION</description>
 	<scriptfile>script.php</scriptfile>
 
@@ -16,35 +16,35 @@
 	</files>
 	<languages folder="language">
 		<language tag="de-DE">de-DE/de-DE.com_aggpxtrack.sys.ini</language>
-<language tag="en-GB">en-GB/en-GB.com_aggpxtrack.sys.ini</language>
 <language tag="it-IT">it-IT/it-IT.com_aggpxtrack.sys.ini</language>
+<language tag="en-GB">en-GB/en-GB.com_aggpxtrack.sys.ini</language>
 	</languages>
 
 	<administration>
         <files folder="administrator/components/com_aggpxtrack">
-			<file>CHANGES</file>
-<folder>controllers</folder>
-<file>controller.php</file>
-<folder>models</folder>
+			<file>controller.php</file>
 <file>aggpxtrack.xml</file>
-<file>aggpxtrack.php</file>
-<file>script.php</file>
-<file>config.xml</file>
+<folder>models</folder>
+<folder>controllers</folder>
+<file>CHANGES</file>
 <folder>views</folder>
+<file>aggpxtrack.php</file>
+<file>config.xml</file>
+<file>script.php</file>
         </files>
 		<languages folder="administrator/language">
 			<language tag="de-DE">de-DE/de-DE.com_aggpxtrack.sys.ini</language>
 <language tag="de-DE">de-DE/de-DE.com_aggpxtrack.ini</language>
+<language tag="it-IT">it-IT/it-IT.com_aggpxtrack.sys.ini</language>
+<language tag="it-IT">it-IT/it-IT.com_aggpxtrack.ini</language>
 <language tag="en-GB">en-GB/en-GB.com_aggpxtrack.sys.ini</language>
 <language tag="en-GB">en-GB/en-GB.com_aggpxtrack.ini</language>
-<language tag="it-IT">it-IT/it-IT.com_aggpxtrack.ini</language>
-<language tag="it-IT">it-IT/it-IT.com_aggpxtrack.sys.ini</language>
 		</languages>
     </administration>
 
     <media destination="com_aggpxtrack" folder="media/com_aggpxtrack">
-		<folder>gpxfiles</folder>
-<folder>js</folder>
+		<folder>js</folder>
 <folder>images</folder>
+<folder>gpxfiles</folder>
     </media>
 </extension>
