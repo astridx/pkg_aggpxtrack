@@ -77,7 +77,7 @@ waypoint icon. You can choose the
 - a custom class.  
 - You can also specify whether the icon image should rotate.
 
-If there is a <sym> Tag in your GPX file, you need to add a Icon for this - see [Issue 8](https://github.com/astridx/pkg_aggpxtrack/issues/8).
+If there is a sym-Tag in your GPX file, you need to add a Icon for this - see [Issue 8](https://github.com/astridx/pkg_aggpxtrack/issues/8).
 
 ## Additional Information of the GPX File
 If your GPX file contains more information, you can display 
