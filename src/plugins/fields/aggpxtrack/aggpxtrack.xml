@@ -12,6 +12,9 @@
 	<files>
 		##FILES##
 	</files>
+	<languages folder="administrator/language">
+		##LANGUAGE_FILES##
+	</languages>
 	<!-- Media files -->
     <media folder="media/plg_fields_aggpxtrack" destination="plg_fields_aggpxtrack">
 		##MEDIA_FILES##

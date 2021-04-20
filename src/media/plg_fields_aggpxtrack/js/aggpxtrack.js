@@ -427,7 +427,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				if (value)
 				{
 					if (infoElement === 'distance') {
-						value.innerHTML = (gpx.get_distance() / 1000).toFixed(2);
+						value.innerHTML = (gpx.get_distance() / 1000).toFixed(0);
 					}
 					if (infoElement === 'name') {
 						value.innerHTML = gpx.get_name();
@@ -450,31 +450,31 @@ document.addEventListener('DOMContentLoaded', function () {
 						value.innerHTML = gpx.get_duration_string(gpx.get_moving_pace());
 					}
 					if (infoElement === 'moving_speed') {
-						value.innerHTML = gpx.get_moving_speed().toFixed(2);
+						value.innerHTML = gpx.get_moving_speed().toFixed(0);
 					}
 					if (infoElement === 'total_speed') {
-						value.innerHTML = gpx.get_total_speed().toFixed(2);
+						value.innerHTML = gpx.get_total_speed().toFixed(0);
 					}
 					if (infoElement === 'elevation_min') {
-						value.innerHTML = gpx.get_elevation_min().toFixed(2);
+						value.innerHTML = gpx.get_elevation_min().toFixed(0);
 					}
 					if (infoElement === 'elevation_max') {
-						value.innerHTML = gpx.get_elevation_max().toFixed(2);
+						value.innerHTML = gpx.get_elevation_max().toFixed(0);
 					}
 					if (infoElement === 'elevation_gain') {
-						value.innerHTML = gpx.get_elevation_gain().toFixed(2);
+						value.innerHTML = gpx.get_elevation_gain().toFixed(0);
 					}
 					if (infoElement === 'elevation_loss') {
-						value.innerHTML = gpx.get_elevation_loss().toFixed(2);
+						value.innerHTML = gpx.get_elevation_loss().toFixed(0);
 					}
 					if (infoElement === 'average_hr') {
-						value.innerHTML = gpx.get_average_hr().toFixed(2);
+						value.innerHTML = gpx.get_average_hr().toFixed(0);
 					}
 					if (infoElement === 'average_cadence') {
-						value.innerHTML = gpx.get_average_cadence().toFixed(2);
+						value.innerHTML = gpx.get_average_cadence().toFixed(0);
 					}
 					if (infoElement === 'average_temp') {
-						value.innerHTML = gpx.get_average_temp().toFixed(2);
+						value.innerHTML = gpx.get_average_temp().toFixed(0);
 					}
 				}
 			});
@@ -516,11 +516,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			panelLayersControl.addTo(window['mymap' + unique]);
 		}
 
-
-
 	});
 	// For all maps [end]
-
-
 
 }, false);
