@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="plugin" version="3.8.0" group="fields" method="upgrade">
+	<name>plg_fields_aggpxtrack</name>
+	<author>Astrid Günther</author>
+	<creationDate>##DATE##</creationDate>
+	<copyright>(C) ##YEAR## Astrid Günther. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@astrid-guenther.de</authorEmail>
+	<authorUrl>www.astrid-guenther.de</authorUrl>
+	<version>##VERSION##</version>
+	<description>PLG_FIELDS_AGGPXTRACK_XML_DESCRIPTION</description>
+	<files>
+		##FILES##
+	</files>
+	<languages folder="administrator/language">
+		##LANGUAGE_FILES##
+	</languages>
+	<!-- Media files -->
+    <media folder="media/plg_fields_aggpxtrack" destination="plg_fields_aggpxtrack">
+		##MEDIA_FILES##
+	</media>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="directory"
+					type="folderlist"
+					label="PLG_FIELDS_AGGPXTRACK_PARAMS_DIRECTORY_LABEL"
+					description="PLG_FIELDS_AGGPXTRACK_PARAMS_DIRECTORY_DESC"
+					directory="images"
+					hide_none="true"
+					recursive="true"
+				/>
+				<field
+					name="preview"
+					type="hidden"
+					label="PLG_FIELDS_AGGPXTRACK_PARAMS_kPREVIEW_LABEL"
+					description="PLG_FIELDS_AGGPXTRACK_PARAMS_PREVIEW_DESC"
+					class="btn-group"
+					default="false"
+					>
+					<option value="false">JNO</option>
+				</field>
+				<field
+					name="image_class"
+					type="textarea"
+					label="PLG_FIELDS_AGGPXTRACK_PARAMS_IMAGE_CLASS_LABEL"
+					description="PLG_FIELDS_AGGPXTRACK_PARAMS_IMAGE_CLASS_DESC"
+					size="40"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

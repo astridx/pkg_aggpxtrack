@@ -1,0 +1,12 @@
+{
+    "name": "astrid/plg_fields_aggpxtrack",
+    "require": {
+        "astridx/jorobo": "0.8.*"
+    },
+    "authors": [
+        {
+            "name": "astridx",
+            "email": "info@astrid-guenther.de"
+        }
+    ]
+}

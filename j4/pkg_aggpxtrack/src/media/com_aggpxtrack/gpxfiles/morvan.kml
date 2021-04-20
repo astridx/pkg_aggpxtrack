@@ -1,0 +1,3473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>morvankml</name>
+	<open>1</open>
+	<Style>
+		<ListStyle>
+			<listItemType>check</listItemType>
+			<bgColor>00ffffff</bgColor>
+			<maxSnippetLines>2</maxSnippetLines>
+		</ListStyle>
+	</Style>
+	<Style id="sh_grn-stars000">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_grn-stars1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_target0">
+		<IconStyle>
+			<color>ff00aaff</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_purple-stars">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_purple-stars0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_purple-stars00</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_placemark_circle_highlight">
+		<IconStyle>
+			<color>ffff55ff</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_grn-stars0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_triangle">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_triangle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_triangle</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_grn-stars00">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_grn-stars000</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_grn-stars000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin00">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/I.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/I-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_purple-stars">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/purple-stars.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/purple-stars-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_purple-stars">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/purple-stars.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/purple-stars-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_target0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_target</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_target0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_target">
+		<IconStyle>
+			<color>ff00aaff</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_target">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_placemark_circle">
+		<IconStyle>
+			<color>ffff5500</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_placemark_square_highlight">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square_highlight.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_placemark_circle">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_purple-stars0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_purple-stars1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_purple-stars</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_placemark_circle1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl00">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<scale>1.41818</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/I.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/I-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_placemark_square">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_purple-stars1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/purple-stars.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/purple-stars-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_placemark_circle_highlight1">
+		<IconStyle>
+			<color>ffff55ff</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_grn-stars">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_grn-stars1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_grn-stars</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin01">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin00</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl00</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_grn-stars">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_triangle">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square_highlight.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_grn-stars1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_grn-stars</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_grn-stars0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_triangle">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_placemark_circle0">
+		<IconStyle>
+			<color>ffff55ff</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_placemark_circle0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_purple-stars0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/purple-stars.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/purple-stars-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_placemark_circle1">
+		<IconStyle>
+			<color>ffff55ff</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_placemark_circle_highlight0">
+		<IconStyle>
+			<color>ffff5500</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_grn-stars0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_grn-stars0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_grn-stars1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_purple-stars00">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/purple-stars.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/purple-stars-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_grn-stars1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_purple-stars1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/purple-stars.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/purple-stars-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_purple-stars00">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_purple-stars10</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_purple-stars0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_grn-stars">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_grn-stars0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="s_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_purple-stars10">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/purple-stars.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/purple-stars-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_placemark_square">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_square</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_square_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_purple-stars000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_purple-stars</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_purple-stars1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_purple-stars0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/purple-stars.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/purple-stars-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_target">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_target0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_target</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_grn-stars000">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_target0">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>Départs circuits VTT-FFC</name>
+		<Style>
+			<ListStyle>
+				<listItemType>check</listItemType>
+				<bgColor>00ffffff</bgColor>
+				<maxSnippetLines>2</maxSnippetLines>
+			</ListStyle>
+		</Style>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ de Brassy</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>3.937071129577281,47.26183197823476,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ de la Comelle</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.111025424317985,46.87870202714542,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ d&apos;Alligny en Morvan</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.177122116088867,47.19971179962158,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ d&apos;Autun</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.316130642523497,46.95529566539302,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ d&apos;Avallon</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>3.912980016320944,47.48740000650287,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ d&apos;Etang sur Arroux</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.179626222875115,46.86830769011449,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ d&apos;Ouroux en Morvan</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>3.945389986038208,47.18597000464797,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ d&apos;Uchon</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.26078270774261,46.80724379966485,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ de Cussy en Morvan</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.16319047100842,47.08913035690785,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ de Dun les Places</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.015641120044158,47.28600817945613,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ de Gien sur Cure</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.098069537431002,47.13950266130269,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ de Gouloux</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.075698489323258,47.2388072591275,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ de la Grande Verrière</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.14272865280509,46.96841586381197,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ de La Roche en Brenil</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.179003015160561,47.37625613808632,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ de Lormes</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>3.822198053821921,47.28253229521215,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ de Montsauche</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.025796696417167,47.21468782055593,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ de Luzy</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>3.968317253104863,46.78858826258981,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ de Moulins Engilbert</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>3.808317568206578,46.98800992860613,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ de Rouvray</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.10821595332044,47.42420908032589,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ de Moux en Morvan</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.152758236819174,47.17067208807448,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ de Saint Agnan</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.095003604888916,47.31809377670288,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ de Quarré les Tombes</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>3.996839532628655,47.36843364313245,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ de Saint Brisson</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.097659854420326,47.27584192979656,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ de Saint Didier sur Arroux</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.115561783862029,46.83314088793196,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ de Saint Léger sous Beuvray</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.100771527737379,46.92391265183687,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ de Saint Prix</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.072844663985434,46.95519884503671,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Départ liaison vers La Roche en Brenil</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.096921887248755,47.33076863922179,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ de Saulieu</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.226312488717349,47.2810225088028,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Départ liaison vers St Agnan (GTM)</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.148045349622493,47.35294698306207,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ de Thil sur Arroux</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.09855468198657,46.80300093255937,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ de Vézelay</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>3.737773429602385,47.45689096860588,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ des Settons</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.057259559631348,47.1977162361145,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuits VTT-FFC - Départ d&apos;Anost</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.091957440366592,47.07790528355734,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuit VTT-FFC - Départ de Château-Chinon</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>3.926206408068538,47.05503336153925,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuit VTT-FFC - Départ d&apos;Alligny en Morvan</name>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<coordinates>4.177122116088867,47.19971179962158,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Circuist VTT-FFC - Départ de Chaumard</name>
+			<LookAt>
+				<gx:TimeSpan>
+					<begin>2015-08-28T06:24:47Z</begin>
+					<end>2017-06-30T12:44:02Z</end>
+				</gx:TimeSpan>
+				<longitude>3.912250966240558</longitude>
+				<latitude>47.14453898149918</latitude>
+				<altitude>0</altitude>
+				<heading>-0.01947470441479814</heading>
+				<tilt>28.63687128335064</tilt>
+				<range>226.9109433037283</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_target</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.912577525962941,47.14418092384954,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Etapes GTM</name>
+		<Placemark>
+			<name>GTM - Champeau en Morvan</name>
+			<styleUrl>#msn_target0</styleUrl>
+			<Point>
+				<coordinates>4.144055843353272,47.27588653564453,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>GTM - Corcelles</name>
+			<styleUrl>#msn_target0</styleUrl>
+			<Point>
+				<coordinates>4.07726121135056,47.05129645764828,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>GTM - D114</name>
+			<styleUrl>#msn_target0</styleUrl>
+			<Point>
+				<coordinates>4.101462364196777,46.8891978263855,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>GTM - Etang de la Passée</name>
+			<styleUrl>#msn_target0</styleUrl>
+			<Point>
+				<coordinates>4.006279734894633,47.18606958165765,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>GTM - Etang sur Arroux</name>
+			<styleUrl>#msn_target0</styleUrl>
+			<Point>
+				<coordinates>4.184718132019043,46.86673164367676,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>GTM - Fétigny</name>
+			<styleUrl>#msn_target0</styleUrl>
+			<Point>
+				<coordinates>4.17356014251709,47.23513841629028,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>GTM - Genetouse</name>
+			<styleUrl>#msn_target0</styleUrl>
+			<Point>
+				<coordinates>4.081908809021115,46.96237955242395,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>GTM - La Queue de Charbonnat</name>
+			<styleUrl>#msn_target0</styleUrl>
+			<Point>
+				<coordinates>4.251735555008054,46.87506618909538,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>GTM - La Tagnière</name>
+			<styleUrl>#msn_target0</styleUrl>
+			<Point>
+				<coordinates>4.217677116394043,46.78961277008057,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>GTM - Les Miens</name>
+			<styleUrl>#msn_target0</styleUrl>
+			<Point>
+				<coordinates>4.100211365148425,47.10043695755303,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>GTM - Les Valtats</name>
+			<styleUrl>#msn_target0</styleUrl>
+			<Point>
+				<coordinates>4.061705572530627,47.34394700266421,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>GTM - Montarin</name>
+			<styleUrl>#msn_target0</styleUrl>
+			<Point>
+				<coordinates>3.975462913513184,47.37476348876953,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>GTM - Planchez</name>
+			<styleUrl>#msn_target0</styleUrl>
+			<Point>
+				<coordinates>4.016382694244385,47.13630437850952,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>GTM - Pré du Massé</name>
+			<styleUrl>#msn_target0</styleUrl>
+			<Point>
+				<coordinates>4.023661119863391,46.97969513945282,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>GTM - Ruisseau de Lyonnet</name>
+			<styleUrl>#msn_target0</styleUrl>
+			<Point>
+				<coordinates>4.093854781240225,47.17817768454552,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>GTM - Saint Germain des Champs</name>
+			<styleUrl>#msn_target0</styleUrl>
+			<Point>
+				<coordinates>3.921582698822022,47.4105978012085,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Descente</name>
+		<Placemark>
+			<name>Pistes de descente d&apos;Autun</name>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/dh_autun.jpg"></p><p align="justify">Pour multiplier les plaisirs en VTT, des pistes de descente vous attendent sur les pentes de la montagne Saint-Sébastien sur laquelle se situe la Croix de la Libération.<p>]]></description>
+			<styleUrl>#msn_placemark_circle1</styleUrl>
+			<Point>
+				<coordinates>4.287049770355225,46.93382978439331,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pistes de descente de la forêt de Breuil</name>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/breuil.jpg"></p><p align="justify">Breuil, c'est un spot DH permanent en forêt de Breuil-Chenue, dans le Parc Naturel Régional du Morvan ! Au programme, des pistes accessibles gratuitement toute l'année.<p>]]></description>
+			<styleUrl>#msn_placemark_circle1</styleUrl>
+			<Point>
+				<coordinates>4.053311347961426,47.28927796706557,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pistes descendantes du Haut Folin</name>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/circuits_haut_folin.jpg"></p><p align="justify">Utilisant des chemins existants, trois itinéraires VTT à profils descendants ont été créés et balisés à partir du Haut Folin, sommet du Morvan et de la Bourgogne, culminant à 901 mètres..<p>]]></description>
+			<LookAt>
+				<longitude>4.035857960339229</longitude>
+				<latitude>46.9959463683166</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0008254685750350948</heading>
+				<tilt>24.45547361317503</tilt>
+				<range>463.1971075382793</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_placemark_circle1</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.03725084658789,46.99549446742184,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Bike Parks</name>
+		<Placemark>
+			<name>Pump-track - Ouroux en Morvan</name>
+			<LookAt>
+				<longitude>3.948191615294436</longitude>
+				<latitude>47.18738168057499</latitude>
+				<altitude>0</altitude>
+				<heading>0.001461572671092472</heading>
+				<tilt>18.40972788632536</tilt>
+				<range>104.2198564061478</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_placemark_circle0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.948555908712468,47.18756201183671,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Carrière de La Roche en Brenil</name>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/carriere_la_roche.jpg"></p><p align="justify">En cours de création sur le site d'une ancienne carrière désaffectée, dans un cadre naturel exceptionnel, plusieurs circuits typés cross-country sont en cours d'aménagement.<p>]]></description>
+			<styleUrl>#msn_placemark_circle1</styleUrl>
+			<Point>
+				<coordinates>4.161350391805172,47.38277147524059,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bike Park de Mersvres</name>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/bikepark_mesvres_01.jpg"></p><p align="justify">Seul équipement de ce type en Bourgogne, le site de Mesvres accueille les pilotes qui veulent travailler leur technique (deux pump-tracks, une zone de trial et une zone d'évolution.<p>]]></description>
+			<styleUrl>#msn_placemark_circle1</styleUrl>
+			<Point>
+				<coordinates>4.236098024994135,46.85894996859133,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pump-track - Les Settons</name>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/pump_settons_01.jpg"></p><p align="justify">C'est une piste constituée d'enchaînements de bosses et de virages relevés, qui peuvent être parcourues sans donner un coup de pédale.<p>]]></description>
+			<styleUrl>#msn_placemark_circle1</styleUrl>
+			<Point>
+				<coordinates>4.070718884468079,47.18766306526959,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Stations de lavage</name>
+		<Placemark>
+			<name>Station de lavage - Avallon</name>
+			<styleUrl>#msn_triangle</styleUrl>
+			<Point>
+				<coordinates>3.912679860368371,47.48739950358868,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Station de lavage - Lac des Settons</name>
+			<styleUrl>#msn_triangle</styleUrl>
+			<Point>
+				<coordinates>4.057259559631348,47.1977162361145,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Station de lavage - Quarré les Tombes</name>
+			<styleUrl>#msn_triangle</styleUrl>
+			<Point>
+				<coordinates>3.998840963467956,47.36847002059221,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Station de lavage - Saulieu</name>
+			<styleUrl>#msn_triangle</styleUrl>
+			<Point>
+				<coordinates>4.224678687751293,47.28262206539512,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Station de lavage - Ouroux en Morvan</name>
+			<LookAt>
+				<longitude>3.9465235843841</longitude>
+				<latitude>47.18527263480092</latitude>
+				<altitude>0</altitude>
+				<heading>0.0002838818025732089</heading>
+				<tilt>19.47590395075268</tilt>
+				<range>72.21588345551774</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_placemark_square</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.946680450800437,47.18535546916998,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Offices de Tourisme</name>
+		<Placemark>
+			<name>Antenne Office de tourisme - Quarré les Tombes</name>
+			<styleUrl>#m_ylw-pushpin01</styleUrl>
+			<Point>
+				<coordinates>3.996451031416655,47.36923998221755,499.872</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bureau d&apos;infos - Luzy</name>
+			<styleUrl>#m_ylw-pushpin01</styleUrl>
+			<Point>
+				<coordinates>3.968645995482802,46.78922996856272,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Maison du Tourisme du Parc du Morvan - Saint Brisson</name>
+			<styleUrl>#m_ylw-pushpin01</styleUrl>
+			<Point>
+				<coordinates>4.0989089012146,47.27560758590698,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Syndicat d&apos;initiative - Chaumard</name>
+			<styleUrl>#m_ylw-pushpin01</styleUrl>
+			<Point>
+				<coordinates>3.892468996345997,47.15791996568441,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Office de tourisme - Autun</name>
+			<styleUrl>#m_ylw-pushpin01</styleUrl>
+			<Point>
+				<coordinates>4.298237012699246,46.9492600299418,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Office de tourisme - Avallon</name>
+			<styleUrl>#m_ylw-pushpin01</styleUrl>
+			<Point>
+				<coordinates>3.907029032707214,47.48648772016168,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Office de tourisme - Chateau-Chinon</name>
+			<styleUrl>#m_ylw-pushpin01</styleUrl>
+			<Point>
+				<coordinates>3.934359988197684,47.06337000243366,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Office de tourisme - Etang sur Arroux</name>
+			<styleUrl>#m_ylw-pushpin01</styleUrl>
+			<Point>
+				<coordinates>4.180125016719103,46.8679900187999,399.8976</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Office de tourisme - Grands Lacs</name>
+			<styleUrl>#m_ylw-pushpin01</styleUrl>
+			<Point>
+				<coordinates>4.057281017303467,47.19793081283569,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Office de tourisme - Moulins Engilbert</name>
+			<styleUrl>#m_ylw-pushpin01</styleUrl>
+			<Point>
+				<coordinates>3.811125978827477,46.98748997412622,499.872</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Office de tourisme - Ouroux en Morvan</name>
+			<styleUrl>#m_ylw-pushpin01</styleUrl>
+			<Point>
+				<coordinates>3.945389986038208,47.18597000464797,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Office de tourisme de Lormes</name>
+			<styleUrl>#m_ylw-pushpin01</styleUrl>
+			<Point>
+				<coordinates>3.816199963912368,47.29150000959635,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Office de tourisme - Vézelay</name>
+			<styleUrl>#m_ylw-pushpin01</styleUrl>
+			<Point>
+				<coordinates>3.743072971701622,47.46364996768534,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Office de tourisme - Saulieu</name>
+			<styleUrl>#m_ylw-pushpin01</styleUrl>
+			<Point>
+				<coordinates>4.230573177337647,47.28146553039551,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Office de tourisme - Saint Honoré les Bains</name>
+			<styleUrl>#m_ylw-pushpin01</styleUrl>
+			<Point>
+				<coordinates>3.841680027544498,46.90560003742576,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Sites naturels</name>
+		<Placemark>
+			<name>Rocher de la Beufnie</name>
+			<styleUrl>#msn_grn-stars00</styleUrl>
+			<Point>
+				<coordinates>4.172760006040335,47.34254001639783,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Gorges du Trinquelin</name>
+			<styleUrl>#msn_grn-stars00</styleUrl>
+			<Point>
+				<coordinates>4.042763141915202,47.36171999014914,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Griffe du Diable</name>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/griffe_diable.jpg"></p>]]></description>
+			<styleUrl>#msn_grn-stars0</styleUrl>
+			<Point>
+				<coordinates>4.249449977651238,46.80310000665486,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Rocher Arthur</name>
+			<styleUrl>#msn_grn-stars00</styleUrl>
+			<Point>
+				<coordinates>4.191219974309206,47.39033002406359,399.8976</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pierres Pelot</name>
+			<styleUrl>#msn_grn-stars00</styleUrl>
+			<Point>
+				<coordinates>4.195579988881946,47.39017001353204,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Chêne Saint Charles</name>
+			<description><![CDATA[<p align="justify">Un chêne remarquable, au diamètre impressionnant.<p>]]></description>
+			<styleUrl>#msn_grn-stars00</styleUrl>
+			<Point>
+				<coordinates>4.161909967660904,47.35426001250744,399.8976</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Dolmen de Chevresse</name>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/dolmen_chevresse.jpg"></p><p align="justify">Malgré son appellation et son aspect extérieur rappelant un dolmen, il semble qu'il s'agisse en fait d'une formation naturelle, un chaos granitique, due à l'érosion, comme il en existe divers exemples dans le Morvan et ailleurs.<p>]]></description>
+			<styleUrl>#msn_grn-stars0</styleUrl>
+			<Point>
+				<coordinates>4.060850031673908,47.27400999516249,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mont Beuvray</name>
+			<description><![CDATA[<p align="justify">Le mont Beuvray culmine à 821 m. Il se trouve sur les communes de Saint-Léger-sous-Beuvray (Saône-et-Loire), Glux-en-Glenne et Larochemillay (Nièvre). Son sommet correspond à l'ancien oppidum gaulois de Bibracte, capitale des Éduens.<p>]]></description>
+			<styleUrl>#msn_grn-stars0</styleUrl>
+			<Point>
+				<coordinates>4.037469970062375,46.92160000093281,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Poron Meurger</name>
+			<description><![CDATA[<p align="justify">Le Poron meurger est un impressionnant amas grantique classé monument historique au début du XXème Siècle. Il aurait été laissé à son emplacement actuel par le Diable en personne.<p>]]></description>
+			<styleUrl>#msn_grn-stars00</styleUrl>
+			<Point>
+				<coordinates>4.166339971125126,47.36345001496375,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Roche des Fées</name>
+			<description><![CDATA[<p align="justify">Ces rochers en granit monumentaux ont des formes qui ont inspirées la population locale.<p>]]></description>
+			<styleUrl>#msn_grn-stars00</styleUrl>
+			<Point>
+				<coordinates>3.989960001781583,47.35524999909103,499.872</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Roches du Carnaval</name>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/rochers_carnaval.jpg"></p>
+<p align="justify">Le site des roches du Carnaval n'occupe qu'une partie du sommet du massif d'Uchon, lui même surnommé "la perle du Morvan", tant la vue y est superbe. A ces blocs de granit impressionnants sont attachés de nombreuses légendes.<p>]]></description>
+			<styleUrl>#msn_grn-stars0</styleUrl>
+			<Point>
+				<coordinates>4.253163620542539,46.80637798836514,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Saut de Gouloux</name>
+			<description><![CDATA[<p align="justify">Au Saut de Gouloux, le cours d'eau "le Caillot" tombe dans une faille ancienne qui a créé le surplomb, se terminant en une cascade de 10 mètres de haut.<p>]]></description>
+			<styleUrl>#msn_grn-stars00</styleUrl>
+			<Point>
+				<coordinates>4.062070246304925,47.24349393130035,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Rocher de la Pérouse</name>
+			<description><![CDATA[<p align="justify">Point culminant du département de l'Yonne (556 m), cette table d'orientation circulaire illustre le paysage du Morvan central. Un vaste panorama s’offre au regard, phénomène relativement rare dans cette partie du Morvan.<p>]]></description>
+			<styleUrl>#msn_grn-stars00</styleUrl>
+			<Point>
+				<coordinates>4.007659982889891,47.31414003297687,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Sommet du Haut Folin (antenne)</name>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/haut_folin.jpg"></p>
+<p align="justify">Le Haut-Folin est le point culminant du massif du Morvan. Il s'élève à 901 mètres d'altitude dans le massif du Bois du Roi. Il supporte un relais de télévision.<p>]]></description>
+			<styleUrl>#msn_grn-stars0</styleUrl>
+			<Point>
+				<coordinates>4.036412643648872,46.99610978070555,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>La Pierre qui Croûle</name>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/pierre_qui_croule.jpg"></p>
+<p align="justify">En 1869, des jeunes gens ont essayé de la déplacer pour faire cesser cet oracle qui engendrait bien des malheurs. Avec un attelage et des leviers , ils ne réussirent qu'à la faire glisser de quelques centimètres mais cela suffit à la rendre immobile.<p>]]></description>
+			<LookAt>
+				<longitude>4.254074455004853</longitude>
+				<latitude>46.79790654599327</latitude>
+				<altitude>0</altitude>
+				<heading>4.738569929815143e-006</heading>
+				<tilt>18.58501692898175</tilt>
+				<range>623.8808421834266</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.254493843151184,46.79774499937268,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Gorges de la Canche</name>
+			<LookAt>
+				<longitude>4.103559661006499</longitude>
+				<latitude>47.01239097100346</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0009178542695773077</heading>
+				<tilt>14.45769886195861</tilt>
+				<range>760.0252199871126</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.104442923636775,47.01303779404186,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Gorges de Narvau</name>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/cascade_gorges_narvau.jpg"></p>
+<p align="justify">.<p>]]></description>
+			<LookAt>
+				<longitude>3.808753691336328</longitude>
+				<latitude>47.28468402971452</latitude>
+				<altitude>0</altitude>
+				<heading>0.001143212696037444</heading>
+				<tilt>20.77345652425318</tilt>
+				<range>934.017068441215</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.809266299957019,47.28473050966559,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Vallée du Cousin</name>
+			<description><![CDATA[<p align="justify";>La vallée du Cousin, du nom de la rivière qui la traverse, serpente au pied de la vieille ville d'Avallon. Elle offre un cadre propice au repos et des aires de pique-nique.<p>]]></description>
+			<LookAt>
+				<longitude>3.88623205825487</longitude>
+				<latitude>47.48227938628483</latitude>
+				<altitude>0</altitude>
+				<heading>-0.01644579400660627</heading>
+				<tilt>23.55230373425353</tilt>
+				<range>1101.550447502093</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars1</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.884437631089293,47.48225793384222,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Patrimoine rural</name>
+		<Placemark>
+			<name>Hameau des Gâtis</name>
+			<LookAt>
+				<longitude>3.901892323326146</longitude>
+				<latitude>47.44524384899925</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0007085093620934114</heading>
+				<tilt>26.02993209584076</tilt>
+				<range>377.2875005404883</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.902290728060069,47.44530174434935,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Chateau de Chastellux</name>
+			<open>1</open>
+			<description><![CDATA[<p align="justify">Le château de Chastellux est un édifice des XIᵉ, XIIIᵉ, XVᵉ et XIXᵉ siècle. Ce château est toujours habité par la famille qui l'a construit, fait rarissime en France.<p>]]></description>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<coordinates>3.890321971848607,47.3923600371927,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Chapelle du Chêne</name>
+			<open>1</open>
+			<description><![CDATA[<p align="justify">La chapelle du Chêne marque l'emplacement d'un site liés à des rites païens et chrétiens, très anciens. Une première chapelle a été détruite à la Révolution puis reconstruite au XIXe siècle : c'est celle-ci qui est aujourd'hui visible.<p>]]></description>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<coordinates>3.922420972958207,47.05696497112513,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Chapelle de Fauboulouin</name>
+			<open>1</open>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/chapelle_fauboulouin.jpg"></p>
+<p align="justify">Avec son site perdu au milieu des bois, ses rites et ses coutumes, cette chapelle se dresse sur un éperon rocheux qui domine de plus de 70 mètres la naissance de l'Oussière.<p>]]></description>
+			<styleUrl>#msn_grn-stars0</styleUrl>
+			<Point>
+				<coordinates>3.976052148606901,47.12166580298423,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Vieux pont de Pierre-Perthuis</name>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/pierre_perthuis.jpg"></p>
+<p align="justify">Le "vieux pont", ou "pont de Ternos", enjambe la Cure en bas du village de Pierre-Pertuis, au point le plus resserré de la rivière. Il présente une forme en dos d'âne et a conservé ses pavés et chasses-roues.</p>]]></description>
+			<LookAt>
+				<longitude>3.786772415520128</longitude>
+				<latitude>47.43189923541902</latitude>
+				<altitude>0</altitude>
+				<heading>0.001661102868660058</heading>
+				<tilt>21.11189876417975</tilt>
+				<range>295.8660538091976</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.786371723896267,47.4320456575446,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Calvaire de Château-Chinon</name>
+			<open>1</open>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/calvaire_chateau_chinon.jpg"></p>
+<p align="justify">Le Calvaire de Château-Chinon est situé sur les hauteurs de la ville (609 m). Il est constitué de trois croix de pierre sur socle. Un magnifique panorama sur les monts du Morvan, la vallée de l’Yonne et le val de Loire s'étend à ses pieds.<p>]]></description>
+			<styleUrl>#msn_grn-stars0</styleUrl>
+			<Point>
+				<coordinates>3.933955067252271,47.06915617317659,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Basilique Sainte Madeleine</name>
+			<open>1</open>
+			<description><![CDATA[<p align="justify">Inscrite au patrimoine mondial de l'Unesco, la basilique Sainte-Marie-Madeleine de Vézelay est une ancienne abbatiale française. Haut lieu de la chrétienté au Moyen Âge, Vézelay est un lieu de pèlerinage important sur le chemin de Saint-Jacques-de-Compostelle.</p>]]></description>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<coordinates>3.749053011277408,47.4662803642052,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Abbaye de la Pierre qui Vire</name>
+			<open>1</open>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/pierre_qui_vire.jpg"></p>
+<p align="justify">Cette abbaye bénédictine a été fondée en 1850 par le révérend père Jean-Baptiste Muard.  Le nom du lieu-dit, « la Pierre-qui-Vire », provient d'une caractéristique naturelle, une roche qui, posée sur une autre, pouvait être mise en mouvement par une simple pression humaine. Aujourd'hui scellée la roche est surmontée d'une statue de la Vierge Marie.</p>]]></description>
+			<styleUrl>#msn_grn-stars0</styleUrl>
+			<Point>
+				<coordinates>4.06280024908483,47.35768175683916,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Oratoire de Belle Croix</name>
+			<open>1</open>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/oratoire_bellecroix.jpg"></p>]]></description>
+			<styleUrl>#msn_grn-stars0</styleUrl>
+			<Point>
+				<coordinates>4.251454473604241,46.81350188541867,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>La Tour de Bourdeau</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<coordinates>4.344349969178438,46.8363400362432,399.8976</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Croix des Adieux</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<coordinates>4.17433999478817,47.394890030846,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Château de Trélague</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<coordinates>4.217899991199374,46.78409999236465,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Château de Montfeurton</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<coordinates>4.185859998688102,46.79600003175438,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Château de Champignolle</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<coordinates>4.209550023078919,46.7949900124222,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Chapelle de la Certenue</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<coordinates>4.278339967131615,46.85003003105521,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Centre de recherche archéologique européeen de Bibracte</name>
+			<open>1</open>
+			<description><![CDATA[<p align="center"><img width=100% src="http://www.morvanvtt.fr/images/photos/centre_recherche.jpg"></p>]]></description>
+			<styleUrl>#msn_grn-stars0</styleUrl>
+			<Point>
+				<coordinates>4.029129976406694,46.9579600263387,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Taureau de Pompon</name>
+			<open>1</open>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<coordinates>4.230895126238465,47.28128414601088,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Chapelle Saint Roch</name>
+			<open>1</open>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/chapelle_saint_roch.jpg"></p>
+<p align="justify">Cette chapelle du XVIème siècle fut construite en 1588 suite à une grande épidémie de peste. Elle est dédiée à Saint Roch, saint qui avait consacré sa vie à soigner les pestiférés.<p>]]></description>
+			<styleUrl>#msn_grn-stars0</styleUrl>
+			<Point>
+				<coordinates>3.934426248763319,47.08545356046562,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Tourbière de Champgazon</name>
+			<description><![CDATA[<p align="justify">Ces tourbières sont aménagées avec des passerelles en bois et des panneaux explicatifs. Dans ce milieu humide, on peut observer de belles variétés de plantes et de nombreux oiseaux.<p>]]></description>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<coordinates>4.051999999210239,47.2025000397116,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Chateau de La Roche en Brenil</name>
+			<description><![CDATA[<p align="justify">Le château a été construit du XIVème siècle au XVIIIème siècle. Il a gardé sa tour carrée d'origine. Le reste des bâtiments, les douves, la chapelle et le portail ont été refaits ultérieurement. Il fut acheté en 1841 par Charles de Montalembert, écrivain et leader catholique.<p>]]></description>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<coordinates>4.181610038504005,47.3849500156939,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Chateau de Montjeu</name>
+			<description><![CDATA[<p align="justify">Le château de Montjeu est situé dans un parc occupé par une forêt, des étangs et les jardins, sur la montagne qui domine Autun.<p>]]></description>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<coordinates>4.283960033208132,46.90309996716678,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cimetière franco-britanique</name>
+			<description><![CDATA[<p align="justify">Au cours de l’été 1944, le Morvan occupe un rôle stratégique dans la libération du territoire et devient l’un des hauts lieux de la Résistance française. Le maquis Bernard, installé dans cette forêt, édifie ce cimetière militaire afin d’y recevoir les corps des combattants, victimes des combats de la Libération.<p>]]></description>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<coordinates>4.000379964709282,47.18606002628803,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Croix de la Libération</name>
+			<description><![CDATA[<p align="justify">La Croix de la Libération commémore la libération d’Autun en septembre 1944. Le 9 septembre 1945, la première pierre de la croix fut posée par Mgr Piguet, évêque de Clermont à son retour de Dachau. Elle fut inaugurée le 5 septembre 1948.<p>]]></description>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<coordinates>4.287283691429336,46.93397089361825,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Fontaine Tinguely / St Phalle</name>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/fontaine_saint_phalle.jpg"></p><p align="justify">Cette fontaine est une œuvre d’art rare, puisqu’il en existe probablement cinq dansle Monde. A Paris, dans l’espace Beaubourg, on peut admirer sa sœur jumelle.]]></description>
+			<styleUrl>#msn_grn-stars0</styleUrl>
+			<Point>
+				<coordinates>3.932969430461526,47.0646666828543,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Maison du Parc Naturel Régional du Morvan</name>
+			<description><![CDATA[<p align="justify">La maison du Parc est situé dans un ensemble de bâtiments construits en 1802 et 1803 par un architecte anglais. En 1975, le parc naturel régional du Morvan acquiert ce domaine et y installe la Maison du Parc.<p>]]></description>
+			<styleUrl>#msn_grn-stars0</styleUrl>
+			<Point>
+				<coordinates>4.097965070498997,47.27458102999758,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Eglise de Saint Père</name>
+			<LookAt>
+				<longitude>3.765985680212516</longitude>
+				<latitude>47.45751025895537</latitude>
+				<altitude>0</altitude>
+				<heading>0.0001084415655331368</heading>
+				<tilt>25.20815318670989</tilt>
+				<range>510.9613364385907</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.765295367048644,47.45813727342498,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Château de Bazoches</name>
+			<description><![CDATA[<p align="justify">Construit au XIIème siècle, le chateau de Bazoches fut la demeure familiale, le cabinet d'études et le lieu d'inspiration de l'oeuvre littéraire du Maréchal de Vauban, qui acquit Bazoches en 1675.<p>]]></description>
+			<LookAt>
+				<longitude>3.795147043442583</longitude>
+				<latitude>47.3807746303039</latitude>
+				<altitude>0</altitude>
+				<heading>7.451911976133805e-005</heading>
+				<tilt>18.80088308396448</tilt>
+				<range>398.7540461301144</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.794991538712431,47.38096251887789,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Chapelle du Banquet</name>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/chapelle_banquet.jpg"></p>
+<p align="justify">Située à 554 mètres d’altitude, cette chapelle domine la région avoisinante et permet une vue panoramique sur les communes de Mhère et Gâcogne.<p>]]></description>
+			<LookAt>
+				<longitude>3.889043372556185</longitude>
+				<latitude>47.19981238143158</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0005628857924353876</heading>
+				<tilt>18.22798546453185</tilt>
+				<range>258.2275605605167</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.889442352298889,47.19979139706923,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Etang du Goulot</name>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/etang_goulot.jpg"></p>
+<p align="justify">.<p>]]></description>
+			<LookAt>
+				<longitude>3.825417310960486</longitude>
+				<latitude>47.28006990887511</latitude>
+				<altitude>0</altitude>
+				<heading>0.001255281159737813</heading>
+				<tilt>3.858922001455585</tilt>
+				<range>874.1801680106092</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.82437364439032,47.28077957428855,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Quartier historique d&apos;Avallon</name>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/quartier_historique_avallon.jpg"></p><p align="justify">Au coeur de la ville,  il est possible d'admirer de nombreux bâtiments remarquables, des rues pittoresques à l'accent médiéval, ponctués de  points de vue sur la vallée du Cousin et sur les paysages du Morvan.<p>]]></description>
+			<LookAt>
+				<longitude>3.907579456742844</longitude>
+				<latitude>47.48617009479906</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0001306803071338551</heading>
+				<tilt>15.92922349071539</tilt>
+				<range>432.5585693620376</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.907263636616833,47.48603098874173,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Fontaines salées</name>
+			<description><![CDATA[<p align="justify">Les fontaines salées sont un site archéologique de première importance, occupé de la fin du néolithique à la période gallo-romaine. Des cuvelages en chêne évidé de plus de 4000 ans captent une eau minérale salée.<p>]]></description>
+			<LookAt>
+				<longitude>3.776942985226281</longitude>
+				<latitude>47.44894263426742</latitude>
+				<altitude>0</altitude>
+				<heading>-4.714186947664087e-005</heading>
+				<tilt>25.03669378349417</tilt>
+				<range>220.7836835152742</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.776942985226282,47.44894263426741,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Chapelle d&apos;Uchon</name>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/chapelle_uchon.jpg"></p>
+<p align="justify">.<p>]]></description>
+			<LookAt>
+				<longitude>4.252235834382281</longitude>
+				<latitude>46.81377828235804</latitude>
+				<altitude>0</altitude>
+				<heading>-0.01427334827047573</heading>
+				<tilt>30.0004640924157</tilt>
+				<range>245.8157415442384</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.252263648742575,46.813014955991,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Square Houdaille</name>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/square_houdaille.jpg"></p>
+<p align="justify">Ce square est situé en bordure la route qui descend à Cousin-le-Pont. Des bancs peremettent le repos et la méditation, loin des bruits de la ville.<p>]]></description>
+			<LookAt>
+				<longitude>3.907894920624522</longitude>
+				<latitude>47.48495266980716</latitude>
+				<altitude>0</altitude>
+				<heading>0.0001016228813911157</heading>
+				<tilt>15.93108444758055</tilt>
+				<range>453.1125374655099</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.907225356277535,47.48409725358549,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Musées</name>
+		<Placemark>
+			<name>Saboterie Marchand</name>
+			<open>1</open>
+			<LookAt>
+				<longitude>4.074606616063232</longitude>
+				<latitude>47.23674171843224</latitude>
+				<altitude>0</altitude>
+				<heading>0.0001568617345022546</heading>
+				<tilt>22.58171216788017</tilt>
+				<range>239.698167667936</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.074609185148517,47.23694662010175,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Musée de l&apos;Avallonnais</name>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/musee_avallonnais.jpg"></p><p align="justify">Ce musée remonte l'histoire du pays avallonnais, et celle des artistes anonymes du Moyen Age aux sculpteurs et peintres des 19e et 20e siècles, avec les oeuvres de G. Rouault, P. Vigoureux, G. Loiseau-Bailly ou J. Després.<p>]]></description>
+			<LookAt>
+				<longitude>3.906484360214266</longitude>
+				<latitude>47.48673135324244</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0001053078896466525</heading>
+				<tilt>24.06957826710383</tilt>
+				<range>278.2350513483784</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars1</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.906501977424937,47.48683023195619,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Maison des Galvachers</name>
+			<description><![CDATA[<p align="justify">La maison des Galvachers retrace l'histoire des galvachers, ces agriculteurs charretiers migrants qui, de mai à octobre de chaque année, parcouraient les régions voisines du Morvan afin de vendre leurs services, accompagnés de leurs bœufs « rouge du Morvan ».<p>]]></description>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<Point>
+				<coordinates>4.099000012502074,47.07745000720024,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Musée de Bibracte</name>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/musee_bibracte.jpg"></p><p align="justify">Au pied du site archéologique de Bibracte, capitale gauloise, le musée présente l'histoire de du site et l’actualité de la recherche archéologique.<p>]]></description>
+			<styleUrl>#msn_grn-stars</styleUrl>
+			<Point>
+				<coordinates>4.047509981319308,46.9325300026685,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Musée du Costume</name>
+			<description><![CDATA[<p align="justify">L’hôtel particulier de la famille Buteau-Ravizy, datant du 18ème siècle, abrite depuis 1992, un important ensemble de costumes riche de quelque 5 000 pièces.<p>]]></description>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<Point>
+				<coordinates>3.934225039556623,47.06720002926886,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Musée du Septennat</name>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/musee_septennat.jpg"></p>
+<p align="justify">Le Musée du Septennat abrite les cadeaux officiels ou personnels reçus par le Président de la République François Mitterrand, dans le cadre de ses fonctions.<p>]]></description>
+			<styleUrl>#msn_grn-stars0</styleUrl>
+			<Point>
+				<coordinates>3.935186192393303,47.06726507283747,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Maison Vauban</name>
+			<description><![CDATA[<p align="justify">Musée consacré à la vie et l'oeuvre de Vauban au service de Louis XIV.<p>]]></description>
+			<LookAt>
+				<longitude>4.045738972074313</longitude>
+				<latitude>47.38534059239922</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0002567534027166858</heading>
+				<tilt>36.22384759004792</tilt>
+				<range>382.3905276231149</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin1</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.045880820416786,47.38517996515988,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Lacs et étangs</name>
+		<Placemark>
+			<name>Barrage du Lac du Crescent</name>
+			<open>1</open>
+			<description><![CDATA[<p align="justify">Le Lac du Crescent s'étend sur une surface de 165 ha. Sa retenue d'une capacité maximale de 14,25 millions de mètres cubes est utilisée par une usine hydro-électrique et permet également d'alimenter l'Avallonnais en eau potable.</p>]]></description>
+			<styleUrl>#msn_grn-stars</styleUrl>
+			<Point>
+				<coordinates>3.907778791436516,47.38655601997174,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Barrage du Lac des Settons</name>
+			<open>1</open>
+			<description><![CDATA[<p align="justify">Le barrage de ce lac artificiel de 366 hectares a été construit de 1854 à 1861, pour réguler la navigation sur l'Yonne et faciliter le flottage du bois jusqu'à Paris.</p>]]></description>
+			<styleUrl>#msn_grn-stars</styleUrl>
+			<Point>
+				<coordinates>4.057073959593409,47.19658556807526,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Barrage du Lac de Saint Agnan</name>
+			<open>1</open>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/lac_saint_agnan.jpg"></p>
+<p align="justify">Le barrage de ce lac artificiel, réalisé en arène granitique compactée, est long de 160 m et s'élève à 16 m de hauteur. Il retient un plan d'eau d'une superficie de 140 ha à niveau constant, en utilisant un versant naturel.</p>]]></description>
+			<styleUrl>#msn_grn-stars</styleUrl>
+			<Point>
+				<coordinates>4.077389546361658,47.33629512759124,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Barrage du Lac de Pannecière</name>
+			<open>1</open>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/lac_panneciere.jpg"></p>
+<p align="justify">Ce llac artificiel de 520 hectares a une capacité de 82,5 millions de m3. Le barrage (352 mètres de long, 49 mètres de large) a été construit entre 1937 et 1949 pour protéger Paris des inondations causées par la Seine.</p>]]></description>
+			<styleUrl>#msn_grn-stars</styleUrl>
+			<Point>
+				<coordinates>3.874558545023172,47.16390499330494,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Barrage du Lac de Chamboux</name>
+			<open>1</open>
+			<description><![CDATA[<p align="justify">Construit en 1985, le lac de Chamboux (75 hectares) est le plus récent des « six grands lacs » du Morvan et sert de réserve d'eau potable. Il est constitué de 3 plans d'eau séparés par des digues.</p>]]></description>
+			<styleUrl>#msn_grn-stars</styleUrl>
+			<Point>
+				<coordinates>4.188753514023656,47.24402017394336,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Barrage de Chaumeçon</name>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/barrage_chaumecon.jpg"></p>
+<p align="justify">Le lac s'étend sur une surface de 135 ha et sa retenue, d'une capacité maximale de 19 millions de mètres cubes, alimente une usine hydro-électrique. Il permet également de réguler indirectement les eaux de l'Yonne et de la Seine pour éviter les crues dans la capitale.<p>]]></description>
+			<LookAt>
+				<longitude>3.915977302836486</longitude>
+				<latitude>47.2921352307828</latitude>
+				<altitude>0</altitude>
+				<heading>0.0007182349606818397</heading>
+				<tilt>0</tilt>
+				<range>2518.574933511091</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.916955022636608,47.30227360471573,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Etang de la Goulette</name>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/etang_goulette.jpg"></p>
+<p align="justify">.<p>]]></description>
+			<LookAt>
+				<longitude>4.056787965275022</longitude>
+				<latitude>46.985806937092</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0002748441992458324</heading>
+				<tilt>12.49431849528894</tilt>
+				<range>634.311637004683</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-stars</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.056787965275022,46.985806937092,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Ski de fond</name>
+		<Placemark>
+			<name>Chalet de Préperny (ski de fond)</name>
+			<open>1</open>
+			<description><![CDATA[<p align="center"><img width=250 src="http://www.morvanvtt.fr/images/photos/chalet_preperny.jpg"></p>
+<p align="justify">Le club alpin français avait aménagé une piste de ski alpin avec une remontée mécanique et des canons à neige sur les flans du Haut Folin. Faute d'enneigement suffisant et régulier, le téléski n'existe plus depuis la fin des années 80. Des pistes de ski de fond sont balisées au départ de ce chalet.<p>]]></description>
+			<styleUrl>#msn_placemark_circle</styleUrl>
+			<Point>
+				<coordinates>4.034799998626113,47.00542003847659,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Prestataires touristiques</name>
+		<Placemark>
+			<name>Gîte de la base de Chaumeçon</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Grand gîte - 7 chambres / 29 personnes.</p>
+<p>03 86 22 65 28</p>]]></description>
+			<LookAt>
+				<longitude>4.015890251205558</longitude>
+				<latitude>47.37467268604309</latitude>
+				<altitude>0</altitude>
+				<heading>1.183775341301489</heading>
+				<tilt>24.70947341544594</tilt>
+				<range>28416.81321216717</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.915243,47.30161500000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Citotel Avallon Vauban</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel - 30 chambres.</p>
+<p>http://www.citotel-avallon.fr/</p>]]></description>
+			<LookAt>
+				<longitude>3.907924</longitude>
+				<latitude>47.49243600000001</latitude>
+				<altitude>0</altitude>
+				<heading>0</heading>
+				<tilt>45</tilt>
+				<range>1000</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.907924,47.49243600000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hôtel du Parc</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel - 27 chambres.</p>
+<p>03 86 34 17 00</p>]]></description>
+			<LookAt>
+				<longitude>3.907924000000029</longitude>
+				<latitude>47.49243600000003</latitude>
+				<altitude>0</altitude>
+				<heading>-9.462150177353963e-014</heading>
+				<tilt>44.99973704641023</tilt>
+				<range>1000.000000000199</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.912073,47.49577777777778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hostellerie de la Poste</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel Restaurant - 30 chambres / 30 personnes.</p>
+<p>http://www.hostelleriedelaposte.com/fr/</p>]]></description>
+			<LookAt>
+				<longitude>3.907924000000029</longitude>
+				<latitude>47.49243600000003</latitude>
+				<altitude>0</altitude>
+				<heading>-9.462150177353963e-014</heading>
+				<tilt>44.99973704641023</tilt>
+				<range>1000.000000000199</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.908722,47.489688,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Le Moulin des Ruats</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel Restaurant - 25 chambres / 12 personnes.</p>
+<p>http://www.moulindesruats.com/fr/</p>]]></description>
+			<LookAt>
+				<longitude>3.893966577396866</longitude>
+				<latitude>47.48335609984306</latitude>
+				<altitude>0</altitude>
+				<heading>-0.01030697471634058</heading>
+				<tilt>42.28811616603586</tilt>
+				<range>200.1197997586758</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.894488232717566,47.48310409993879,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pub Vauban</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel Restaurant - 4 chambres.</p>
+<p>https://www.hotelpubvauban.fr/</p>]]></description>
+			<LookAt>
+				<longitude>3.900334212154801</longitude>
+				<latitude>47.48240806911206</latitude>
+				<altitude>0</altitude>
+				<heading>-0.006043408068374614</heading>
+				<tilt>28.94354572884526</tilt>
+				<range>851.5296777266624</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.907402,47.489467,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Le Relais Fleuri</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel Restaurant - 48 chambres.</p>
+<p>http://www.hotel-relais-fleuri.com/fr/</p>]]></description>
+			<LookAt>
+				<longitude>3.967430549729518</longitude>
+				<latitude>47.49655896068644</latitude>
+				<altitude>0</altitude>
+				<heading>0.03970268533088139</heading>
+				<tilt>13.5976872359478</tilt>
+				<range>226.8293809767422</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.967914348611075,47.49770999386723,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Les Capucins</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel Restaurant - 23 chambres.</p>
+<p>http://www.avallonlescapucins.com/</p>]]></description>
+			<LookAt>
+				<longitude>3.909704450608895</longitude>
+				<latitude>47.49271682891224</latitude>
+				<altitude>0</altitude>
+				<heading>-0.001195226560017419</heading>
+				<tilt>18.78507999565947</tilt>
+				<range>128.9199274508748</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.910073252167208,47.49280126528496,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Auberge du Cheval Blanc</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel Restaurant - 13 chambres.</p>
+<p>http://www.auberge-cheval-blanc-avallon.fr/</p>]]></description>
+			<LookAt>
+				<longitude>3.912768390136088</longitude>
+				<latitude>47.49133084115661</latitude>
+				<altitude>0</altitude>
+				<heading>97.50818921780369</heading>
+				<tilt>39.77409393147364</tilt>
+				<range>68.40085665263996</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.912773628162041,47.49136727573821,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Brit Hôtel Dak&apos;Hôtel</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel Restaurant - 27 chambres.</p>
+<p>http://avallon.brit-hotel.fr/</p>]]></description>
+			<LookAt>
+				<longitude>3.920850435079839</longitude>
+				<latitude>47.49307370214301</latitude>
+				<altitude>0</altitude>
+				<heading>97.51414712274696</heading>
+				<tilt>39.77219032072703</tilt>
+				<range>190.7826504362395</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.920955183794062,47.49289030575162,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Le Saint Vincent</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel Restaurant - 8 chambres / 17 personnes.</p>
+<p>03 86 34 04 53</p>]]></description>
+			<LookAt>
+				<longitude>3.907464672057627</longitude>
+				<latitude>47.49006942999545</latitude>
+				<altitude>0</altitude>
+				<heading>-0.01911317729986435</heading>
+				<tilt>12.96671329649063</tilt>
+				<range>75.18141958336308</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.907821410228851,47.49006292393215,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>La Cimentelle</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres et table d'hôtes - 4 chambres / 14 personnes.</p>
+<p>http://www.lacimentelle.com/</p>]]></description>
+			<LookAt>
+				<longitude>3.907464672057627</longitude>
+				<latitude>47.49006942999545</latitude>
+				<altitude>0</altitude>
+				<heading>-0.01911317729986435</heading>
+				<tilt>12.96671329649063</tilt>
+				<range>75.18141958336308</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.918863,47.53666666666666,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Chambres d&apos;hôtes Bel Air</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres et table d'hôtes - 3 chambres / 7 personnes.</p>
+<p>03 86 31 66 19</p>]]></description>
+			<LookAt>
+				<longitude>3.918700441806524</longitude>
+				<latitude>47.53669087453564</latitude>
+				<altitude>0</altitude>
+				<heading>-0.004217488760754895</heading>
+				<tilt>27.77736614839309</tilt>
+				<range>192.3745463604121</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.908016,47.488625,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Camping Sous Roche</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Camping - 98 emplacements / 4 chalets.</p>
+<p>http://www.campingsousroche.com/</p>]]></description>
+			<LookAt>
+				<longitude>3.91191579680701</longitude>
+				<latitude>47.48031176516497</latitude>
+				<altitude>0</altitude>
+				<heading>-68.59343358263459</heading>
+				<tilt>45.34098098462463</tilt>
+				<range>451.7111151922621</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.91378890508975,47.48002210555114,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Camping à la ferme des Châtelaines</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Camping - 40 personnes.</p>
+<p>03 86 34 16 37</p>]]></description>
+			<LookAt>
+				<longitude>3.91191579680701</longitude>
+				<latitude>47.48031176516497</latitude>
+				<altitude>0</altitude>
+				<heading>-68.59343358263459</heading>
+				<tilt>45.34098098462463</tilt>
+				<range>451.7111151922621</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.897120000000001,47.47752222222223,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Le Moulin des Templiers</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel Restaurant - 15 chambres / 38 personnes.</p>
+<p>http://hotel-moulin-des-templiers.com/</p>]]></description>
+			<LookAt>
+				<longitude>3.867311873466686</longitude>
+				<latitude>47.48935068376299</latitude>
+				<altitude>0</altitude>
+				<heading>-0.03377399777450484</heading>
+				<tilt>29.99977751893781</tilt>
+				<range>261.370765176078</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.867718088285368,47.48891833098757,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Au Soleil d&apos;Or</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel Restaurant - 15 chambres</p>
+<p>http://www.hotelausoleildor.com/</p>]]></description>
+			<LookAt>
+				<longitude>3.859376328801303</longitude>
+				<latitude>47.48950434559545</latitude>
+				<altitude>0</altitude>
+				<heading>-0.03913700881308759</heading>
+				<tilt>29.99847230912913</tilt>
+				<range>92.88316964683645</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.859360578031095,47.48952887876789,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Les Fleurs</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel Restaurant - 7 chambres</p>
+<p>http://www.hotel-lesfleurs.com/</p>]]></description>
+			<LookAt>
+				<longitude>3.857744231716223</longitude>
+				<latitude>47.48868764734573</latitude>
+				<altitude>0</altitude>
+				<heading>-0.04034011057544677</heading>
+				<tilt>29.99847230912913</tilt>
+				<range>92.88316964637656</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.857804711387893,47.48869985677481,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ferme de l&apos;Hermitage</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres d'hôtes - 2 chambres - 1 roulotte / 11 personnes.</p>
+<p>http://www.morvan-endurance.com/</p>]]></description>
+			<LookAt>
+				<longitude>2.349682999996181</longitude>
+				<latitude>48.87289100000007</latitude>
+				<altitude>0</altitude>
+				<heading>-3.58826203469362e-012</heading>
+				<tilt>0</tilt>
+				<range>11001000</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.066451,47.426173,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Les Champs Cordois</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres d'hôtes - 3 chambres - 15 personnes.</p>
+<p>http://www.les-champs-cordois.com/</p>]]></description>
+			<LookAt>
+				<longitude>4.061547393136444</longitude>
+				<latitude>47.42599249076442</latitude>
+				<altitude>0</altitude>
+				<heading>1.217083314627987</heading>
+				<tilt>22.36497385453435</tilt>
+				<range>125.6521279042942</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.061550751957766,47.42609960718358,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>La Ferme des Ruats</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres d'hôtes - 3 chambres - 9 personnes.</p>
+<p>http://www.lafermedesruats.fr/</p>]]></description>
+			<LookAt>
+				<longitude>4.061547393136444</longitude>
+				<latitude>47.42599249076442</latitude>
+				<altitude>0</altitude>
+				<heading>1.217083314627987</heading>
+				<tilt>22.36497385453435</tilt>
+				<range>125.6521279042942</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.052307,47.43920833333333,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ici M&apos;Aime</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel-Restaurant - 24 chambres .</p>
+<p>http://www.icimaime.fr/fr/</p>]]></description>
+			<LookAt>
+				<longitude>4.097588447895553</longitude>
+				<latitude>47.43051721080085</latitude>
+				<altitude>0</altitude>
+				<heading>1.243242211914414</heading>
+				<tilt>24.60383365729468</tilt>
+				<range>285.0118153522998</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.097862082781722,47.43029579392822,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Le Relais Picard - Mme Garcet</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres et tables d'hôtes - 13 personnes .</p>
+<p>03 80 64 75 22</p>]]></description>
+			<LookAt>
+				<longitude>4.097588447895553</longitude>
+				<latitude>47.43051721080085</latitude>
+				<altitude>0</altitude>
+				<heading>1.243242211914414</heading>
+				<tilt>24.60383365729468</tilt>
+				<range>285.0118153522998</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.105892,47.42449444444444,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Gisèle Richard</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Grand gîte - 2 chambres / 4 personnes .</p>
+<p>03 86 33 01 15</p>]]></description>
+			<LookAt>
+				<longitude>4.000341099728829</longitude>
+				<latitude>47.39913959598421</latitude>
+				<altitude>0</altitude>
+				<heading>0.07102450569011151</heading>
+				<tilt>13.77468326126242</tilt>
+				<range>36041.06832007135</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.040893,47.387967,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Gîte d&apos;étape</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Grand gîte - 12 personnes .</p>
+<p>03 86 34 22 71</p>]]></description>
+			<LookAt>
+				<longitude>4.000341099728829</longitude>
+				<latitude>47.39913959598421</latitude>
+				<altitude>0</altitude>
+				<heading>0.07102450569011151</heading>
+				<tilt>13.77468326126242</tilt>
+				<range>36041.06832007135</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.885638,47.3812,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Auberge de l&apos;Atre</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel-Restaurant - 7 chambres / 30 personnes .</p>
+<p>http://auberge-de-latre.com/</p>]]></description>
+			<LookAt>
+				<longitude>2.349682999996181</longitude>
+				<latitude>48.87289100000007</latitude>
+				<altitude>0</altitude>
+				<heading>-3.58826203469362e-012</heading>
+				<tilt>0</tilt>
+				<range>11001000</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.031229,47.33182999999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hôtel du Nord</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel-Restaurant - 8 chambres / 12 personnes .</p>
+<p>http://hotel-morvan.fr/</p>]]></description>
+			<LookAt>
+				<longitude>4.030221999039693</longitude>
+				<latitude>47.33277082391012</latitude>
+				<altitude>0</altitude>
+				<heading>1.239206265378698</heading>
+				<tilt>29.74239706226349</tilt>
+				<range>402.6555100613491</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.996668,47.36860899999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Le Morvan</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel-Restaurant - 8 chambres.</p>
+<p>http://www.le-morvan.fr/fr/</p>]]></description>
+			<LookAt>
+				<longitude>4.030221999039693</longitude>
+				<latitude>47.33277082391012</latitude>
+				<altitude>0</altitude>
+				<heading>1.239206265378698</heading>
+				<tilt>29.74239706226349</tilt>
+				<range>402.6555100613491</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.998476,47.36819166666666,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Le Pigeonnier de Quarré</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres et tables d'hôtes - 4 Chambres / 14-16 personnes.</p>
+<p>http://www.lepigeonnierdequarre.eu/</p>]]></description>
+			<LookAt>
+				<longitude>4.108312670675285</longitude>
+				<latitude>47.42639200869488</latitude>
+				<altitude>0</altitude>
+				<heading>1.251137561911824</heading>
+				<tilt>24.60956446457849</tilt>
+				<range>1783.451375476223</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.997139,47.382575,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Catherine Vexenat</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres et tables d'hôtes - 5 chambres.</p>
+<p>03 86 32 25 85 / 06 87 47 49 85</p>]]></description>
+			<LookAt>
+				<longitude>4.108312670675285</longitude>
+				<latitude>47.42639200869488</latitude>
+				<altitude>0</altitude>
+				<heading>1.251137561911824</heading>
+				<tilt>24.60956446457849</tilt>
+				<range>1783.451375476223</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.997139,47.38257600000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Du Pont - Grande Maison</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Grand gîte - 5 chambres / 15 personnes</p>
+<p>03 86 22 18 49 / 06 82 02 40 61</p>]]></description>
+			<LookAt>
+				<longitude>4.108312670675304</longitude>
+				<latitude>47.42639200869488</latitude>
+				<altitude>0</altitude>
+				<heading>1.251137561911161</heading>
+				<tilt>24.60969015917521</tilt>
+				<range>1783.451375476447</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.917921,47.34016944444445,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Chez Colette</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres et table d'hôtes - 4 chambres / 10 personnes.</p>
+<p>http://fadrax.enix.org/colette/main_rincieux.php</p>]]></description>
+			<LookAt>
+				<longitude>4.015890251205558</longitude>
+				<latitude>47.37467268604309</latitude>
+				<altitude>0</altitude>
+				<heading>1.183775341301489</heading>
+				<tilt>24.70947341544594</tilt>
+				<range>28416.81321216717</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.847169,47.326528,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Le Couvent</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres et table d'hôtes - 5 chambres / 12 personnes.</p>
+<p>https://www.maisonlecouvent.com/</p>]]></description>
+			<LookAt>
+				<longitude>4.015890251205558</longitude>
+				<latitude>47.37467268604309</latitude>
+				<altitude>0</altitude>
+				<heading>1.183775341301489</heading>
+				<tilt>24.70947341544594</tilt>
+				<range>28416.81321216717</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.87089,47.332989,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Les Quatre Saisons en Morvan</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres et table d'hôtes - 4 chambres.</p>
+<p>http://www.4saisons-en-morvan.com/</p>]]></description>
+			<LookAt>
+				<longitude>4.015890251205558</longitude>
+				<latitude>47.37467268604309</latitude>
+				<altitude>0</altitude>
+				<heading>1.183775341301489</heading>
+				<tilt>24.70947341544594</tilt>
+				<range>28416.81321216717</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.891656,47.341881,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Maison Jarso</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres et table d'hôtes - 4 chambres.</p>
+<p>http://www.maison-jarso.com/</p>]]></description>
+			<LookAt>
+				<longitude>4.015890251205558</longitude>
+				<latitude>47.37467268604309</latitude>
+				<altitude>0</altitude>
+				<heading>1.183775341301489</heading>
+				<tilt>24.70947341544594</tilt>
+				<range>28416.81321216717</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.844331,47.326568,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>La Grande Maison du Morvan</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres et table d'hôtes - 2 chambres.</p>
+<p>http://www.lagrandemaisondumorvan.fr/?lang=fr</p>]]></description>
+			<LookAt>
+				<longitude>4.015890251205558</longitude>
+				<latitude>47.37467268604309</latitude>
+				<altitude>0</altitude>
+				<heading>1.183775341301489</heading>
+				<tilt>24.70947341544594</tilt>
+				<range>28416.81321216717</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>3.836569,47.32270555555555,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>La Vieille Auberge du Lac</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel-Restaurant - 8 chambres - 20 personnes.</p>
+<p>https://www.lavieilleaubergedulac.com/</p>]]></description>
+			<LookAt>
+				<longitude>4.015890251205558</longitude>
+				<latitude>47.37467268604309</latitude>
+				<altitude>0</altitude>
+				<heading>1.183775341301489</heading>
+				<tilt>24.70947341544594</tilt>
+				<range>28416.81321216717</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.094963,47.31808611111111,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>La Maison du Lac</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres et table d'hôtes - 5 chambres.</p>
+<p>03 86 76 07 55</p>]]></description>
+			<LookAt>
+				<longitude>4.015890251205558</longitude>
+				<latitude>47.37467268604309</latitude>
+				<altitude>0</altitude>
+				<heading>1.183775341301489</heading>
+				<tilt>24.70947341544594</tilt>
+				<range>28416.81321216717</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.094936,47.31811399999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Le Château de Saint Agnan</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres et table d'hôtes - 16 personnes.</p>
+<p>03 86 78 73 70</p>]]></description>
+			<LookAt>
+				<longitude>4.094482688654509</longitude>
+				<latitude>47.3186077457084</latitude>
+				<altitude>0</altitude>
+				<heading>1.208314302885288</heading>
+				<tilt>30.00106186701794</tilt>
+				<range>236.2405422208318</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.095317,47.31799444444444,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Domaine de la Jarnoise</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Camping - 6 emplacements.</p>
+<p>http://lajarnoise.com/</p>]]></description>
+			<LookAt>
+				<longitude>4.094482688654509</longitude>
+				<latitude>47.3186077457084</latitude>
+				<altitude>0</altitude>
+				<heading>1.208314302885288</heading>
+				<tilt>30.00106186701794</tilt>
+				<range>236.2405422208318</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.125206,47.34223055555556,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Camping du Lac</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Camping - 70 emplacements.</p>
+<p>03 86 78 73 70</p>]]></description>
+			<LookAt>
+				<longitude>4.094482688654509</longitude>
+				<latitude>47.3186077457084</latitude>
+				<altitude>0</altitude>
+				<heading>1.208314302885288</heading>
+				<tilt>30.00106186701794</tilt>
+				<range>236.2405422208318</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.096306,47.31817777777778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>M. Michaux</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambre d'Hôtes - 1 chambre.</p>
+<p>03 86 84 64 08</p>]]></description>
+			<LookAt>
+				<longitude>4.096007239016402</longitude>
+				<latitude>47.31913329331071</latitude>
+				<altitude>0</altitude>
+				<heading>1.209435164612592</heading>
+				<tilt>30.00210533535645</tilt>
+				<range>585.7070044030245</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.000076,47.28341666666667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Le Moulin du Plateau - Clévacances</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>]]></description>
+			<LookAt>
+				<longitude>4.096007239016402</longitude>
+				<latitude>47.31913329331071</latitude>
+				<altitude>0</altitude>
+				<heading>1.209435164612592</heading>
+				<tilt>30.00210533535645</tilt>
+				<range>585.7070044030245</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.027831,47.29579722222223,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>La Picherotte</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres d'hôtes - 2 chambres - 4 personnes.</p>
+<p>03 86 84 62 32 / 06 71 17 73 63</p>]]></description>
+			<LookAt>
+				<longitude>4.096007239016402</longitude>
+				<latitude>47.31913329331071</latitude>
+				<altitude>0</altitude>
+				<heading>1.209435164612592</heading>
+				<tilt>30.00210533535645</tilt>
+				<range>585.7070044030245</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.034853,47.3218,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Camping La Croix du Château</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Camping - 31 emplacements.</p>
+<p>03 86 84 62 05 / 06 30 51 54 80</p>]]></description>
+			<LookAt>
+				<longitude>4.096007239016402</longitude>
+				<latitude>47.31913329331071</latitude>
+				<altitude>0</altitude>
+				<heading>1.209435164612592</heading>
+				<tilt>30.00210533535645</tilt>
+				<range>585.7070044030245</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.009136,47.291855,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Camping Les Saults</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Camping - 75 emplacements.</p>
+<p>03 86 78 70 80</p>]]></description>
+			<LookAt>
+				<longitude>4.007233803849473</longitude>
+				<latitude>47.29194707421573</latitude>
+				<altitude>0</altitude>
+				<heading>1.178724986243435</heading>
+				<tilt>23.03101952240816</tilt>
+				<range>976.9545872783358</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.091464,47.27432199999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mme Bonnard</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambre d'Hôtes - 2 chambres / 4 personnes.</p>
+<p>03 80 64 19 48</p>]]></description>
+			<LookAt>
+				<longitude>4.096559416868383</longitude>
+				<latitude>47.31985289638133</latitude>
+				<altitude>0</altitude>
+				<heading>1.209841016844855</heading>
+				<tilt>30.00367895589135</tilt>
+				<range>1053.20979373552</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.17881,47.26108611111112,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hostellerie de la Tour de l&apos;Auxois</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel-Restaurant - 29 chambres.</p>
+<p>http://www.tourdauxois.com/</p>]]></description>
+			<LookAt>
+				<longitude>4.230795456050522</longitude>
+				<latitude>47.28071929540672</latitude>
+				<altitude>0</altitude>
+				<heading>1.376429770694558</heading>
+				<tilt>30.0016149051953</tilt>
+				<range>424.3048410291037</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.231353259209325,47.27999648705239,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Aux Quatre Vents</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel-Restaurant - 10 chambres.</p>
+<p>http://www.aux-quatre-vents.com/</p>]]></description>
+			<LookAt>
+				<longitude>4.22480611583224</longitude>
+				<latitude>47.27646073787569</latitude>
+				<altitude>0</altitude>
+				<heading>1.372029711077837</heading>
+				<tilt>30.00056293935235</tilt>
+				<range>424.3048410281441</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.225006810204461,47.27533280457779,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>La Poste</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel-Restaurant - 35 chambres.</p>
+<p>http://www.hotel-saulieu.com/</p>]]></description>
+			<LookAt>
+				<longitude>4.230795456050522</longitude>
+				<latitude>47.28071929540672</latitude>
+				<altitude>0</altitude>
+				<heading>1.376429770694558</heading>
+				<tilt>30.0016149051953</tilt>
+				<range>424.3048410291037</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.232269078631883,47.27955556233023,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>La Borne Impériale</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel-Restaurant - 6 chambres.</p>
+<p>http://www.borne-imperiale.com/</p>]]></description>
+			<LookAt>
+				<longitude>4.22480611583224</longitude>
+				<latitude>47.27646073787569</latitude>
+				<altitude>0</altitude>
+				<heading>1.372029711077837</heading>
+				<tilt>30.00056293935235</tilt>
+				<range>424.3048410281441</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.231414,47.28078888888889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>La Vieille Auberge</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel-Restaurant - 30 personnes.</p>
+<p>03 80 64 19 76</p>]]></description>
+			<LookAt>
+				<longitude>4.22480611583224</longitude>
+				<latitude>47.27646073787569</latitude>
+				<altitude>0</altitude>
+				<heading>1.372029711077837</heading>
+				<tilt>30.00056293935235</tilt>
+				<range>424.3048410281441</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.232921,47.278867,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>La Bourgogne</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel-Restaurant - 15 chambres.</p>
+<p>http://www.hotellebourgogne.com/</p>]]></description>
+			<LookAt>
+				<longitude>4.22480611583224</longitude>
+				<latitude>47.27646073787569</latitude>
+				<altitude>0</altitude>
+				<heading>1.372029711077837</heading>
+				<tilt>30.00056293935235</tilt>
+				<range>424.3048410281441</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.229043,47.28234599999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Relais Bernard Loiseau</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel-Restaurant - 32 chambres.</p>
+<p>http://www.bernard-loiseau.com/fr/</p>]]></description>
+			<LookAt>
+				<longitude>4.23178333489497</longitude>
+				<latitude>47.28019234366182</latitude>
+				<altitude>0</altitude>
+				<heading>1.377155618465634</heading>
+				<tilt>30.00032943777458</tilt>
+				<range>190.4151400023523</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.23205674108162,47.27993791048316,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Alexia Mathevet</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres d'hôtes - 1 chambre / 2 personnes.</p>
+<p>03 80 64 13 38</p>]]></description>
+			<LookAt>
+				<longitude>4.231005397431182</longitude>
+				<latitude>47.28024470681789</latitude>
+				<altitude>0</altitude>
+				<heading>1.376584097998532</heading>
+				<tilt>30.00080451693502</tilt>
+				<range>296.182775229384</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.235668,47.282449,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Au Grenier Pompon</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambre d'hôtes</p>
+<p>03 80 64 19 35</p>]]></description>
+			<LookAt>
+				<longitude>4.231005397431182</longitude>
+				<latitude>47.28024470681789</latitude>
+				<altitude>0</altitude>
+				<heading>1.376584097998532</heading>
+				<tilt>30.00080451693502</tilt>
+				<range>296.182775229384</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.230282,47.279922,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Le Morvan d&apos;Elle</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres d'hôtes - 2 chambres.</p>
+<p>07 87 50 04 69 / 03 80  64 37 31</p>]]></description>
+			<LookAt>
+				<longitude>4.231005397431182</longitude>
+				<latitude>47.28024470681789</latitude>
+				<altitude>0</altitude>
+				<heading>1.376584097998532</heading>
+				<tilt>30.00080451693502</tilt>
+				<range>296.182775229384</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.232017,47.27758,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Les Tanneries</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres d'hôtes - 4 chambres / 12 personnes.</p>
+<p>03 80 64 24 07</p>]]></description>
+			<LookAt>
+				<longitude>4.231005397431182</longitude>
+				<latitude>47.28024470681789</latitude>
+				<altitude>0</altitude>
+				<heading>1.376584097998532</heading>
+				<tilt>30.00080451693502</tilt>
+				<range>296.182775229384</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.226003,47.278475,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mme Viviez</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres d'hôtes.</p>
+<p>03 80 64 20  75</p>]]></description>
+			<LookAt>
+				<longitude>4.231005397431182</longitude>
+				<latitude>47.28024470681789</latitude>
+				<altitude>0</altitude>
+				<heading>1.376584097998532</heading>
+				<tilt>30.00080451693502</tilt>
+				<range>296.182775229384</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.219034,47.264586,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>M. Van De Molen</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres d'hôtes.</p>
+<p>06 01 98  87  08</p>]]></description>
+			<LookAt>
+				<longitude>4.231005397431202</longitude>
+				<latitude>47.28024470681793</latitude>
+				<altitude>0</altitude>
+				<heading>1.376584097997871</heading>
+				<tilt>30.00027859339468</tilt>
+				<range>296.1827752314216</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.228725,47.28019444444445,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Lycée rural Saint Dominique</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Grand Gîte.</p>
+<p>03 80 64 17 86</p>]]></description>
+			<LookAt>
+				<longitude>4.231005397431202</longitude>
+				<latitude>47.28024470681793</latitude>
+				<altitude>0</altitude>
+				<heading>1.376584097997871</heading>
+				<tilt>30.00027859339468</tilt>
+				<range>296.1827752314216</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.231715,47.27725277777778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Camping de Saulieu</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Camping - 100 emplacements.</p>
+<p>03 80 64 16 19 / 03 86 37 95 83</p>]]></description>
+			<LookAt>
+				<longitude>4.231005397431202</longitude>
+				<latitude>47.28024470681793</latitude>
+				<altitude>0</altitude>
+				<heading>1.376584097997871</heading>
+				<tilt>30.00027859339468</tilt>
+				<range>296.1827752314216</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.223829,47.28935833333333,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>L&apos;Auberge du Morvan</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel-Restaurant - 7 chambres.</p>
+<p>https://www.aubergedumorvan.fr/</p>]]></description>
+			<LookAt>
+				<longitude>4.132797761260383</longitude>
+				<latitude>47.24848399385821</latitude>
+				<altitude>0</altitude>
+				<heading>1.303772475327207</heading>
+				<tilt>30.04433702906745</tilt>
+				<range>17306.56983144812</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.177084,47.19986111111111,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Meix Jeannin</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres d'hôtes.</p>
+<p>https://www.aubergedumorvan.fr/</p>]]></description>
+			<LookAt>
+				<longitude>4.132797761260383</longitude>
+				<latitude>47.24848399385821</latitude>
+				<altitude>0</altitude>
+				<heading>1.303772475327207</heading>
+				<tilt>30.04433702906745</tilt>
+				<range>17306.56983144812</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.177084,47.19986111111111,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Musée des Nourrices</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres d'hôtes - 3 chambres.</p>
+<p>https://www.museedesnourrices.fr/</p>]]></description>
+			<LookAt>
+				<longitude>4.179461408701166</longitude>
+				<latitude>47.19966739724717</latitude>
+				<altitude>0</altitude>
+				<heading>1.335745939236235</heading>
+				<tilt>30.00979531067123</tilt>
+				<range>601.0373254983615</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.176955,47.19915277777778,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>La Cabane dans le Jardin / La Ferme des Prés</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres d'hôtes - 4 chambres.</p>
+<p>http://ungiteenmorvan.com/français/chambres-d-hôtes-3/</p>]]></description>
+			<LookAt>
+				<longitude>4.179461408701306</longitude>
+				<latitude>47.19966739724719</latitude>
+				<altitude>0</altitude>
+				<heading>1.335745939238517</heading>
+				<tilt>30.00926841211383</tilt>
+				<range>601.0373255007065</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.179868,47.23648333333334,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Les Bruyères</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Grand Gîte - 6 chambres / 18 personnes.</p>
+<p>03 86 76 13 50 33 /  03 80 45 97 15</p>]]></description>
+			<LookAt>
+				<longitude>4.194601158974378</longitude>
+				<latitude>47.18646523418591</latitude>
+				<altitude>0</altitude>
+				<heading>1.346848447254415</heading>
+				<tilt>30.02948966211695</tilt>
+				<range>5101.762464353315</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.17666,47.2006,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hôtel l&apos;Annexe</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Hôtel-restaurant - 19 chambres / 44 personnes personnes.</p>
+<p>http://www.hotel-annexe-morvan.ovh/</p>]]></description>
+			<LookAt>
+				<longitude>4.194601158974378</longitude>
+				<latitude>47.18646523418591</latitude>
+				<altitude>0</altitude>
+				<heading>1.346848447254415</heading>
+				<tilt>30.02948966211695</tilt>
+				<range>5101.762464353315</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.150482,47.17133888888888,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Maison des Roseaux</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres et table d'hôtes - 7 chambres.</p>
+<p>http://www.maisondesroseaux.com/</p>]]></description>
+			<LookAt>
+				<longitude>4.149990645193699</longitude>
+				<latitude>47.1733062637017</latitude>
+				<altitude>0</altitude>
+				<heading>1.314121044745671</heading>
+				<tilt>30.01523475854988</tilt>
+				<range>2046.43969717386</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.103861,47.17374166666667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Les Roses</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Chambres et table d'hôtes - 2 chambres / 4 personnes.</p>
+<p>06 76 83 03 23</p>]]></description>
+			<LookAt>
+				<longitude>4.149990645193699</longitude>
+				<latitude>47.1733062637017</latitude>
+				<altitude>0</altitude>
+				<heading>1.314121044745671</heading>
+				<tilt>30.01523475854988</tilt>
+				<range>2046.43969717386</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.14963,47.17191111111112,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Gîte communal de Moux</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Grand gîte - 24 personnes.</p>
+<p>03 86 76 11 50</p>]]></description>
+			<LookAt>
+				<longitude>4.149459790610028</longitude>
+				<latitude>47.17220600007727</latitude>
+				<altitude>0</altitude>
+				<heading>1.313731795146123</heading>
+				<tilt>30.00739546692184</tilt>
+				<range>301.4178787932185</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.151175,47.17234166666666,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Camping l&apos;Hermitage</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Camping - 120 emplacements.</p>
+<p>03 86 84 50 97</p>]]></description>
+			<LookAt>
+				<longitude>4.149459790610028</longitude>
+				<latitude>47.17220600007727</latitude>
+				<altitude>0</altitude>
+				<heading>1.313731795146123</heading>
+				<tilt>30.00739546692184</tilt>
+				<range>301.4178787932185</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.061878,47.17173055555556,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Settons Cottage</name>
+			<description><![CDATA[<p align="center"><img width=150 src="http://www.morvanvtt.fr/images/photos/logo_gtm_grand.png"><br><b>Prestataire touristique</br></b></p>
+<p align="justify">Camping - 23 emplacements.</p>
+<p>03 86 76 04 99 / 06 04 08 93 18</p>]]></description>
+			<LookAt>
+				<longitude>4.149459790610028</longitude>
+				<latitude>47.17220600007727</latitude>
+				<altitude>0</altitude>
+				<heading>1.313731795146123</heading>
+				<tilt>30.00739546692184</tilt>
+				<range>301.4178787932185</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_purple-stars00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>4.076115,47.17676111111111,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

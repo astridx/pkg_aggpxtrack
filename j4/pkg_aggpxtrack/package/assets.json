@@ -1,0 +1,21 @@
+{
+  "local": [
+  ],
+  "phpvendor": [
+  ],
+  "vendor": [
+    {
+      "src": "leaflet/dist/leaflet.js",
+      "dest": "src/media/com_agadvents/media/js/leaflet/leaflet.js"
+    },
+    {
+      "src": "leaflet/dist/leaflet.css",
+      "dest": "src/media/com_agadvents/css/leaflet/leaflet.css"
+    },
+    {
+      "src": "leaflet/dist/images",
+      "dest": "src/media/com_agadvents/css/leaflet"
+    }
+  ],
+  "docBlock": "/**\n * @package    AGAdvents\n * @copyright  Copyright (C) Astrid Günther. <https://www.astrid-guenther.de>\n * @license    http://www.gnu.org/licenses/gpl.html GNU/GPL\n */"
+}

@@ -1,0 +1,93 @@
+aggpxtrack Changelog
+-----------------
+
+v1.0.1
+ - Leaflet updated to v1.1.0
+ - Deleted preview
+ - Fixes in language strings
+v1.0.2
+ - Leaflet updated to v1.2.0
+ - added uniqid() to the id of the map for category blog views
+ - add the opportunitiy to show additional gpx informations with the map
+v1.0.3
+ - Fehlerhaftes Schattenfild korrigiert
+ - load gpx track id only if the HTML document should be shown.
+ - add elevation and d3
+ - changed map to osm, but made mapbox optional
+v1.0.4
+ - Korrektur Fehler in Benennung der deutschen Sprachdatei für das Installerplugin
+ - Korrektur Fehler bei Parametern der zusätzlichen Infos für die GPX-Datei
+v1.0.5
+ - google maps support
+ - add z-index to the id of the map; (the map was scolled over one sticky top menu)
+ - two styles für gpx-info
+ - change (leaflet-gpx core hack!!) in gpx.js because start time was tacken from last last `<trkseg>`-segment
+   (https://github.com/mpetazzoni/leaflet-gpx/pull/63)
+ - change elevation so that there is a option for mapid so the elevation is shown
+   on the right map while mouseover
+   https://github.com/MrMufflon/Leaflet.Elevation/pull/71
+ - change bug in elevation.js for chrome
+   https://github.com/MrMufflon/Leaflet.Elevation/pull/73
+ - add style options for download link
+ - add option for changing the color of the polyline of the track
+v1.0.6
+ - skiped :)
+v1.0.7
+ - add fullview
+ - add liveview
+v1.0.71
+  - com_aggpxtrack add an detail view for file selection
+  - add some more maps (thunderforest opentopo)
+v1.0.75
+  - add kml overlay
+  - corrections for italien language.
+v1.0.76
+ - custom icons mit awesomeicons.
+ - kleine bugs behoben. https für osm, anzeige thunderbird-key nur wenn ausgewählt. Durchschnittgeschwindigkeit in Bewegung ..
+v1.0.8
+ - improve language string for pace in german translation
+v1.0.81
+ - set default value for time in gpx (https://github.com/mpetazzoni/leaflet-gpx/pull/64)
+ - kilometer points https://github.com/mpetazzoni/leaflet-gpx/pull/65
+v1.0.82
+ - datumsanzeige mit tolocalstring (ende des tracks und start)
+ - Kilometerpunkte mit optionen versehen
+ - Auflistung der Dateien - sortierun geändert.
+ - Mausrad kann wieder angeklickt werden.
+v1.0.83
+ - sort in list of com bugfix
+v1.0.84
+ - bug, when custom marker with no special markers.
+v1.0.85
+ - Insert variables in install xml files again
+v1.0.86
+ - custom markers for omnivore kml files
+ - integrated easyPrint https://github.com/rowanwins/
+ - integrated https://github.com/stefanocudini/leaflet-panel-layers
+v1.0.87
+  - https://github.com/rowanwins/leaflet-easyPrint/issues/71
+  - Place all javascript in separat files.
+v1.0.88
+  - Inserting of layers (https://github.com/stefanocudini/leaflet-panel-layers) now flexibel.
+v1.0.89
+  - bug kilometer points
+v1.0.90
+  - bug spinning icon.
+v1.0.93
+  - deleted option for spinning icon in custom icon.
+v.1.0.94
+  - internal changes in xml files
+todo
+ - delete inline javascript
+ - minify all
+ - Autocenter wenn elevation?
+ - kilometerangaben in tabelle auf - ist elevation controll passend?
+ - karte nach norden ausrichten, momentan in leaflet noch nicht möglich.
+ - Tabellen ist schrift mobil klein genug?
+ - karten auch im frontend auswählen
+ - vielleicht png, als karte möglich machen.
+ - field falist mit xml parametern erweitern
+ - custom icons - vielleicht eigenen Bilder hochladen
+ - Anzeige Provides by Astrid Günther
+ - agpxtrack js so erweitern das nicht nur des und sym angezeigt werden sondern auch link ...
+ - Joomla4 (media ansicht, vielleicht auch köpfe sortierbar machen.)
