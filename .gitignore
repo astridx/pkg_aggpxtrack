@@ -1,3 +1,7 @@
+.gitignore
 vendor/
 sik/
 dist/
+j4/pkg_aggpxtrack/sik
+j4/pkg_aggpxtrack/dist/
+j4/pkg_aggpxtrack/vendor/

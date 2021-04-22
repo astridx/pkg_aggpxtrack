@@ -40,6 +40,7 @@
 				default="'track', 'route', 'waypoint'"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_SHOWELEMENTS_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_SHOWELEMENTS_DESC"
+				validate="options"
 			>
 				<option value="track,route,waypoint">track, route and waypoints</option>
 				<option value="track,route">track and route</option>
@@ -65,6 +66,7 @@
 				default="0"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_CUSTOMICONS_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_CUSTOMICONS_DESC"
+				validate="options"
 			>
 				<option value="1">JYES</option>
 				<option value="0">JNO</option>
@@ -94,6 +96,7 @@
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_CUSTOMICONSTART_MARKERCOLOR_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_CUSTOMICONSTART_MARKERCOLOR_DESC"
 				showon="custom_icons:1"
+				validate="options"
 			>
 				<option value="red">red</option>
 				<option value="darkred">darkred</option>
@@ -131,7 +134,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_CUSTOMICONSTART_SPIN_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_CUSTOMICONSTART_SPIN_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 				showon="custom_icons:1"
 			>
@@ -163,6 +166,7 @@
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_CUSTOMICONSTART_MARKERCOLOR_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_CUSTOMICONSTART_MARKERCOLOR_DESC"
 				showon="custom_icons:1"
+				validate="options"
 			>
 				<option value="red">red</option>
 				<option value="darkred">darkred</option>
@@ -200,7 +204,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_CUSTOMICONSTART_SPIN_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_CUSTOMICONSTART_SPIN_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 				showon="custom_icons:1"
 			>
@@ -232,6 +236,7 @@
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_CUSTOMICONSTART_MARKERCOLOR_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_CUSTOMICONSTART_MARKERCOLOR_DESC"
 				showon="custom_icons:1"
+				validate="options"
 			>
 				<option value="red">red</option>
 				<option value="darkred">darkred</option>
@@ -269,7 +274,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_CUSTOMICONSTART_SPIN_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_CUSTOMICONSTART_SPIN_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 				showon="custom_icons:1"
 			>
@@ -305,7 +310,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_DOWNLOAD_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_DOWNLOAD_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 			>
 				<option value="0">JNO</option>
@@ -339,7 +344,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SCOLLWHEELZOOM_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SCOLLWHEELZOOM_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="1"
 			>
 				<option value="0">JNO</option>
@@ -351,6 +356,7 @@
 				default="osm"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_MAPTYPE_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_MAPTYPE_DESC"
+				validate="options"
 			>
 				<option value="osm">OpenStreetMap</option>
 				<option value="osm_bw">OpenStreetMap.BlackAndWhite</option>
@@ -386,6 +392,7 @@
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_THUNDERFORESTMAPTYPE_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_THUNDERFORESTMAPTYPE_DESC"
 				showon="maptype:thunderforest"
+				validate="options"
 			>
 				<option value="cycle">cycle</option>
 				<option value="transport">transport</option>
@@ -415,6 +422,7 @@
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_GOOGLETYPE_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_GOOGLETYPE_DESC"
 				showon="maptype:google"
+				validate="options"
 			>
 				<option value="satellite">satellite</option>
 				<option value="roadmap">roadmap</option>
@@ -441,6 +449,7 @@
 				default="no"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOWINFO_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOWINFO_DESC"
+				validate="options"
 			>
 				<option value="no">no</option>
 				<option value="before">before map</option>
@@ -453,6 +462,7 @@
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_INFOSTYLE_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_INFOSTYLE_DESC"
 				showon="showinfo!:no"
+				validate="options"
 			>
 				<option value="style">no</option>
 				<option value="style_1">style_1</option>
@@ -479,7 +489,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_DISTANCE_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_DISTANCE_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 				showon="showinfo!:no"
 			>
@@ -492,7 +502,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_NAME_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_NAME_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 				showon="showinfo!:no"
 			>
@@ -505,7 +515,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_START_TIME_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_START_TIME_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 				showon="showinfo!:no"
 			>
@@ -518,7 +528,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_END_TIME_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_END_TIME_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 				showon="showinfo!:no"
 			>
@@ -531,7 +541,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_MOVING_TIME_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_MOVING_TIME_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 				showon="showinfo!:no"
 			>
@@ -544,7 +554,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_TOTAL_TIME_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_TOTAL_TIME_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 				showon="showinfo!:no"
 			>
@@ -557,7 +567,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_MOVING_PACE_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_MOVING_PACE_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 				showon="showinfo!:no"
 			>
@@ -570,7 +580,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_MOVING_SPEED_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_MOVING_SPEED_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 				showon="showinfo!:no"
 			>
@@ -583,7 +593,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_TOTAL_SPEED_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_TOTAL_SPEED_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 				showon="showinfo!:no"
 			>
@@ -596,7 +606,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_ELEVATION_MIN_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_ELEVATION_MIN_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 				showon="showinfo!:no"
 			>
@@ -609,7 +619,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_ELEVATION_MAX_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_ELEVATION_MAX_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 				showon="showinfo!:no"
 			>
@@ -622,7 +632,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_ELEVATION_GAIN_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_ELEVATION_GAIN_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 				showon="showinfo!:no"
 			>
@@ -635,7 +645,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_ELEVATION_LOSS_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_ELEVATION_LOSS_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 				showon="showinfo!:no"
 			>
@@ -648,7 +658,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_AVERAGE_HR_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_AVERAGE_HR_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 				showon="showinfo!:no"
 			>
@@ -661,7 +671,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_AVERAGE_CADENCE_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_AVERAGE_CADENCE_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 				showon="showinfo!:no"
 			>
@@ -674,7 +684,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_AVERAGE_TEMP_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_AVERAGE_TEMP_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 				showon="showinfo!:no"
 			>
@@ -689,7 +699,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_ELEVATIONCONTROL_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_ELEVATIONCONTROL_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 			>
 				<option value="1">JSHOW</option>
@@ -703,6 +713,7 @@
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_POSITION_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_POSITION_DESC"
 				showon="show_elevantioncontrol:1"
+				validate="options"
 			>
 				<option value="bottomleft">PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_POSITION_BOTTOMLEFT</option>
 				<option value="bottomright">PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_POSITION_BOTTOMRIGHT</option>
@@ -717,6 +728,7 @@
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_THEME_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_THEME_DESC"
 				showon="show_elevantioncontrol:1"
+				validate="options"
 			>
 				<option value="steelblue-theme">steelblue-theme</option>
 				<option value="purple-theme">purple-theme</option>
@@ -730,6 +742,7 @@
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_HEIGHT_DESC"
 				default="125"
 				showon="show_elevantioncontrol:1"
+				validate="options"
 			>
 				<option value="-25">PLG_FIELDS_AGGPXTRACK_PARAMS_HEIGHT_25</option>
 				<option value="-50">PLG_FIELDS_AGGPXTRACK_PARAMS_HEIGHT_50</option>
@@ -754,6 +767,7 @@
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_WIDTH_DESC"
 				default="600"
 				showon="show_elevantioncontrol:1"
+				validate="options"
 			>
 				<option value="-25">PLG_FIELDS_AGGPXTRACK_PARAMS_WIDTH_25</option>
 				<option value="-50">PLG_FIELDS_AGGPXTRACK_PARAMS_WIDTH_50</option>
@@ -826,6 +840,7 @@
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_COLLAPSED_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_COLLAPSED_DESC"
 				showon="show_elevantioncontrol:1"
+				validate="options"
 			>
 				<option value="true">JYES</option>
 				<option value="false">JNO</option>
@@ -838,7 +853,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_FULLSCREEN_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_FULLSCREEN_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 			>
 				<option value="1">JYES</option>
@@ -852,6 +867,7 @@
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_POSITION_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_POSITION_DESC"
 				showon="show_fullscreencontrol:1"
+				validate="options"
 			>
 				<option value="bottomleft">PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_POSITION_BOTTOMLEFT</option>
 				<option value="bottomright">PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_POSITION_BOTTOMRIGHT</option>
@@ -865,7 +881,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_CURRENTPOSITION_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_CURRENTPOSITION_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 			>
 				<option value="1">JYES</option>
@@ -879,6 +895,7 @@
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_CURRENTPOSITION_INTITILZOOM_DESC"
 				default="17"
 				showon="show_currentposition:1"
+				validate="options"
 			>
 				<option value="1">1</option>
 				<option value="2">2</option>
@@ -908,6 +925,7 @@
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_CURRENTPOSITION_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_CURRENTPOSITION_DESC"
 				showon="show_currentposition:1"
+				validate="options"
 			>
 				<option value="bottomleft">PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_POSITION_BOTTOMLEFT</option>
 				<option value="bottomright">PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_POSITION_BOTTOMRIGHT</option>
@@ -922,7 +940,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_OMNIVORE_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_OMNIVORE_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 			>
 				<option value="1">JSHOW</option>
@@ -958,6 +976,7 @@
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_CUSTOMICONSTART_MARKERCOLOR_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_CUSTOMICONSTART_MARKERCOLOR_DESC"
 				showon="show_omnivore:1"
+				validate="options"
 			>
 				<option value="red">red</option>
 				<option value="darkred">darkred</option>
@@ -995,7 +1014,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_CUSTOMICONSTART_SPIN_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_CUSTOMICONSTART_SPIN_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 				showon="show_omnivore:1"
 			>
@@ -1010,7 +1029,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_KILOMETERPOINTS_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_KILOMETERPOINTS_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 			>
 				<option value="1">JSHOW</option>
@@ -1066,7 +1085,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_EASYPRINT_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_EASYPRINT_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 			>
 				<option value="1">JSHOW</option>
@@ -1080,6 +1099,7 @@
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_CURRENTPOSITION_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_CURRENTPOSITION_DESC"
 				showon="show_easyprint:1"
+				validate="options"
 			>
 				<option value="bottomleft">PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_POSITION_BOTTOMLEFT</option>
 				<option value="topleft">PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_POSITION_TOPLEFT</option>
@@ -1092,7 +1112,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_PANELLAYERS_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_PANELLAYERS_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 			>
 				<option value="1">JSHOW</option>
@@ -1107,6 +1127,7 @@
 				icon="list"
 				multiple="true"
 				showon="show_panelLayers:1"
+				validate="options"
 			>
 				<form hidden="true" name="list_templates_modal" repeat="true">
 					<field
@@ -1135,7 +1156,7 @@
 				type="radio"
 				label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_INACTIVEFIRST_LABEL"
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_INACTIVEFIRST_DESC"
-				class="btn-group btn-group-yesno switcher"
+				layout="joomla.form.field.radio.switcher"
 				default="0"
 			>
 				<option value="1">JYES</option>

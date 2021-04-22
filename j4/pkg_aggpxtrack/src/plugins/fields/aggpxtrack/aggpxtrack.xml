@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<extension type="plugin" version="3.8.0" group="fields" method="upgrade">
+<extension type="plugin" group="fields" method="upgrade">
 	<name>plg_fields_aggpxtrack</name>
 	<author>Astrid Günther</author>
 	<creationDate>##DATE##</creationDate>
@@ -12,9 +12,6 @@
 	<files>
 		##FILES##
 	</files>
-	<languages folder="administrator/language">
-		##LANGUAGE_FILES##
-	</languages>
 	<!-- Media files -->
     <media folder="media/plg_fields_aggpxtrack" destination="plg_fields_aggpxtrack">
 		##MEDIA_FILES##
@@ -25,7 +22,7 @@
 			<fieldset name="basic">
 				<field
 					name="directory"
-					type="folderlist"
+					type="hidden"
 					label="PLG_FIELDS_AGGPXTRACK_PARAMS_DIRECTORY_LABEL"
 					description="PLG_FIELDS_AGGPXTRACK_PARAMS_DIRECTORY_DESC"
 					directory="images"
@@ -44,7 +41,7 @@
 				</field>
 				<field
 					name="image_class"
-					type="textarea"
+					type="hidden"
 					label="PLG_FIELDS_AGGPXTRACK_PARAMS_IMAGE_CLASS_LABEL"
 					description="PLG_FIELDS_AGGPXTRACK_PARAMS_IMAGE_CLASS_DESC"
 					size="40"
