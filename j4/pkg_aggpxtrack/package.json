@@ -1,0 +1,16 @@
+{
+  "name": "aggpxtrack",
+  "description": "Aggpxtrack Extensions",
+  "repository": {},
+  "license": "See license in license.md",
+  "engines": {
+    "node": "14.x"
+  },
+  "dependencies": {
+    "d3": "^6.7.0",
+    "font-awesome": "^4.7.0",
+    "leaflet": "^1.7.1",
+    "leaflet.elevation": "^0.0.3",
+    "leaflet.gridlayer.googlemutant": "^0.12.1"
+  }
+}

@@ -1,7 +1,9 @@
 .gitignore
+node_modules/
 vendor/
 sik/
 dist/
 j4/pkg_aggpxtrack/sik
 j4/pkg_aggpxtrack/dist/
 j4/pkg_aggpxtrack/vendor/
+j4/pkg_aggpxtrack/node_modules/
