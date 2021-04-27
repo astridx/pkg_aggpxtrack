@@ -1,0 +1,2 @@
+docker exec -it --user 1000 -w /home/astrid/git/joomla-development/pkg_aggpxtrack/ ag-joomla-docker_php74_mysql ./vendor/bin/robo build
+docker exec -it --user 1000 -w /home/astrid/git/joomla-development/pkg_aggpxtrack/j4/pkg_aggpxtrack/ ag-joomla-docker_php74_mysql ./vendor/bin/robo build
