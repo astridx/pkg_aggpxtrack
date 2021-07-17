@@ -143,7 +143,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			{
 				for (var element in specialwaypoints) {
 					if ([specialwaypoints[element].sub_customicon_tagname] !== '') {
-						console.log(specialwaypoints[element].sub_customicon_spin);
 						Object.assign(window['aggpx_marker_options' + unique].wptIcons, {
 							[specialwaypoints[element].sub_customicon_tagname]:
 									new L.AwesomeMarkers.icon(
