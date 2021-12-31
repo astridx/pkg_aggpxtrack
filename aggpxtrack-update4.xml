@@ -54,7 +54,6 @@
             <downloadurl type="full" format="zip">https://github.com/astridx/pkg_aggpxtrack/releases/download/v4.0.2/pkg-aggpxtrack-4.0.2.zip</downloadurl>
         </downloads>
         <tags>
-            <tag>rc</tag>
             <tag>stable</tag>
         </tags>
         <maintainer>Astrid Günther</maintainer>
