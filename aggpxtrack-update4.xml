@@ -59,7 +59,7 @@
         </tags>
         <maintainer>Astrid Günther</maintainer>
         <maintainerurl>https://astrid-guenther.de</maintainerurl>
-        <targetplatform name="joomla" version="4.0.0"/>
+        <targetplatform name="joomla" version="4.*"/>
         <sha256></sha256>
         <sha384></sha384>
     </update>
