@@ -42,4 +42,25 @@
         <sha256></sha256>
         <sha384></sha384>
     </update>
+    <update>
+        <name>pkg_aggpxtrack</name>
+        <description>pkg_aggpxtrack</description>
+        <element>pkg_aggpxtrack</element>
+        <type>package</type>
+        <client>site</client>
+        <version>4.0.2</version>
+        <infourl title="aggpxtrack">https://github.com/astridx/pkg_aggpxtrack/blob/v4.0.2/README.md</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/astridx/pkg_aggpxtrack/releases/download/v4.0.2/pkg-aggpxtrack-4.0.2.zip</downloadurl>
+        </downloads>
+        <tags>
+            <tag>rc</tag>
+            <tag>stable</tag>
+        </tags>
+        <maintainer>Astrid Günther</maintainer>
+        <maintainerurl>https://astrid-guenther.de</maintainerurl>
+        <targetplatform name="joomla" version="4.0.0"/>
+        <sha256></sha256>
+        <sha384></sha384>
+    </update>
 </updates>

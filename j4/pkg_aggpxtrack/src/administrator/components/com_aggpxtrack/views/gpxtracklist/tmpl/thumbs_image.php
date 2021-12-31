@@ -15,7 +15,7 @@ use Joomla\Registry\Registry;
 $params = JComponentHelper::getParams('com_aggpxtrack');
 
 $dispatcher = JEventDispatcher::getInstance();
-$dispatcher->trigger('onContentBeforeDisplay', array('com_aggpxtrack.file', &$this->_tmp_img, &$params));
+$dispatcher->trigger('onContentBeforeDisplay', ['com_aggpxtrack.file', &$this->_tmp_img, &$params]);
 ?>
 
 <li class="imgOutline thumbnail height-80 width-80 center">
@@ -30,4 +30,4 @@ $dispatcher->trigger('onContentBeforeDisplay', array('com_aggpxtrack.file', &$th
 	</a>
 </li>
 <?php
-$dispatcher->trigger('onContentAfterDisplay', array('com_aggpxtrack.file', &$this->_tmp_img, &$params));
+$dispatcher->trigger('onContentAfterDisplay', ['com_aggpxtrack.file', &$this->_tmp_img, &$params]);

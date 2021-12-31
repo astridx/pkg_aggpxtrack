@@ -34,8 +34,7 @@ class AggpxtrackModelGpxtrackList extends JModelLegacy
 	{
 		static $set;
 
-		if (!$set)
-		{
+		if (!$set) {
 			$input  = JFactory::getApplication()->input;
 			$folder = $input->get('folder', '', 'path');
 			$this->setState('folder', $folder);
@@ -89,8 +88,7 @@ class AggpxtrackModelGpxtrackList extends JModelLegacy
 		static $list;
 
 		// Only process the list once per request
-		if (is_array($list))
-		{
+		if (is_array($list)) {
 			return $list;
 		}
 
@@ -100,26 +98,22 @@ class AggpxtrackModelGpxtrackList extends JModelLegacy
 		$basePath  = COM_MEDIA_BASE . ((strlen($current) > 0) ? '/' . $current : '');
 		$mediaBase = str_replace(DIRECTORY_SEPARATOR, '/', COM_MEDIA_BASE . '/');
 
-		$images  = array ();
-		$folders = array ();
+		$images  =  [];
+		$folders =  [];
 
 		$fileList   = false;
 		$folderList = false;
 
-		if (file_exists($basePath))
-		{
+		if (file_exists($basePath)) {
 			// Get the list of files and folders from the given folder
 			$fileList   = array_reverse(JFolder::files($basePath));
 			$folderList = JFolder::folders($basePath);
 		}
 
 		// Iterate over the files if they exist
-		if ($fileList !== false)
-		{
-			foreach ($fileList as $file)
-			{
-				if (is_file($basePath . '/' . $file) && substr($file, 0, 1) != '.' && strtolower($file) !== 'index.html')
-				{
+		if ($fileList !== false) {
+			foreach ($fileList as $file) {
+				if (is_file($basePath . '/' . $file) && substr($file, 0, 1) != '.' && strtolower($file) !== 'index.html') {
 					$tmp = new JObject;
 					$tmp->name = $file;
 					$tmp->path = str_replace(DIRECTORY_SEPARATOR, '/', JPath::clean($basePath . '/' . $file));
@@ -129,8 +123,7 @@ class AggpxtrackModelGpxtrackList extends JModelLegacy
 
 					$file_extension = strtolower(JFile::getExt($file));
 
-					if ($file_extension == 'gpx')
-					{
+					if ($file_extension == 'gpx') {
 						$images[] = $tmp;
 					}
 				}
@@ -138,10 +131,8 @@ class AggpxtrackModelGpxtrackList extends JModelLegacy
 		}
 
 		// Iterate over the folders if they exist
-		if ($folderList !== false)
-		{
-			foreach ($folderList as $folder)
-			{
+		if ($folderList !== false) {
+			foreach ($folderList as $folder) {
 				$tmp = new JObject;
 				$tmp->name = basename($folder);
 				$tmp->path = str_replace(DIRECTORY_SEPARATOR, '/', JPath::clean($basePath . '/' . $folder));
@@ -156,16 +147,15 @@ class AggpxtrackModelGpxtrackList extends JModelLegacy
 		}
 
 		// Sortiert nach Datum
-		$date = array();
+		$date = [];
 
-		foreach ($images as $key => $row)
-		{
+		foreach ($images as $key => $row) {
 			$date[$key]    = $row->date;
 		}
 
 		array_multisort($date, SORT_DESC, $images);
 
-		$list = array('folders' => $folders, 'images' => $images);
+		$list = ['folders' => $folders, 'images' => $images];
 
 		return $list;
 	}

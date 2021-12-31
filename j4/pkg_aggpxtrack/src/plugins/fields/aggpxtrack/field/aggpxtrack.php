@@ -46,10 +46,10 @@ class JFormFieldAggpxtrack extends MediaField
 	{
 		$template = JFactory::getApplication()->getTemplate();
 
-		return array(
+		return [
 			JPATH_ADMINISTRATOR . '/templates/' . $template . '/html/layouts/plugins/system/stats',
 			dirname(__DIR__) . '/layouts',
 			JPATH_SITE . '/layouts'
-		);
+		];
 	}
 }
