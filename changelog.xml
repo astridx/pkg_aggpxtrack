@@ -12,7 +12,7 @@
 		<type>package</type>
 		<version>4.0.3</version>
 		<note>
-			<item>Add Geoportal France and delete Openstreetmap black and white map provider</item>
+			<item>Add Geoportal France and delete Openstreetmap black and white map provider.</item>
 		</note>
 	</changelog>
 </changelogs>
