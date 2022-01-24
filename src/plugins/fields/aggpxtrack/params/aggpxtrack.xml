@@ -353,12 +353,21 @@
 				description="PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_MAPTYPE_DESC"
 			>
 				<option value="osm">OpenStreetMap</option>
-				<option value="osm_bw">OpenStreetMap.BlackAndWhite</option>
 				<option value="opentopomap">OpenTopoMap</option>
 				<option value="thunderforest">Thunderforest</option>
 				<option value="mapbox">Mapbox</option>
 				<option value="google">GoogleMaps</option>
+				<option value="geoportailfrance">GeoportailFrance</option>
 			</field>
+			<field
+				name="geoportailfrancekey"
+				type="text"
+				default="choisirgeoportail"
+				label="PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_GEOPORTAILFRAMCEKEY_LABEL"
+				description="PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_GEOPORTAILFRAMCEKEY_DESC"
+				size="40"
+				showon="maptype:geoportailfrance"
+			/>
 			<field
 				name="mapboxkey"
 				type="text"

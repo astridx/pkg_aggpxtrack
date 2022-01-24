@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		var maptype = element.getAttribute('data-maptype');
 		var thunderforestkey = element.getAttribute('data-thunderforestkey');
 		var mapboxkey = element.getAttribute('data-mapboxkey');
+		var geoportailfrancekey = element.getAttribute('data-geoportailfrancekey');
 		var thunderforestmaptype = element.getAttribute('data-thunderforestmaptype');
 		var googlemapstype = element.getAttribute('data-googlemapstype');
 		var show_omnivore = element.getAttribute('data-show_omnivore');
@@ -230,6 +231,20 @@ document.addEventListener('DOMContentLoaded', function () {
 						'<a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, ' +
 						'Imagery © <a href=\"http://mapbox.com\">Mapbox</a>',
 				id: 'mapbox.streets'
+			}).addTo(window['mymap' + unique]);
+		} else if (maptype === 'geoportailfrance')
+		{
+			L.tileLayer('https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET=PM&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}', {
+				attribution: '<a target="_blank" href="https://www.geoportail.gouv.fr/">Geoportail France</a>',
+				bounds: [[-75, -180], [81, 180]],
+				minZoom: 2,
+				maxZoom: 18,
+				// Get your own geoportail apikey here : http://professionnels.ign.fr/ign/contrats/
+				// NB : 'choisirgeoportail' is a demonstration key that comes with no guarantee
+				apikey: geoportailfrancekey,
+				format: 'image/png',
+				style: 'normal',
+				variant: 'GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2'
 			}).addTo(window['mymap' + unique]);
 		} else if (maptype === 'opentopomap')
 		{

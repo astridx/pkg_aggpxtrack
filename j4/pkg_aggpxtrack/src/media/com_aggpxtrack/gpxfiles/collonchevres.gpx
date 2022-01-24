@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?><gpx creator="Garmin Desktop App" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/WaypointExtension/v1 http://www8.garmin.com/xmlschemas/WaypointExtensionv1.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www8.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/ActivityExtension/v1 http://www8.garmin.com/xmlschemas/ActivityExtensionv1.xsd http://www.garmin.com/xmlschemas/AdventuresExtensions/v1 http://www8.garmin.com/xmlschemas/AdventuresExtensionv1.xsd http://www.garmin.com/xmlschemas/PressureExtension/v1 http://www.garmin.com/xmlschemas/PressureExtensionv1.xsd http://www.garmin.com/xmlschemas/TripExtensions/v1 http://www.garmin.com/xmlschemas/TripExtensionsv1.xsd http://www.garmin.com/xmlschemas/TripMetaDataExtensions/v1 http://www.garmin.com/xmlschemas/TripMetaDataExtensionsv1.xsd http://www.garmin.com/xmlschemas/ViaPointTransportationModeExtensions/v1 http://www.garmin.com/xmlschemas/ViaPointTransportationModeExtensionsv1.xsd http://www.garmin.com/xmlschemas/CreationTimeExtension/v1 http://www.garmin.com/xmlschemas/CreationTimeExtensionsv1.xsd http://www.garmin.com/xmlschemas/AccelerationExtension/v1 http://www.garmin.com/xmlschemas/AccelerationExtensionv1.xsd http://www.garmin.com/xmlschemas/PowerExtension/v1 http://www.garmin.com/xmlschemas/PowerExtensionv1.xsd http://www.garmin.com/xmlschemas/VideoExtension/v1 http://www.garmin.com/xmlschemas/VideoExtensionv1.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wptx1="http://www.garmin.com/xmlschemas/WaypointExtension/v1" xmlns:gpxtrx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:trp="http://www.garmin.com/xmlschemas/TripExtensions/v1" xmlns:adv="http://www.garmin.com/xmlschemas/AdventuresExtensions/v1" xmlns:prs="http://www.garmin.com/xmlschemas/PressureExtension/v1" xmlns:tmd="http://www.garmin.com/xmlschemas/TripMetaDataExtensions/v1" xmlns:vptm="http://www.garmin.com/xmlschemas/ViaPointTransportationModeExtensions/v1" xmlns:ctx="http://www.garmin.com/xmlschemas/CreationTimeExtension/v1" xmlns:gpxacc="http://www.garmin.com/xmlschemas/AccelerationExtension/v1" xmlns:gpxpx="http://www.garmin.com/xmlschemas/PowerExtension/v1" xmlns:vidx1="http://www.garmin.com/xmlschemas/VideoExtension/v1">
+
+  <metadata>
+    <link href="http://www.garmin.com">
+      <text>Garmin International</text>
+    </link>
+    <time>2021-05-22T06:30:01Z</time>
+    <bounds maxlat="47.281559994444251" maxlon="4.242040039971471" minlat="47.261549960821867" minlon="4.213560009375215" />
+  </metadata>
+
+  <wpt lat="47.263355255126953" lon="4.21825647354126">
+    <ele>591.0546875</ele>
+    <time>2021-05-22T05:58:29Z</time>
+    <name>Collonchèvres</name>
+    <cmt>Traverser le hameau de Collonchèvres (km 4.5), point culminant de Saulieu à 595m d’altitude, vous  êtes  pour  quelques  mètres  sur  l’ancienne Bibracte - Alésia.</cmt>
+    <desc>Traverser le hameau de Collonchèvres (km 4.5), point culminant de Saulieu à 595m d’altitude, vous  êtes  pour  quelques  mètres  sur  l’ancienne Bibracte - Alésia.</desc>
+    <sym>TracBack Point</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2021-05-22T05:58:29Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="47.280785590410233" lon="4.226537458598614">
+    <ele>533.0078125</ele>
+    <time>2021-05-22T06:13:30Z</time>
+    <name>Départ</name>
+    <cmt>Rejoindre le centre bourg de Saulieu par la rue Gambetta autrefois rue des Sabots, quartiers chic de Saulieu. Emprunter la rue de la truie qui file, vous apercevez sur votre droite une ancienne bâtisse moyenâgeuse. Poursuivez votre chemin en remontant la rue commerçante de Saulieu pour rejoindre l’église St Saturnin.</cmt>
+    <desc>Rejoindre le centre bourg de Saulieu par la rue Gambetta autrefois rue des Sabots, quartiers chic de Saulieu. Emprunter la rue de la truie qui file, vous apercevez sur votre droite une ancienne bâtisse moyenâgeuse. Poursuivez votre chemin en remontant la rue commerçante de Saulieu pour rejoindre l’église St Saturnin.</desc>
+    <sym>Flag, Green</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2021-05-22T06:13:30Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="47.275006771087646" lon="4.238705635070801">
+    <ele>510.33984375</ele>
+    <time>2021-05-22T05:55:59Z</time>
+    <name>Départementale 15</name>
+    <cmt>Traverser  la  Route  Départementale 15 et longez la voie ferrée (km 1.3).</cmt>
+    <desc>Traverser  la  Route  Départementale 15 et longez la voie ferrée (km 1.3).</desc>
+    <sym>TracBack Point</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2021-05-22T05:55:59Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="47.276435131207108" lon="4.232655996456742">
+    <ele>539.00390625</ele>
+    <time>2021-05-22T05:54:46Z</time>
+    <name>Eglise Saint Saturnin</name>
+    <cmt>Au pied de l’église (km 0.7), prenez sur votre gauche pour rejoindre le quartier de Villeneuve.</cmt>
+    <desc>Au pied de l’église (km 0.7), prenez sur votre gauche pour rejoindre le quartier de Villeneuve.</desc>
+    <sym>Scenic Area</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2021-05-22T05:54:46Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="47.279238039627671" lon="4.220066042616963">
+    <ele>556.33984375</ele>
+    <time>2021-05-22T06:00:50Z</time>
+    <name>Etang de Montivent</name>
+    <cmt>Longer l’étang de Montivent (km 6.8), lieu de pêche réputé des Sédélociens. Poursuivre  sur  le  chemin  de  Belle-vue, prenez  le  temps  d’admirer le panorama sur le centre-ville de Saulieu et la Basilique St Andoche. Rejoindre le point de départ en longeant le gymnase et la piscine.</cmt>
+    <desc>Longer l’étang de Montivent (km 6.8), lieu de pêche réputé des Sédélociens. Poursuivre  sur  le  chemin  de  Belle-vue, prenez  le  temps  d’admirer le panorama sur le centre-ville de Saulieu et la Basilique St Andoche. Rejoindre le point de départ en longeant le gymnase et la piscine.</desc>
+    <sym>Scenic Area</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2021-05-22T06:00:50Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="47.263813493773341" lon="4.239629656076431">
+    <ele>525.9296875</ele>
+    <time>2021-05-22T05:57:21Z</time>
+    <name>Le Morvan et l'Auxois</name>
+    <cmt>Traverser la D15 (km 2.7) et suivez le balisage jaune le long des étangs, au sommet vous pourrez admirer le massif du Morvan devant vous et l’Auxois dans votre dos.</cmt>
+    <desc>Traverser la D15 (km 2.7) et suivez le balisage jaune le long des étangs, au sommet vous pourrez admirer le massif du Morvan devant vous et l’Auxois dans votre dos.</desc>
+    <sym>Scenic Area</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2021-05-22T05:57:21Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="47.27092981338501" lon="4.216303825378418">
+    <ele>579.9609375</ele>
+    <time>2021-05-22T05:59:53Z</time>
+    <name>Maison Rouge</name>
+    <cmt>Suivre la piste. Vous êtes sur l’ancienne voie du «Tacot» qui reliait Saulieu à Corbigny. Attention  aux  traversées  de  routes,  prenez  le temps de regarder si la voie est libre (km 5.6).</cmt>
+    <desc>Suivre la piste. Vous êtes sur l’ancienne voie du «Tacot» qui reliait Saulieu à Corbigny. Attention  aux  traversées  de  routes,  prenez  le temps de regarder si la voie est libre (km 5.6).</desc>
+    <sym>TracBack Point</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2021-05-22T05:59:53Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="47.263891696929932" lon="4.214887619018555">
+    <ele>582.49609375</ele>
+    <time>2021-05-22T05:59:12Z</time>
+    <name>Prendre à droite</name>
+    <cmt>A la sortie du bourg (km 4.8), prenez deux fois sur la droite pour rejoindre la D26 au lieu-dit «maison rouge».</cmt>
+    <desc>A la sortie du bourg (km 4.8), prenez deux fois sur la droite pour rejoindre la D26 au lieu-dit «maison rouge».</desc>
+    <sym>TracBack Point</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2021-05-22T05:59:12Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="47.268311977386475" lon="4.240457871928811">
+    <ele>515.1640625</ele>
+    <time>2021-05-22T05:56:41Z</time>
+    <name>Prudence !</name>
+    <cmt>Prudence, longez la RD15, restez bien sur le bas-côté de la route (km 2.1).</cmt>
+    <desc>Prudence, longez la RD15, restez bien sur le bas-côté de la route (km 2.1).</desc>
+    <sym>TracBack Point</sym>
+    <type>user</type>
+    <extensions>
+      <gpxx:WaypointExtension>
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+      <wptx1:WaypointExtension>
+        <wptx1:DisplayMode>SymbolAndName</wptx1:DisplayMode>
+      </wptx1:WaypointExtension>
+      <ctx:CreationTimeExtension>
+        <ctx:CreationTime>2021-05-22T05:56:41Z</ctx:CreationTime>
+      </ctx:CreationTimeExtension>
+    </extensions>
+  </wpt>
+
+  <trk>
+    <name>OR-2021764--Saulieu:saulieu projet pdipr collonchèvres</name>
+    <extensions>
+      <gpxx:TrackExtension>
+        <gpxx:DisplayColor>DarkGray</gpxx:DisplayColor>
+      </gpxx:TrackExtension>
+    </extensions>
+    <trkseg>
+      <trkpt lat="47.280800007283688" lon="4.226529998704791">
+        <ele>533</ele>
+        <time>2017-05-30T10:31:11Z</time>
+      </trkpt>
+      <trkpt lat="47.280860021710396" lon="4.226799979805946">
+        <ele>533</ele>
+        <time>2017-05-30T10:33:11Z</time>
+      </trkpt>
+      <trkpt lat="47.281130002811551" lon="4.227589974179864">
+        <ele>535</ele>
+        <time>2017-05-30T10:35:11Z</time>
+      </trkpt>
+      <trkpt lat="47.280939985066652" lon="4.227860039100051">
+        <ele>537</ele>
+        <time>2017-05-30T10:37:11Z</time>
+      </trkpt>
+      <trkpt lat="47.280709985643625" lon="4.227949976921082">
+        <ele>537</ele>
+        <time>2017-05-30T10:39:11Z</time>
+      </trkpt>
+      <trkpt lat="47.280389964580536" lon="4.228079980239272">
+        <ele>537</ele>
+        <time>2017-05-30T10:41:11Z</time>
+      </trkpt>
+      <trkpt lat="47.280140016227961" lon="4.228239990770817">
+        <ele>537</ele>
+        <time>2017-05-30T10:43:11Z</time>
+      </trkpt>
+      <trkpt lat="47.280089976266026" lon="4.228599993512034">
+        <ele>537</ele>
+        <time>2017-05-30T10:45:11Z</time>
+      </trkpt>
+      <trkpt lat="47.279899958521128" lon="4.228760004043579">
+        <ele>538</ele>
+        <time>2017-05-30T10:47:11Z</time>
+      </trkpt>
+      <trkpt lat="47.27955998852849" lon="4.228950021788478">
+        <ele>539</ele>
+        <time>2017-05-30T10:49:11Z</time>
+      </trkpt>
+      <trkpt lat="47.279320014640689" lon="4.228980029001832">
+        <ele>540</ele>
+        <time>2017-05-30T10:51:11Z</time>
+      </trkpt>
+      <trkpt lat="47.279060008004308" lon="4.22929996624589">
+        <ele>541</ele>
+        <time>2017-05-30T10:53:11Z</time>
+      </trkpt>
+      <trkpt lat="47.278749961405993" lon="4.229710008949041">
+        <ele>540</ele>
+        <time>2017-05-30T10:55:11Z</time>
+      </trkpt>
+      <trkpt lat="47.27859003469348" lon="4.230030030012131">
+        <ele>540</ele>
+        <time>2017-05-30T10:57:11Z</time>
+      </trkpt>
+      <trkpt lat="47.27870000526309" lon="4.230339992791414">
+        <ele>540</ele>
+        <time>2017-05-30T10:59:11Z</time>
+      </trkpt>
+      <trkpt lat="47.278500013053417" lon="4.230430014431477">
+        <ele>540</ele>
+        <time>2017-05-30T11:01:11Z</time>
+      </trkpt>
+      <trkpt lat="47.278019981458783" lon="4.230769984424114">
+        <ele>540</ele>
+        <time>2017-05-30T11:03:11Z</time>
+      </trkpt>
+      <trkpt lat="47.276709973812103" lon="4.232249977067113">
+        <ele>540</ele>
+        <time>2017-05-30T11:05:11Z</time>
+      </trkpt>
+      <trkpt lat="47.276160037145019" lon="4.233150025829673">
+        <ele>534</ele>
+        <time>2017-05-30T11:07:11Z</time>
+      </trkpt>
+      <trkpt lat="47.275189999490976" lon="4.234389960765839">
+        <ele>530</ele>
+        <time>2017-05-30T11:09:11Z</time>
+      </trkpt>
+      <trkpt lat="47.274839971214533" lon="4.235850004479289">
+        <ele>523</ele>
+        <time>2017-05-30T11:11:11Z</time>
+      </trkpt>
+      <trkpt lat="47.27511003613472" lon="4.236349985003471">
+        <ele>519</ele>
+        <time>2017-05-30T11:13:11Z</time>
+      </trkpt>
+      <trkpt lat="47.275080028921366" lon="4.238519975915551">
+        <ele>511</ele>
+        <time>2017-05-30T11:15:11Z</time>
+      </trkpt>
+      <trkpt lat="47.274539982900023" lon="4.239220032468438">
+        <ele>509</ele>
+        <time>2017-05-30T11:17:11Z</time>
+      </trkpt>
+      <trkpt lat="47.272369991987944" lon="4.241279968991876">
+        <ele>502</ele>
+        <time>2017-05-30T11:19:11Z</time>
+      </trkpt>
+      <trkpt lat="47.271779989823699" lon="4.241690011695027">
+        <ele>502</ele>
+        <time>2017-05-30T11:21:11Z</time>
+      </trkpt>
+      <trkpt lat="47.271129973232746" lon="4.24191003665328">
+        <ele>507</ele>
+        <time>2017-05-30T11:23:11Z</time>
+      </trkpt>
+      <trkpt lat="47.2707299888134" lon="4.242040039971471">
+        <ele>510</ele>
+        <time>2017-05-30T11:25:11Z</time>
+      </trkpt>
+      <trkpt lat="47.26885998621583" lon="4.241200005635619">
+        <ele>517</ele>
+        <time>2017-05-30T11:27:11Z</time>
+      </trkpt>
+      <trkpt lat="47.268309965729713" lon="4.24042996019125">
+        <ele>515</ele>
+        <time>2017-05-30T11:29:11Z</time>
+      </trkpt>
+      <trkpt lat="47.266299985349178" lon="4.2401700373739">
+        <ele>516</ele>
+        <time>2017-05-30T11:31:11Z</time>
+      </trkpt>
+      <trkpt lat="47.265690034255385" lon="4.241200005635619">
+        <ele>515</ele>
+        <time>2017-05-30T11:33:11Z</time>
+      </trkpt>
+      <trkpt lat="47.265019984915853" lon="4.241369990631938">
+        <ele>516</ele>
+        <time>2017-05-30T11:35:11Z</time>
+      </trkpt>
+      <trkpt lat="47.264459989964962" lon="4.241409972310066">
+        <ele>516</ele>
+        <time>2017-05-30T11:37:11Z</time>
+      </trkpt>
+      <trkpt lat="47.264139968901873" lon="4.240640010684729">
+        <ele>519</ele>
+        <time>2017-05-30T11:39:11Z</time>
+      </trkpt>
+      <trkpt lat="47.263790024444461" lon="4.239520020782948">
+        <ele>527</ele>
+        <time>2017-05-30T11:41:11Z</time>
+      </trkpt>
+      <trkpt lat="47.263439996168017" lon="4.238149998709559">
+        <ele>534</ele>
+        <time>2017-05-30T11:43:11Z</time>
+      </trkpt>
+      <trkpt lat="47.262749997898936" lon="4.23729001544416">
+        <ele>539</ele>
+        <time>2017-05-30T11:45:11Z</time>
+      </trkpt>
+      <trkpt lat="47.262190002948046" lon="4.236259963363409">
+        <ele>543</ele>
+        <time>2017-05-30T11:47:11Z</time>
+      </trkpt>
+      <trkpt lat="47.261549960821867" lon="4.235020028427243">
+        <ele>550</ele>
+        <time>2017-05-30T11:49:11Z</time>
+      </trkpt>
+      <trkpt lat="47.262099981307983" lon="4.234289964661002">
+        <ele>557</ele>
+        <time>2017-05-30T11:51:11Z</time>
+      </trkpt>
+      <trkpt lat="47.262280024588108" lon="4.231970021501184">
+        <ele>574</ele>
+        <time>2017-05-30T11:53:11Z</time>
+      </trkpt>
+      <trkpt lat="47.262310031801462" lon="4.230379974469543">
+        <ele>583</ele>
+        <time>2017-05-30T11:55:11Z</time>
+      </trkpt>
+      <trkpt lat="47.262450009584427" lon="4.228239990770817">
+        <ele>587</ele>
+        <time>2017-05-30T11:57:11Z</time>
+      </trkpt>
+      <trkpt lat="47.2622200101614" lon="4.226859994232655">
+        <ele>585</ele>
+        <time>2017-05-30T11:59:11Z</time>
+      </trkpt>
+      <trkpt lat="47.263010004535317" lon="4.224539967253804">
+        <ele>589</ele>
+        <time>2017-05-30T12:01:11Z</time>
+      </trkpt>
+      <trkpt lat="47.263219971209764" lon="4.222550019621849">
+        <ele>593</ele>
+        <time>2017-05-30T12:03:11Z</time>
+      </trkpt>
+      <trkpt lat="47.262910008430481" lon="4.22048999927938">
+        <ele>591</ele>
+        <time>2017-05-30T12:05:11Z</time>
+      </trkpt>
+      <trkpt lat="47.263360032811761" lon="4.218229986727238">
+        <ele>592</ele>
+        <time>2017-05-30T12:07:11Z</time>
+      </trkpt>
+      <trkpt lat="47.264029998332262" lon="4.215739974752069">
+        <ele>586</ele>
+        <time>2017-05-30T12:09:11Z</time>
+      </trkpt>
+      <trkpt lat="47.263999991118908" lon="4.214970013126731">
+        <ele>583</ele>
+        <time>2017-05-30T12:11:11Z</time>
+      </trkpt>
+      <trkpt lat="47.266390006989241" lon="4.213560009375215">
+        <ele>584</ele>
+        <time>2017-05-30T12:13:11Z</time>
+      </trkpt>
+      <trkpt lat="47.267059972509742" lon="4.214670024812222">
+        <ele>586</ele>
+        <time>2017-05-30T12:15:11Z</time>
+      </trkpt>
+      <trkpt lat="47.267869999632239" lon="4.215400004759431">
+        <ele>586</ele>
+        <time>2017-05-30T12:17:11Z</time>
+      </trkpt>
+      <trkpt lat="47.27105000987649" lon="4.216259988024831">
+        <ele>580</ele>
+        <time>2017-05-30T12:19:11Z</time>
+      </trkpt>
+      <trkpt lat="47.273029983043671" lon="4.215230019763112">
+        <ele>575</ele>
+        <time>2017-05-30T12:21:11Z</time>
+      </trkpt>
+      <trkpt lat="47.274219961836934" lon="4.215620029717684">
+        <ele>574</ele>
+        <time>2017-05-30T12:23:11Z</time>
+      </trkpt>
+      <trkpt lat="47.278030039742589" lon="4.216389991343021">
+        <ele>563</ele>
+        <time>2017-05-30T12:25:11Z</time>
+      </trkpt>
+      <trkpt lat="47.278760019689798" lon="4.219010006636381">
+        <ele>558</ele>
+        <time>2017-05-30T12:27:11Z</time>
+      </trkpt>
+      <trkpt lat="47.279959972947836" lon="4.221189972013235">
+        <ele>554</ele>
+        <time>2017-05-30T12:29:11Z</time>
+      </trkpt>
+      <trkpt lat="47.280630022287369" lon="4.223080007359386">
+        <ele>548</ele>
+        <time>2017-05-30T12:31:11Z</time>
+      </trkpt>
+      <trkpt lat="47.281529987230897" lon="4.223600020632148">
+        <ele>546</ele>
+        <time>2017-05-30T12:33:11Z</time>
+      </trkpt>
+      <trkpt lat="47.281350027769804" lon="4.224330000579357">
+        <ele>536</ele>
+        <time>2017-05-30T12:35:11Z</time>
+      </trkpt>
+      <trkpt lat="47.281559994444251" lon="4.225270031020045">
+        <ele>530</ele>
+        <time>2017-05-30T12:37:11Z</time>
+      </trkpt>
+      <trkpt lat="47.281239973381162" lon="4.225960029289126">
+        <ele>532</ele>
+        <time>2017-05-30T12:39:11Z</time>
+      </trkpt>
+      <trkpt lat="47.280809981748462" lon="4.226539973169565">
+        <ele>533</ele>
+        <time>2017-05-30T12:41:11Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+
+</gpx>

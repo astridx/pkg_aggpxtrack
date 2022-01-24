@@ -131,6 +131,7 @@ else
 		$skriptstring .= " data-thunderforestkey='" . $fieldParams->get('thunderforestkey', '') . "' ";
 		$skriptstring .= " data-thunderforestmaptype='" . $fieldParams->get('thunderforestmaptype', 'cycle') . "' ";
 		$skriptstring .= " data-mapboxkey='" . $fieldParams->get('mapboxkey', '') . "' ";
+		$skriptstring .= " data-geoportailfrancekey='" . $fieldParams->get('geoportailfrancekey', 'choisirgeoportail') . "' ";
 		$skriptstring .= " data-googlekey='" . $fieldParams->get('googlekey', '') . "' ";
 		$skriptstring .= " data-googlemapstype='" . $fieldParams->get('googlemapstype', 'satellite') . "' ";
 
