@@ -21,16 +21,15 @@ $isMoo      = $input->getInt('ismoo', 1);
 JHtml::_('formbehavior.chosen', 'select');
 
 // Load tooltip instance without HTML support because we have a HTML tag in the tip
-JHtml::_('bootstrap.tooltip', '.noHtmlTip', array('html' => false));
+JHtml::_('bootstrap.tooltip', '.noHtmlTip', ['html' => false]);
 
 // Include jQuery
 JHtml::_('jquery.framework');
 JHtml::_('script', 'com_aggpxtrack/popup-manager.js', false, true, false, false, true);
-JHtml::_('stylesheet', 'media/popup-imagemanager.css', array(), true);
+JHtml::_('stylesheet', 'media/popup-imagemanager.css', [], true);
 
-if ($lang->isRtl())
-{
-	JHtml::_('stylesheet', 'media/popup-imagemanager_rtl.css', array(), true);
+if ($lang->isRtl()) {
+	JHtml::_('stylesheet', 'media/popup-imagemanager_rtl.css', [], true);
 }
 
 JFactory::getDocument()->addScriptDeclaration(
@@ -47,14 +46,11 @@ JFactory::getDocument()->addScriptDeclaration(
  *
  * This should be removed when mootools won't be shipped by Joomla.
  */
-if (!empty($fieldInput)) // Media Form Field
-{
-	if ($isMoo)
-	{
+if (!empty($fieldInput)) { // Media Form Field
+	if ($isMoo) {
 		$onClick = "window.parent.jInsertFieldValue(document.getElementById('f_url').value, '" . $fieldInput . "');window.parent.jModalClose();window.parent.jQuery('.modal.in').modal('hide');";
 	}
-}
-else // XTD Image plugin
+} else // XTD Image plugin
 {
 	$onClick = 'ImageManager.onok();window.parent.jModalClose();';
 }
@@ -64,7 +60,7 @@ else // XTD Image plugin
 	<form action="index.php?option=com_media&amp;asset=<?php echo $input->getCmd('asset');?>&amp;author=<?php echo $input->getCmd('author'); ?>" class="form-vertical" id="imageForm" method="post" enctype="multipart/form-data">
 
 		<div id="messages" style="display: none;">
-			<span id="message"></span><?php echo JHtml::_('image', 'media/dots.gif', '...', array('width' => 22, 'height' => 12), true) ?>
+			<span id="message"></span><?php echo JHtml::_('image', 'media/dots.gif', '...', ['width' => 22, 'height' => 12], true) ?>
 		</div>
 
 		<div class="well">
@@ -81,7 +77,8 @@ else // XTD Image plugin
 				</div>
 				<div class="pull-right">
 					<button class="btn btn-success button-save-selected" type="button" <?php if (!empty($onClick)) :
-					// This is for Mootools compatibility ?>onclick="<?php echo $onClick; ?>"<?php endif; ?> data-dismiss="modal"><?php echo JText::_('COM_AGGPXTRACK_INSERT'); ?></button>
+					// This is for Mootools compatibility ?>onclick="<?php echo $onClick; ?>"<?php
+																					   endif; ?> data-dismiss="modal"><?php echo JText::_('COM_AGGPXTRACK_INSERT'); ?></button>
 					<button class="btn button-cancel" type="button" onclick="window.parent.jModalClose();" data-dismiss="modal"><?php echo JText::_('JCANCEL'); ?></button>
 				</div>
 			</div>
@@ -100,7 +97,7 @@ else // XTD Image plugin
 					</div>
 				</div>
 			</div>
-			<?php if (!$this->state->get('field.id')):?>
+			<?php if (!$this->state->get('field.id')) :?>
 				<div class="row">
 					<div class="span6 control-group">
 						<div class="control-label">

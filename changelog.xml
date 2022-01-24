@@ -1,0 +1,18 @@
+<changelogs>
+	<changelog>
+		<element>pkg_aggpxtrack</element>
+		<type>package</type>
+		<version>4.0.0</version>
+		<note>
+			<item>Initial Version</item>
+		</note>
+	</changelog>
+	<changelog>
+		<element>pkg_aggpxtrack</element>
+		<type>package</type>
+		<version>4.0.3</version>
+		<note>
+			<item>Add Geoportal France and delete Openstreetmap black and white map provider</item>
+		</note>
+	</changelog>
+</changelogs>

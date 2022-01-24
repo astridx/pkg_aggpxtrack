@@ -2,12 +2,12 @@
 <extension version="3.5" type="component" method="upgrade">
     <name>com_aggpxtrack</name>
 	<author>Astrid Günther</author>
-	<creationDate>2021-05-18</creationDate>
-	<copyright>(C) 2021 Astrid Günther. All rights reserved.</copyright>
+	<creationDate>2022-01-24</creationDate>
+	<copyright>(C) 2022 Astrid Günther. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>info@astrid-guenther.de</authorEmail>
 	<authorUrl>www.astrid-guenther.de</authorUrl>
-	<version>3.0.1</version>
+	<version>3.0.2</version>
     <description>COM_AGGPXTRACK_XML_DESCRIPTION</description>
 	<scriptfile>script.php</scriptfile>
 

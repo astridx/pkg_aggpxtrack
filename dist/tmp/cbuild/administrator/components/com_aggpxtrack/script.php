@@ -83,10 +83,8 @@ class Com_AggpxtrackInstallerScript
 		// Now we read all png files and put them in an array.
 		$gpx_files = JFolder::files($pathsearch, '.gpx');
 
-		foreach ($gpx_files as $file)
-		{
-			if (!file_exists($path . $file))
-			{
+		foreach ($gpx_files as $file) {
+			if (!file_exists($path . $file)) {
 				JFile::copy($pathsearch . $file, $path . $file);
 			}
 		}
