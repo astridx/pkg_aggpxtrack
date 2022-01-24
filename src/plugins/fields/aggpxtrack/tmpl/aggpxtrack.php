@@ -12,15 +12,13 @@ defined('_JEXEC') or die;
 
 JHtml::_('bootstrap.framework');
 
-if ($field->value == '')
-{
+if ($field->value == '') {
 	return;
 }
 
 $class = $fieldParams->get('image_class');
 
-if ($class)
-{
+if ($class) {
 	$class = ' class="' . htmlentities($class, ENT_COMPAT, 'UTF-8', true) . '"';
 }
 
@@ -31,15 +29,11 @@ $buffer = '';
 $document = JFactory::getDocument();
 $jinput = JFactory::getApplication()->input;
 
-if ($fieldParams->get('show_inactivefirst', 0) && !$jinput->get('aggpxtrackshow', '0'))
-{
+if ($fieldParams->get('show_inactivefirst', 0) && !$jinput->get('aggpxtrackshow', '0')) {
 	$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/js/site.js');
 	echo '<a class="aggpxtrackactivate btn btn-primary">' . JText::_('PLG_AGGPXTRACK_INHALT_AKTIVIEREN') . '</a>';
-}
-else
-{
-	if ($fieldParams->get('show_inactivefirst', 0))
-	{
+} else {
+	if ($fieldParams->get('show_inactivefirst', 0)) {
 		$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/js/site.js');
 		echo '<a class="aggpxtrackdeactivate btn btn-primary">' . JText::_('PLG_AGGPXTRACK_INHALT_DEAKTIVIEREN') . '</a>';
 	}
@@ -51,54 +45,45 @@ else
 	$stylecolorlight = $fieldParams->get('stylecolorlight', '#cadea5');
 	$stylecolordark = $fieldParams->get('stylecolordark', '#86b827');
 
-	if ($fieldParams->get('show_elevantioncontrol', 0))
-	{
+	if ($fieldParams->get('show_elevantioncontrol', 0)) {
 		$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/d3/d3.v3.min.js');
 		$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/Leaflet.Elevation-master/leaflet.elevation-0.0.4.src.js');
 		$document->addStyleSheet(JURI::root(true) . '/media/plg_fields_aggpxtrack/Leaflet.Elevation-master/leaflet.elevation-0.0.4.css');
 	}
 
-	if ($fieldParams->get('show_fullscreencontrol', 0))
-	{
+	if ($fieldParams->get('show_fullscreencontrol', 0)) {
 		$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/Leaflet.fullscreen/Leaflet.fullscreen.js');
 		$document->addStyleSheet(JURI::root(true) . '/media/plg_fields_aggpxtrack/Leaflet.fullscreen/leaflet.fullscreen.css');
 	}
 
-	if ($fieldParams->get('show_currentposition', 0))
-	{
+	if ($fieldParams->get('show_currentposition', 0)) {
 		$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/L.Control.Locate/L.Control.Locate.min.js');
 		$document->addStyleSheet(JURI::root(true) . '/media/plg_fields_aggpxtrack/L.Control.Locate/L.Control.Locate.css');
 	}
 
-	if ($fieldParams->get('show_currentposition', 0) || $fieldParams->get('custom_icons', 0) || $fieldParams->get('show_omnivore', 0))
-	{
+	if ($fieldParams->get('show_currentposition', 0) || $fieldParams->get('custom_icons', 0) || $fieldParams->get('show_omnivore', 0)) {
 		$document->addStyleSheet(JURI::root(true) . '/media/plg_fields_aggpxtrack/L.Control.Locate/font-awesome.min.css');
 	}
 
-	if ($fieldParams->get('custom_icons', 0) || $fieldParams->get('show_omnivore', 0))
-	{
+	if ($fieldParams->get('custom_icons', 0) || $fieldParams->get('show_omnivore', 0)) {
 		$document->addStyleSheet(JURI::root(true) . '/media/plg_fields_aggpxtrack/Leaflet.awesome-markers/leaflet.awesome-markers.css');
 		$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/Leaflet.awesome-markers/leaflet.awesome-markers.js');
 	}
 
-	if ($fieldParams->get('show_omnivore', 0))
-	{
+	if ($fieldParams->get('show_omnivore', 0)) {
 		$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/leaflet-omnivore/leaflet-omnivore.js');
 	}
 
-	if ($fieldParams->get('easyprint_position', 0))
-	{
+	if ($fieldParams->get('easyprint_position', 0)) {
 		$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/leaflet-easyPrint/bundle.js');
 	}
 
-	if ($fieldParams->get('show_panelLayers', 0))
-	{
+	if ($fieldParams->get('show_panelLayers', 0)) {
 		$document->addStyleSheet(JURI::root(true) . '/media/plg_fields_aggpxtrack/leaflet-panel-layers/leaflet-panel-layers.min.css');
 		$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/leaflet-panel-layers/leaflet-panel-layers.min.js');
 	}
 
-	if ($fieldParams->get('maptype', 'osm') == 'google')
-	{
+	if ($fieldParams->get('maptype', 'osm') == 'google') {
 		$document->addScript('https://maps.googleapis.com/maps/api/js?key=' . $fieldParams->get('googlekey', ''));
 		$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/GoogleMutant/Leaflet.GoogleMutant.js');
 	}
@@ -106,8 +91,7 @@ else
 	$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/js/aggpxtrack.js');
 
 	foreach ($value as $path) {
-		if (!$path)
-		{
+		if (!$path) {
 			continue;
 		}
 
@@ -136,8 +120,7 @@ else
 		$skriptstring .= " data-googlemapstype='" . $fieldParams->get('googlemapstype', 'satellite') . "' ";
 
 		$skriptstring .= " data-show_omnivore='" . $fieldParams->get('show_omnivore', 0) . "' ";
-		if ($fieldParams->get('show_omnivore', 0))
-		{
+		if ($fieldParams->get('show_omnivore', 0)) {
 			$skriptstring .= " data-omnivore_icon='" . $fieldParams->get('omnivore_icon', 'home') . "' ";
 			$skriptstring .= " data-omnivore_markercolor='" . $fieldParams->get('omnivore_markercolor', 'red') . "' ";
 			$skriptstring .= " data-omnivore_iconcolor='" . $fieldParams->get('omnivore_iconcolor', '#ffffff') . "' ";
@@ -147,8 +130,7 @@ else
 		}
 
 		$skriptstring .= " data-show_fullscreencontrol='" . $fieldParams->get('show_fullscreencontrol', 0) . "' ";
-		if ($fieldParams->get('show_fullscreencontrol', 0))
-		{
+		if ($fieldParams->get('show_fullscreencontrol', 0)) {
 			$skriptstring .= " data-fullscreencontrol_viewfullscreen='" . JText::_('PLG_AGGPXTRACK_VIEW_FULLSCREEN') . "' ";
 			$skriptstring .= " data-fullscreencontrol_exitfullscreen='" . JText::_('PLG_AGGPXTRACK_EXIT_FULLSCREEN') . "' ";
 			$skriptstring .= " data-fullscreencontrol_position='" . $fieldParams->get('fullscreencontrol_position', 'topleft') . "' ";
@@ -189,8 +171,7 @@ else
 		$skriptstring .= " data-currentposition_position='" . $fieldParams->get('currentposition_position', 'topleft') . "' ";
 		$skriptstring .= " data-currentposition_initialZoomLevel='" . $fieldParams->get('currentposition_initialZoomLevel', '17') . "' ";
 
-		if (null !== $fieldParams->get('scale'))
-		{
+		if (null !== $fieldParams->get('scale')) {
 			$skriptstring .= " data-scale='" . count($fieldParams->get('scale')) . "' ";
 		}
 
@@ -198,8 +179,7 @@ else
 		$skriptstring .= " data-scale-imperial='" . in_array('imperial', $fieldParams->get('scale', $defaultArray)) . "' ";
 
 		$skriptstring .= " data-show_elevantioncontrol='" . $fieldParams->get('show_elevantioncontrol', 0) . "' ";
-		if ($fieldParams->get('show_elevantioncontrol', 0))
-		{
+		if ($fieldParams->get('show_elevantioncontrol', 0)) {
 			$skriptstring .= " data-elevantioncontrol_collapsed='" . $fieldParams->get('elevantioncontrol_collapsed', false) . "' ";
 			$skriptstring .= " data-elevantioncontrol_top='" . $fieldParams->get('elevantioncontrol_top', '10') . "' ";
 			$skriptstring .= " data-elevantioncontrol_right='" . $fieldParams->get('elevantioncontrol_right', '20') . "' ";
@@ -212,8 +192,7 @@ else
 		}
 
 		$skriptstring .= " data-show_panelLayers='" . $fieldParams->get('show_panelLayers', 0) . "' ";
-		if ($fieldParams->get('show_panelLayers', 0))
-		{
+		if ($fieldParams->get('show_panelLayers', 0)) {
 			$skriptstring .= " data-panelLayers='" . htmlspecialchars(json_encode($fieldParams->get('panelLayers', null)), ENT_QUOTES, 'UTF-8') . "' ";
 		}
 
@@ -223,12 +202,17 @@ else
 		JText::script('PLG_AGGPXTRACK_CURRENTPOSITION_STRING');
 
 		$buffer .= sprintf(
-			$skriptstring, $class, htmlentities($path, ENT_COMPAT, 'UTF-8', true), htmlentities($startIconUrl, ENT_COMPAT, 'UTF-8', true), htmlentities($endIconUrl, ENT_COMPAT, 'UTF-8', true), htmlentities($shadowUrl, ENT_COMPAT, 'UTF-8', true), htmlentities($wptIconUrls, ENT_COMPAT, 'UTF-8', true)
+			$skriptstring,
+			$class,
+			htmlentities($path, ENT_COMPAT, 'UTF-8', true),
+			htmlentities($startIconUrl, ENT_COMPAT, 'UTF-8', true),
+			htmlentities($endIconUrl, ENT_COMPAT, 'UTF-8', true),
+			htmlentities($shadowUrl, ENT_COMPAT, 'UTF-8', true),
+			htmlentities($wptIconUrls, ENT_COMPAT, 'UTF-8', true)
 		);
 
 		$buttonstyle = '';
-		if ($fieldParams->get('show_downloadlink', 0) == 'text')
-		{
+		if ($fieldParams->get('show_downloadlink', 0) == 'text') {
 			$buffer .= '<p class="agbutton_p' . $unique . '"><span>' . JText::_('PLG_AGGPXTRACK_DOWNLOAD_LABEL') . '</span>'
 				. '<a href="' . $path . '" download>' . JText::_('PLG_AGGPXTRACK_DOWNLOAD_LINKTEXT') . '</a></p>';
 			$buttonstyle .= '.agbutton_p' . $unique . ' {';
@@ -236,8 +220,7 @@ else
 			$buttonstyle .= '}';
 			$document->addStyleDeclaration($buttonstyle);
 		}
-		if ($fieldParams->get('show_downloadlink', 0) == 'button')
-		{
+		if ($fieldParams->get('show_downloadlink', 0) == 'button') {
 			$buffer .= '<p class="agbutton_p' . $unique . '"><a class="agbutton' . $unique . '" '
 				. 'href="' . $path . '" '
 				. 'download>'
@@ -265,12 +248,11 @@ else
 
 		$buffer_info = '';
 
-		if ($fieldParams->get('showinfo', 'no') != 'no')
-		{
+		if ($fieldParams->get('showinfo', 'no') != 'no') {
 			$buffer_info = '<div class="gpx_info" id="gpx_info_' . $unique . '">';
 			$buffer_info .= '<table class="gpx_info_table">';
 
-			$infovalues = array(
+			$infovalues = [
 				"distance",
 				"name",
 				"start_time",
@@ -287,11 +269,10 @@ else
 				"average_hr",
 				"average_cadence",
 				"average_temp"
-			);
+			];
 
 			foreach ($infovalues as $value) {
-				if ($fieldParams->get('show_' . $value, 0))
-				{
+				if ($fieldParams->get('show_' . $value, 0)) {
 					$buffer_info .= ''
 						. '<tr>'
 						. '<td>'
@@ -311,8 +292,7 @@ else
 
 		$style = '';
 
-		if ($fieldParams->get('infostyle', 'style') == 'style_1')
-		{
+		if ($fieldParams->get('infostyle', 'style') == 'style_1') {
 			$style = '#gpx_info_' . $unique . ' tr:nth-child(even) td {';
 			$style .= 'background: ' . $stylecolorlight . ';';
 			$style .= '}';
@@ -334,8 +314,7 @@ else
 			$style .= '}';
 		}
 
-		if ($fieldParams->get('infostyle', 'style') == 'style_2')
-		{
+		if ($fieldParams->get('infostyle', 'style') == 'style_2') {
 			$style = '#gpx_info_' . $unique . ' table tbody tr {';
 			$style .= 'border-top: 2px solid ' . $stylecolordark . ';';
 			$style .= '}';
@@ -379,14 +358,11 @@ else
 		$document->addStyleDeclaration($style);
 	}
 
-	if ($fieldParams->get('showinfo', 'no') == 'before')
-	{
+	if ($fieldParams->get('showinfo', 'no') == 'before') {
 		echo $buffer_info . $buffer;
-	} elseif ($fieldParams->get('showinfo', 'no') == 'after')
-	{
+	} else if ($fieldParams->get('showinfo', 'no') == 'after') {
 		echo $buffer . $buffer_info;
-	} else
-	{
+	} else {
 		echo $buffer;
 	}
 }

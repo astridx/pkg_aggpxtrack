@@ -15,7 +15,7 @@ use Joomla\Registry\Registry;
 $params = JComponentHelper::getParams('com_aggpxtrack');
 
 $dispatcher = JEventDispatcher::getInstance();
-$dispatcher->trigger('onContentBeforeDisplay', array('com_aggpxtrack.file', &$this->_tmp_img, &$params));
+$dispatcher->trigger('onContentBeforeDisplay', ['com_aggpxtrack.file', &$this->_tmp_img, &$params]);
 ?>
 	<tr>
 
@@ -41,4 +41,4 @@ $dispatcher->trigger('onContentBeforeDisplay', array('com_aggpxtrack.file', &$th
 
 	</tr>
 <?php
-$dispatcher->trigger('onContentAfterDisplay', array('com_aggpxtrack.file', &$this->_tmp_img, &$params));
+$dispatcher->trigger('onContentAfterDisplay', ['com_aggpxtrack.file', &$this->_tmp_img, &$params]);

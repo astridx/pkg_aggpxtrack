@@ -30,7 +30,7 @@ class AggpxtrackController extends JControllerLegacy
 	 *
 	 * @since   1.5
 	 */
-	public function display($cacheable = false, $urlparams = array())
+	public function display($cacheable = false, $urlparams = [])
 	{
 		return parent::display();
 	}

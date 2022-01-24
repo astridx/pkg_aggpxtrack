@@ -55,21 +55,18 @@ JHtml::_('behavior.modal');
 
 // Include jQuery
 JHtml::_('jquery.framework');
-JHtml::_('script', 'media/mediafield-mootools.min.js', array('version' => 'auto', 'relative' => true, 'framework' => true));
+JHtml::_('script', 'media/mediafield-mootools.min.js', ['version' => 'auto', 'relative' => true, 'framework' => true]);
 
 // Tooltip for INPUT showing whole image path
-$options = array(
+$options = [
 	'onShow' => 'jMediaRefreshImgpathTip',
-);
+];
 
 JHtml::_('behavior.tooltip', '.hasTipImgpath', $options);
 
-if (!empty($class))
-{
+if (!empty($class)) {
 	$class .= ' hasTipImgpath';
-}
-else
-{
+} else {
 	$class = 'hasTipImgpath';
 }
 
@@ -91,8 +88,7 @@ echo '<div class="input-prepend input-append">';
 $showPreview = true;
 $showAsTooltip = false;
 
-switch ($preview)
-{
+switch ($preview) {
 	case 'no': // Deprecated parameter value
 	case 'false':
 	case 'none':
@@ -106,22 +102,18 @@ switch ($preview)
 	case 'tooltip':
 	default:
 		$showAsTooltip = true;
-		$options = array(
+		$options = [
 				'onShow' => 'jMediaRefreshPreviewTip',
-		);
+		];
 		JHtml::_('behavior.tooltip', '.hasTipPreview', $options);
 		break;
 }
 
 // Pre fill the contents of the popover
-if ($showPreview)
-{
-	if ($value && file_exists(JPATH_ROOT . '/' . $value))
-	{
+if ($showPreview) {
+	if ($value && file_exists(JPATH_ROOT . '/' . $value)) {
 		$src = JUri::root() . $value;
-	}
-	else
-	{
+	} else {
 		$src = '';
 	}
 
@@ -131,32 +123,29 @@ if ($showPreview)
 	$style .= ($width > 0) ? 'max-width:' . $width . 'px;' : '';
 	$style .= ($height > 0) ? 'max-height:' . $height . 'px;' : '';
 
-	$imgattr = array(
+	$imgattr = [
 		'id' => $id . '_preview',
 		'class' => 'media-preview',
 		'style' => $style,
-	);
+	];
 
 	$img = JHtml::_('image', $src, JText::_('JLIB_FORM_MEDIA_PREVIEW_ALT'), $imgattr);
 	$previewImg = '<div id="' . $id . '_preview_img"' . ($src ? '' : ' style="display:none"') . '>' . $img . '</div>';
 	$previewImgEmpty = '<div id="' . $id . '_preview_empty"' . ($src ? ' style="display:none"' : '') . '>'
 		. JText::_('JLIB_FORM_MEDIA_PREVIEW_EMPTY') . '</div>';
 
-	if ($showAsTooltip)
-	{
+	if ($showAsTooltip) {
 		echo '<div class="media-preview add-on">';
 		$tooltip = $previewImgEmpty . $previewImg;
-		$options = array(
+		$options = [
 			'title' => JText::_('JLIB_FORM_MEDIA_PREVIEW_SELECTED_IMAGE'),
 					'text' => '<span class="icon-eye" aria-hidden="true"></span>',
 					'class' => 'hasTipPreview'
-					);
+					];
 
 		echo JHtml::_('tooltip', $tooltip, $options);
 		echo '</div>';
-	}
-	else
-	{
+	} else {
 		echo '<div class="media-preview add-on" style="height:auto">';
 		echo ' ' . $previewImgEmpty;
 		echo ' ' . $previewImg;

@@ -28,7 +28,7 @@ class PlgFieldsAggpxtrack extends FieldsPlugin
 	 *
 	 * @since   1.5
 	 */
-	public function __construct(& $subject, $config)
+	public function __construct(&$subject, $config)
 	{
 		parent::__construct($subject, $config);
 		JFormHelper::addFieldPath(__DIR__ . '/field');
