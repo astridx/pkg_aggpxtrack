@@ -82,4 +82,24 @@
         <sha256>be833b246e7be2b49aae3fd4e45de69f9a8f64f2844111018eb036f49216210a</sha256>
         <sha384>d1a6fb18f32e90aad4ead28431e00fcd5ee59f0aca4e219851b97fefc0b0b8c4fa0aec1bcfca96a38895115c753ede04</sha384>
     </update>
+    <update>
+        <name>pkg_aggpxtrack</name>
+        <description>pkg_aggpxtrack</description>
+        <element>pkg_aggpxtrack</element>
+        <type>package</type>
+        <client>site</client>
+        <version>4.0.4</version>
+        <infourl title="aggpxtrack">https://github.com/astridx/pkg_aggpxtrack/blob/v4.0.4/README.md</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/astridx/pkg_aggpxtrack/releases/download/v4.0.4/pkg-aggpxtrack-4.0.4.zip</downloadurl>
+        </downloads>
+        <tags>
+            <tag>stable</tag>
+        </tags>
+        <maintainer>Astrid Günther</maintainer>
+        <maintainerurl>https://astrid-guenther.de</maintainerurl>
+        <targetplatform name="joomla" version="4.*"/>
+        <sha256>92e6e78842ac23b606ab28c01da1b8ea5528015e8e14e2de912059fe3685d3fb</sha256>
+        <sha384>1752443de46e05dd9e18a134075590f4fc33d862a33595a3c15629566110e55e1e7076e0cff2816f6901d1ffe51c949e</sha384>
+    </update>
 </updates>

@@ -22,7 +22,10 @@ if ($class) {
 	$class = ' class="' . htmlentities($class, ENT_COMPAT, 'UTF-8', true) . '"';
 }
 
-$value = (array) $field->value;
+$value_raw = $field->value;
+
+$value = (array) substr($value_raw, 0, strpos($value_raw, '#joomlaImage:'));
+
 $buffer = '';
 
 // Include skripts/styles to the header

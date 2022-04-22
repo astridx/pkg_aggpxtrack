@@ -15,4 +15,13 @@
 			<item>Add Geoportal France and delete Openstreetmap black and white map provider.</item>
 		</note>
 	</changelog>
+	<changelog>
+		<element>pkg_aggpxtrack</element>
+		<type>package</type>
+		<version>4.0.4</version>
+		<note>
+			<item>Change field type radio to list.</item>
+			<item>Correct layout, delete '#JoomlaImage' trail.</item>
+		</note>
+	</changelog>
 </changelogs>
