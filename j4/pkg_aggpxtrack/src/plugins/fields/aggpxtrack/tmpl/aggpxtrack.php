@@ -24,7 +24,11 @@ if ($class) {
 
 $value_raw = $field->value;
 
-$value = (array) substr($value_raw, 0, strpos($value_raw, '#joomlaImage:'));
+$value = (array) $value_raw;
+
+if (str_contains($value_raw, '#joomlaImage:')) {
+	$value = (array) substr($value_raw, 0, strpos($value_raw, '#joomlaImage:'));
+}
 
 $buffer = '';
 
