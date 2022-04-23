@@ -28,7 +28,7 @@ class AggpxtrackViewAggpxtrack extends JViewLegacy
 	 */
 	public function display($tpl = null)
 	{
-		$url = JUri::base() . $url;
+		$url = JUri::base();
 		header('Location: ' . $url . 'index.php?option=com_config');
 	}
 }

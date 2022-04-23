@@ -24,4 +24,13 @@
 			<item>Correct layout, delete '#JoomlaImage' trail.</item>
 		</note>
 	</changelog>
+	<changelog>
+		<element>pkg_aggpxtrack</element>
+		<type>package</type>
+		<version>4.0.5</version>
+		<note>
+			<item>Fix (not needed anymore) component.</item>
+			<item>.</item>
+		</note>
+	</changelog>
 </changelogs>

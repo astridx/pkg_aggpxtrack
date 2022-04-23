@@ -9,7 +9,6 @@
  */
 
 defined('_JEXEC') or die;
-JHtml::_('behavior.tabstate');
 
 $params = JComponentHelper::getParams('com_aggpxtrack');
 
