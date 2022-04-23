@@ -30,7 +30,7 @@
 		<version>4.0.5</version>
 		<note>
 			<item>Fix (not needed anymore) component.</item>
-			<item>.</item>
+			<item>Make it posible to show elevation outside the map.</item>
 		</note>
 	</changelog>
 </changelogs>

@@ -381,9 +381,14 @@ document.addEventListener('DOMContentLoaded', function () {
 			{
 				elevantioncontrol_width = document.getElementById('map' + unique).offsetWidth * 0.25;
 			}
+			var position = elevantioncontrol_position;
+			if (elevantioncontrol_position === "above" || elevantioncontrol_position === "under")
+			{
+				position = "topright";
+			} 
 
 			window['aggpx_elevation' + unique] = L.control.elevation({
-				position: elevantioncontrol_position,
+				position: position,
 				mapid: '#map' + unique,
 				theme: elevantioncontrol_theme, //default: lime-theme
 				width: elevantioncontrol_width,
@@ -495,6 +500,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		}).addTo(window['mymap' + unique]);
 
+		// Elevation außerhalb von Karte schieben
+		if (elevantioncontrol_position === "above")
+		{
+			var thismap = document.querySelector('#map' + unique);
+			var parent = document.getElementById("aggpxtrackabove" + unique);
+			var elevation = thismap.querySelector(".elevation");
+			setParent(elevation, parent);
+			function setParent(el, newParent) {
+				if (el)
+					newParent.appendChild(el);
+			}
+		} 
+		if (elevantioncontrol_position === "under")
+		{
+			var thismap = document.querySelector('#map' + unique);
+			var parent = document.getElementById("aggpxtrackunder" + unique);
+			var elevation = thismap.querySelector(".elevation");
+			setParent(elevation, parent);
+			function setParent(el, newParent) {
+				if (el)
+					newParent.appendChild(el);
+			}
+		} 
 
 
 		if (show_easyprint === "1")

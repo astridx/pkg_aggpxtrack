@@ -278,6 +278,8 @@
 				<option value="bottomright">PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_POSITION_BOTTOMRIGHT</option>
 				<option value="topleft">PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_POSITION_TOPLEFT</option>
 				<option value="topright">PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_POSITION_TOPRIGHT</option>
+				<option value="under">PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_POSITION_UNDER</option>
+				<option value="above">PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_POSITION_ABOVE</option>
 			</field>
 
 			<field type="list" name="elevantioncontrol_theme" default="elevation-lime" label="PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_THEME_LABEL" description="PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_THEME_DESC" showon="show_elevantioncontrol:1" validate="options">

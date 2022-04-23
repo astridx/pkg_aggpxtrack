@@ -112,6 +112,7 @@ if ($fieldParams->get('show_inactivefirst', 0) && !$jinput->get('aggpxtrackshow'
 		$defaultArray = [];
 
 		$skriptstring = "";
+		$skriptstring .= "<div class='aggpxtrackabove' id='aggpxtrackabove" . $unique . "'></div><br>";
 		$skriptstring .= "<div id='map" . $unique . "'";
 		$skriptstring .= " class = 'leafletmap'";
 		$skriptstring .= " style='z-index:1;height: " . $fieldParams->get('map_height', '400') . "px;'";
@@ -205,6 +206,7 @@ if ($fieldParams->get('show_inactivefirst', 0) && !$jinput->get('aggpxtrackshow'
 
 		$skriptstring .= " %s>";
 		$skriptstring .= "</div>";
+		$skriptstring .= "<div class='aggpxtrackunder' id='aggpxtrackunder" . $unique . "'></div>";
 
 		JText::script('PLG_AGGPXTRACK_CURRENTPOSITION_STRING');
 
