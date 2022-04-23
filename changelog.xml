@@ -33,4 +33,12 @@
 			<item>Make it posible to show elevation outside the map.</item>
 		</note>
 	</changelog>
+	<changelog>
+		<element>pkg_aggpxtrack</element>
+		<type>package</type>
+		<version>4.0.6</version>
+		<note>
+			<item>Tiding up language files</item>
+		</note>
+	</changelog>
 </changelogs>
