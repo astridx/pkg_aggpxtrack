@@ -95,6 +95,11 @@ if ($fieldParams->get('show_inactivefirst', 0) && !$jinput->get('aggpxtrackshow'
 		$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/GoogleMutant/Leaflet.GoogleMutant.js');
 	}
 
+	if ($fieldParams->get('addlayertree', '0') == 1) {
+		$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/layerstree/L.Control.Layers.Tree.js');
+		$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/layerstree/L.Control.Layers.Tree.css');
+	}
+	
 	$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/js/aggpxtrack.js');
 
 	foreach ($value as $path) {
@@ -119,6 +124,7 @@ if ($fieldParams->get('show_inactivefirst', 0) && !$jinput->get('aggpxtrackshow'
 		$skriptstring .= " data-unique='" . $unique . "' ";
 		$skriptstring .= " data-scrollwheelzoom='" . $fieldParams->get('scrollwheelzoom', '1') . "' ";
 		$skriptstring .= " data-maptype='" . $fieldParams->get('maptype', 'osm') . "' ";
+		$skriptstring .= " data-layertree='" . $fieldParams->get('addlayertree', '0') . "' ";
 
 		$skriptstring .= " data-thunderforestkey='" . $fieldParams->get('thunderforestkey', '') . "' ";
 		$skriptstring .= " data-thunderforestmaptype='" . $fieldParams->get('thunderforestmaptype', 'cycle') . "' ";

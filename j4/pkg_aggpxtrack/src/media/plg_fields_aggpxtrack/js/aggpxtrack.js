@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		var unique = element.getAttribute('data-unique');
 		var scrollwheelzoom = element.getAttribute('data-scrollwheelzoom');
 		var maptype = element.getAttribute('data-maptype');
+		var layertree = element.getAttribute('data-layertree');
+
 		var thunderforestkey = element.getAttribute('data-thunderforestkey');
 		var mapboxkey = element.getAttribute('data-mapboxkey');
 		var geoportailfrancekey = element.getAttribute('data-geoportailfrancekey');
@@ -204,37 +206,42 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 
 		// Load the correct map
+		// Base layer url
+		var tileLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			maxZoom: 18,
+			attribution: '&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a>'
+		});
 		if (maptype === "osm")
 		{
-			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			tileLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				maxZoom: 18,
 				attribution: '&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>'
-			}).addTo(window['mymap' + unique]);
+			});
 		} else if (maptype === "osm_bw")
 		{
-			L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+			tileLayer = L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
 				maxZoom: 18,
 				attribution: '&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>'
-			}).addTo(window['mymap' + unique]);
+			});
 		} else if (maptype === 'thunderforest')
 		{
-			L.tileLayer('https://{s}.tile.thunderforest.com/' + thunderforestmaptype + '/{z}/{x}/{y}.png?apikey={apikey}', {
+			tileLayer = L.tileLayer('https://{s}.tile.thunderforest.com/' + thunderforestmaptype + '/{z}/{x}/{y}.png?apikey={apikey}', {
 				maxZoom: 22,
 				apikey: thunderforestkey,
 				attribution: '&copy; <a href=\"http://www.thunderforest.com/\">Thunderforest</a>, &copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>'
-			}).addTo(window['mymap' + unique]);
+			});
 		} else if (maptype === 'mapbox')
 		{
-			L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxkey, {
+			tileLayer = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxkey, {
 				maxZoom: 18,
 				attribution: 'Map data &copy; <a href=\"http://openstreetmap.org\">OpenStreetMap</a> contributors, ' +
 						'<a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, ' +
 						'Imagery © <a href=\"http://mapbox.com\">Mapbox</a>',
 				id: 'mapbox.streets'
-			}).addTo(window['mymap' + unique]);
+			});
 		} else if (maptype === 'geoportailfrance')
 		{
-			L.tileLayer('https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET=PM&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}', {
+			tileLayer = L.tileLayer('https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET=PM&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}', {
 				attribution: '<a target="_blank" href="https://www.geoportail.gouv.fr/">Geoportail France</a>',
 				bounds: [[-75, -180], [81, 180]],
 				minZoom: 2,
@@ -245,25 +252,40 @@ document.addEventListener('DOMContentLoaded', function () {
 				format: 'image/png',
 				style: 'normal',
 				variant: 'GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2'
-			}).addTo(window['mymap' + unique]);
+			});
 		} else if (maptype === 'opentopomap')
 		{
-			L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+			tileLayer = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
 				maxZoom: 17,
 				attribution: 'Map data: &copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>, <a href=\"http://viewfinderpanoramas.org\">SRTM</a> | Map style: &copy; <a href=\"https://opentopomap.org\">OpenTopoMap</a> (<a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">CC-BY-SA</a>)'
-			}).addTo(window['mymap' + unique]);
+			});
 		} else if (maptype === 'google')
 		{
-			L.gridLayer.googleMutant({
+			tileLayer = L.gridLayer.googleMutant({
 				type: googlemapstype,
-			}).addTo(window['mymap' + unique]);
+			});
 		} else
 		{
-			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			tileLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				maxZoom: 18,
 				attribution: ''
-			}).addTo(window['mymap' + unique]);
+			});
 		}
+		tileLayer.addTo(window['mymap' + unique]);
+
+		if (layertree == '1') {
+			var tileLayer2 = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+				maxZoom: 16,
+				attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
+				id: ''
+			});
+			var baseMaps = {
+				"Map": tileLayer,
+				"Satellit": tileLayer2
+			};
+			L.control.layers(baseMaps).addTo(window['mymap' + unique]);
+		}
+
 
 		// KML Overlay
 		if (show_omnivore === "1")

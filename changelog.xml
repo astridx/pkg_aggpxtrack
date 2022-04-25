@@ -39,6 +39,9 @@
 		<version>4.0.6</version>
 		<note>
 			<item>Tiding up language files</item>
+			<item>Add possiblility for layer control with satellite in frontend</item>
+			<item>Make separators more visible in the backend</item>
+			<item>Correct Panel Layer</item>
 		</note>
 	</changelog>
 </changelogs>

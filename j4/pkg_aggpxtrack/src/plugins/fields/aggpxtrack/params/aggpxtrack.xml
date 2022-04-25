@@ -9,7 +9,7 @@
 			</field>
 			<field name="image_class" type="textarea" label="PLG_FIELDS_AGGPXTRACK_PARAMS_IMAGE_CLASS_LABEL" description="PLG_FIELDS_AGGPXTRACK_PARAMS_IMAGE_CLASS_DESC" size="40" />
 
-			<field type="spacer" name="spacerpolylinecolor" hr="true" />
+			<field type="spacer" name="spacerpolylinecolor" hr="true" class="p-2 m-2" />
 
 			<field type="list" name="showelements" default="'track', 'route', 'waypoint'" label="PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_SHOWELEMENTS_LABEL" description="PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_SHOWELEMENTS_DESC" validate="options">
 				<option value="track,route,waypoint">track, route and waypoints</option>
@@ -113,7 +113,7 @@
 
 			<field name="specialwaypoints" type="subform" formsource="plugins/fields/aggpxtrack/forms/specialwaypoint.xml" multiple="true" label="PLG_FIELDS_AGGPXTRACK_PARAMS_SPECIALWAYPOINT_SUBFORM_LABEL" min= "1" max= "20" description="PLG_FIELDS_AGGPXTRACK_PARAMS_SPECIALWAYPOINT_SUBFORM_DESC" layout="joomla.form.field.subform.repeatable" showon="custom_icons:1" />
 
-			<field type="spacer" name="downloadparams" hr="true" />
+			<field type="spacer" name="downloadparams" hr="true" class="p-2 m-2" />
 
 			<field name="show_downloadlink" type="list" label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_DOWNLOAD_LABEL" description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_DOWNLOAD_DESC" default="0">
 				<option value="0">JNO</option>
@@ -123,7 +123,7 @@
 
 			<field name="downloadbuttoncolor" type="color" default="#cadea5" label="PLG_FIELDS_AGGPXTRACK_PARAMS_BUTTONCOLOR_LABEL" description="PLG_FIELDS_AGGPXTRACK_PARAMS_BUTTONCOLOR_DESC" showon="show_downloadlink:button" />
 
-			<field type="spacer" name="mapparams" hr="true" />
+			<field type="spacer" name="mapparams" hr="true" class="p-2 m-2" />
 
 			<field type="integer" name="map_height" label="PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_HEIGHT_LABEL" description="PLG_FIELDS_AGGPXTRACK_PARAMS__CONTROL_HEIGHT_DESC" default="400" first="0" last="1000" step="1" />
 			<field name="scrollwheelzoom" type="list" label="PLG_FIELDS_AGGPXTRACK_PARAMS_SCOLLWHEELZOOM_LABEL" description="PLG_FIELDS_AGGPXTRACK_PARAMS_SCOLLWHEELZOOM_DESC" default="1">
@@ -137,6 +137,11 @@
 				<option value="mapbox">Mapbox</option>
 				<option value="google">GoogleMaps</option>
 				<option value="geoportailfrance">GeoportailFrance</option>
+			</field>
+
+			<field type="list" name="addlayertree" default="0" label="PLG_FIELDS_AGGPXTRACK_ADDLAYERTREE" description="PLG_FIELDS_AGGPXTRACK_ADDLAYERTREE_DESC">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
 			</field>
 
 			<field name="geoportailfrancekey" type="text" default="choisirgeoportail" label="PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_GEOPORTAILFRAMCEKEY_LABEL" description="PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_GEOPORTAILFRAMCEKEY_DESC" size="40" showon="maptype:geoportailfrance" />
@@ -165,14 +170,14 @@
 				<option value="terrain">terrain</option>
 				<option value="hybrid">hybrid</option>
 			</field>
-			<field type="spacer" name="aggpxscale" hr="true" />
+			<field type="spacer" name="aggpxscale" hr="true" class="p-2 m-2" />
 
 			<field type="checkboxes" name="scale" label="PLG_FIELDS_AGGPXTRACK_PARAMS_SCALE" description="PLG_FIELDS_AGGPXTRACK_PARAMS_SCALE_DESC">
 				<option value="metric">PLG_FIELDS_AGGPXTRACK_PARAMS_METRIC</option>
 				<option value="imperial">PLG_FIELDS_AGGPXTRACK_PARAMS_IMPERIAL</option>
 			</field>
 
-			<field type="spacer" name="gpxparams" hr="true" />
+			<field type="spacer" name="gpxparams" hr="true" class="p-2 m-2" />
 
 			<field type="list" name="showinfo" default="no" label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOWINFO_LABEL" description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOWINFO_DESC" validate="options">
 				<option value="no">JNO</option>
@@ -266,7 +271,7 @@
 				<option value="0">JHIDE</option>
 			</field>
 
-			<field type="spacer" name="elevationcontrol" hr="true" />
+			<field type="spacer" name="elevationcontrol" hr="true" class="p-2 m-2" />
 
 			<field name="show_elevantioncontrol" type="list" label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_ELEVATIONCONTROL_LABEL" description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_ELEVATIONCONTROL_DESC" default="0">
 				<option value="1">JSHOW</option>
@@ -335,7 +340,7 @@
 				<option value="false">JNO</option>
 			</field>
 
-			<field type="spacer" name="fullscreenparams" hr="true" />
+			<field type="spacer" name="fullscreenparams" hr="true" class="p-2 m-2" />
 
 			<field name="show_fullscreencontrol" type="list" label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_FULLSCREEN_LABEL" description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_FULLSCREEN_DESC" default="0">
 				<option value="1">JYES</option>
@@ -348,7 +353,7 @@
 				<option value="topleft">PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_POSITION_TOPLEFT</option>
 				<option value="topright">PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_POSITION_TOPRIGHT</option>
 			</field>
-			<field type="spacer" name="currentposition" hr="true" />
+			<field type="spacer" name="currentposition" hr="true" class="p-2 m-2" />
 
 			<field name="show_currentposition" type="list" label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_CURRENTPOSITION_LABEL" description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_CURRENTPOSITION_DESC" default="0">
 				<option value="1">JYES</option>
@@ -384,7 +389,7 @@
 				<option value="topright">PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_POSITION_TOPRIGHT</option>
 			</field>
 
-			<field type="spacer" name="omnivore" hr="true" />
+			<field type="spacer" name="omnivore" hr="true" class="p-2 m-2" />
 
 			<field name="show_omnivore" type="list" label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_OMNIVORE_LABEL" description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_OMNIVORE_DESC" default="0">
 				<option value="1">JSHOW</option>
@@ -418,7 +423,7 @@
 				<option value="0">JNO</option>
 			</field>
 
-			<field type="spacer" name="kilometerpointsspacer" hr="true" />
+			<field type="spacer" name="kilometerpointsspacer" hr="true" class="p-2 m-2" />
 
 			<field name="show_kilometer_points" type="list" label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_KILOMETERPOINTS_LABEL" description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_KILOMETERPOINTS_DESC" default="0">
 				<option value="1">JSHOW</option>
@@ -433,7 +438,7 @@
 
 			<field type="integer" name="kilometer_point_radius" label="PLG_FIELDS_AGGPXTRACK_PARAMS_KILOMETERPOINTRADIUS_LABEL" description="PLG_FIELDS_AGGPXTRACK_PARAMS_KILOMETERPOINTRADIUS_DESC" default="10" first="1" last="20" step="1" showon="show_kilometer_points:1" />
 
-			<field type="spacer" name="easyPrint" hr="true" />
+			<field type="spacer" name="easyPrint" hr="true" class="p-2 m-2" />
 
 			<field name="show_easyprint" type="list" label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_EASYPRINT_LABEL" description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_EASYPRINT_DESC" default="0">
 				<option value="1">JSHOW</option>
@@ -445,20 +450,21 @@
 				<option value="topleft">PLG_FIELDS_AGGPXTRACK_PARAMS_CONTROL_POSITION_TOPLEFT</option>
 			</field>
 
-			<field type="spacer" name="panelLayersSpacer" hr="true" />
+			<field type="spacer" name="panelLayersSpacer" hr="true" class="p-2 m-2" />
 
 			<field name="show_panelLayers" type="list" label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_PANELLAYERS_LABEL" description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_PANELLAYERS_DESC" default="0">
 				<option value="1">JSHOW</option>
 				<option value="0">JHIDE</option>
 			</field>
-			<field name="panelLayers" type="subform" label="PLG_FIELDS_AGGPXTRACK_PARAMS_PANELLAYERS_LABEL" description="PLG_FIELDS_AGGPXTRACK_PARAMS_PANELLAYERS_DESC" layout="joomla.form.field.subform.repeatable-table" icon="list" multiple="true" showon="show_panelLayers:1" validate="options">
-				<form hidden="true" name="list_templates_modal" repeat="true">
+			<field name="panelLayers" type="subform" label="PLG_FIELDS_AGGPXTRACK_PARAMS_PANELLAYERS_LABEL" description="PLG_FIELDS_AGGPXTRACK_PARAMS_PANELLAYERS_DESC" layout="joomla.form.field.subform.repeatable-table" multiple="true" showon="show_panelLayers:1">
+				<form>
 					<field name="name" type="text" description="PLG_FIELDS_AGGPXTRACK_PARAMS_PANELLAYERS_NAME_DESC" default="Openstreetmap" label="PLG_FIELDS_AGGPXTRACK_PARAMS_PANELLAYERS_NAME_LABEL" size="30" />
 
 					<field name="value" type="text" description="PLG_FIELDS_AGGPXTRACK_PARAMS_PANELLAYERS_LAYER_DESC" default="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" label="PLG_FIELDS_AGGPXTRACK_PARAMS_PANELLAYERS_LAYER_LABEL" size="30" />
 				</form>
 			</field>
-			<field type="spacer" name="panelHideButton" hr="true" />
+
+			<field type="spacer" name="panelHideButton" hr="true" class="p-2 m-2" />
 
 			<field name="show_inactivefirst" type="list" label="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_INACTIVEFIRST_LABEL" description="PLG_FIELDS_AGGPXTRACK_PARAMS_SHOW_INACTIVEFIRST_DESC" default="0">
 				<option value="1">JYES</option>
