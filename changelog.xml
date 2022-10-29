@@ -44,4 +44,12 @@
 			<item>Correct Panel Layer</item>
 		</note>
 	</changelog>
+	<changelog>
+		<element>pkg_aggpxtrack</element>
+		<type>package</type>
+		<version>5.0.0</version>
+		<note>
+			<item>Use Textfield instead of Mediafield</item>
+		</note>
+	</changelog>
 </changelogs>

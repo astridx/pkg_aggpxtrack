@@ -2,12 +2,24 @@
 <form>
 	<fields name="fieldparams" addfieldpath="plugins/fields/aggpxtrack/field">
 		<fieldset name="fieldparams">
-			<field name="directory" type="folderlist" label="PLG_FIELDS_AGGPXTRACK_PARAMS_DIRECTORY_LABEL" description="PLG_FIELDS_AGGPXTRACK_PARAMS_DIRECTORY_DESC" directory="images" hide_none="true" recursive="true" />
-
-			<field name="preview" type="hidden" default="false" label="PLG_FIELDS_AGGPXTRACK_PARAMS_PREVIEW_LABEL" description="PLG_FIELDS_AGGPXTRACK_PARAMS_PREVIEW_DESC">
-				<option value="false">JNO</option>
+			<field
+				name="filter"
+				type="list"
+				label="PLG_FIELDS_TEXT_PARAMS_FILTER_LABEL"
+				class="list"
+				validate="options"
+				>
+				<option value="0">JNO</option>
 			</field>
-			<field name="image_class" type="textarea" label="PLG_FIELDS_AGGPXTRACK_PARAMS_IMAGE_CLASS_LABEL" description="PLG_FIELDS_AGGPXTRACK_PARAMS_IMAGE_CLASS_DESC" size="40" />
+
+			<field
+				name="maxlength"
+				type="number"
+				label="PLG_FIELDS_TEXT_PARAMS_MAXLENGTH_LABEL"
+				filter="integer"
+				default="300"
+			/>
+
 
 			<field type="spacer" name="spacerpolylinecolor" hr="true" class="p-2 m-2" />
 
