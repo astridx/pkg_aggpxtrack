@@ -7,7 +7,7 @@
     "node": "14.x"
   },
   "dependencies": {
-    "d3": "^6.7.0",
+    "d3": "^7.6.1",
     "font-awesome": "^4.7.0",
     "leaflet": "^1.7.1",
     "leaflet.elevation": "^0.0.3",
