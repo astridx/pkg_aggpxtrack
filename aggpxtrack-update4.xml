@@ -159,5 +159,7 @@
         <maintainer>Astrid Günther</maintainer>
         <maintainerurl>https://astrid-guenther.de</maintainerurl>
         <targetplatform name="joomla" version="4.*"/>
+        <sha256>0a54c9ccfe1454c99aaa3572296f5368f670912cb89884b8fc0d10f7deda87f4</sha256>
+        <sha384>b71a985084b091972f944f64b9c1b9aecd5349f5afaf94d111b0454c1d2736874d3b6c6cb6c979b66ab15ca4cf7715cd</sha384>
     </update>    
 </updates>
