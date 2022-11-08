@@ -122,4 +122,42 @@
         <sha256>ed8c3dd2f80f279758d4753e61950c3c0d255da83b319c4fc6535ca7595c7bbf</sha256>
         <sha384>830321c8a8e4907b23de751f2d220bbc36e69004098192a57943402a81a2dba8261f6687abef8060f6dc3695fdcdd39f</sha384>
     </update>
+    <update>
+        <name>pkg_aggpxtrack</name>
+        <description>pkg_aggpxtrack</description>
+        <element>pkg_aggpxtrack</element>
+        <type>package</type>
+        <client>site</client>
+        <version>5.0.0</version>
+        <infourl title="aggpxtrack">https://github.com/astridx/pkg_aggpxtrack/blob/v5.0.0/README.md</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/astridx/pkg_aggpxtrack/releases/download/v5.0.0/pkg-aggpxtrack-5.0.0.zip</downloadurl>
+        </downloads>
+        <tags>
+            <tag>stable</tag>
+        </tags>
+        <maintainer>Astrid Günther</maintainer>
+        <maintainerurl>https://astrid-guenther.de</maintainerurl>
+        <targetplatform name="joomla" version="4.*"/>
+        <sha256>e0d19fa728f8806e9e61ce8c85377961036611167eeb3615e5ba90faf1e7ba51</sha256>
+        <sha384>546671c3c59b2c268f017ed95c9c78e87bb6d73a5d6a1b72a2b798359a93d4e34ce0f847edb4d15111324c9f9d8adf2d</sha384>
+    </update>
+    <update>
+        <name>pkg_aggpxtrack</name>
+        <description>pkg_aggpxtrack</description>
+        <element>pkg_aggpxtrack</element>
+        <type>package</type>
+        <client>site</client>
+        <version>5.0.1</version>
+        <infourl title="aggpxtrack">https://github.com/astridx/pkg_aggpxtrack/blob/v5.0.1/README.md</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/astridx/pkg_aggpxtrack/releases/download/v5.0.1/pkg-aggpxtrack-5.0.1.zip</downloadurl>
+        </downloads>
+        <tags>
+            <tag>stable</tag>
+        </tags>
+        <maintainer>Astrid Günther</maintainer>
+        <maintainerurl>https://astrid-guenther.de</maintainerurl>
+        <targetplatform name="joomla" version="4.*"/>
+    </update>    
 </updates>
