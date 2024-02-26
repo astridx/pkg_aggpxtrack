@@ -11,6 +11,7 @@
 defined('JPATH_PLATFORM') or die;
 
 use Joomla\CMS\Form\Field\MediaField;
+use Joomla\CMS\Factory;
 
 /**
  * Provides a modal media selector including upload mechanism
@@ -44,7 +45,7 @@ class JFormFieldAggpxtrack extends MediaField
 	 */
 	protected function getLayoutPaths()
 	{
-		$template = JFactory::getApplication()->getTemplate();
+		$template = Factory::getApplication()->getTemplate();
 
 		return [
 			JPATH_ADMINISTRATOR . '/templates/' . $template . '/html/layouts/plugins/system/stats',
