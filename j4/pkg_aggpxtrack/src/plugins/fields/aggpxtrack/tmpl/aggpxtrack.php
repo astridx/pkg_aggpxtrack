@@ -4,13 +4,17 @@
  * @package     Joomla.Site
  * @subpackage  pkg_aggpxtrack
  *
- * @copyright   Copyright (C) 2005 - 2018 Astrid Günther, Inc. All rights reserved.
+ * @copyright   Copyright (C) 2005 - 2018 Astrid GÃ¼nther, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later;
  * @link        astrid-guenther.de
  */
 defined('_JEXEC') or die;
-
-JHtml::_('bootstrap.framework');
+use Joomla\CMS\HTML\HTMLHelper;
+use Joomla\CMS\Factory;
+use Joomla\CMS\Uri\Uri;
+use Joomla\CMS\Language\Text;
+//JHtml::_('bootstrap.framework');
+HTMLHelper::_('bootstrap.framework');
 
 if ($field->value == '') {
 	return;
@@ -33,74 +37,74 @@ if (str_contains($value_raw, '#joomlaImage:')) {
 $buffer = '';
 
 // Include skripts/styles to the header
-$document = JFactory::getDocument();
-$jinput = JFactory::getApplication()->input;
+$document = Factory::getDocument();
+$jinput = Factory::getApplication()->input;
 
 if ($fieldParams->get('show_inactivefirst', 0) && !$jinput->get('aggpxtrackshow', '0')) {
-	$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/js/site.js');
-	echo '<a class="aggpxtrackactivate btn btn-primary">' . JText::_('PLG_AGGPXTRACK_INHALT_AKTIVIEREN') . '</a>';
+	$document->addScript(URI::root(true) . '/media/plg_fields_aggpxtrack/js/site.js');
+	echo '<a class="aggpxtrackactivate btn btn-primary">' . Text::_('PLG_AGGPXTRACK_INHALT_AKTIVIEREN') . '</a>';
 } else {
 	if ($fieldParams->get('show_inactivefirst', 0)) {
-		$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/js/site.js');
-		echo '<a class="aggpxtrackdeactivate btn btn-primary">' . JText::_('PLG_AGGPXTRACK_INHALT_DEAKTIVIEREN') . '</a>';
+		$document->addScript(URI::root(true) . '/media/plg_fields_aggpxtrack/js/site.js');
+		echo '<a class="aggpxtrackdeactivate btn btn-primary">' . Text::_('PLG_AGGPXTRACK_INHALT_DEAKTIVIEREN') . '</a>';
 	}
-	$document->addStyleSheet(JURI::root(true) . '/media/plg_fields_aggpxtrack/leaflet/leaflet.css');
-	$document->addStyleSheet(JURI::root(true) . '/media/plg_fields_aggpxtrack/css/style.css');
-	$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/leaflet/leaflet.js');
-	$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/leaflet-gpx/gpx.js');
+	$document->addStyleSheet(URI::root(true) . '/media/plg_fields_aggpxtrack/leaflet/leaflet.css');
+	$document->addStyleSheet(URI::root(true) . '/media/plg_fields_aggpxtrack/css/style.css');
+	$document->addScript(URI::root(true) . '/media/plg_fields_aggpxtrack/leaflet/leaflet.js');
+	$document->addScript(URI::root(true) . '/media/plg_fields_aggpxtrack/leaflet-gpx/gpx.js');
 
 	$stylecolorlight = $fieldParams->get('stylecolorlight', '#cadea5');
 	$stylecolordark = $fieldParams->get('stylecolordark', '#86b827');
 
 	if ($fieldParams->get('show_elevantioncontrol', 0)) {
-		$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/d3/d3.v3.min.js');
-		$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/Leaflet.Elevation-master/leaflet.elevation-0.0.4.src.js');
-		$document->addStyleSheet(JURI::root(true) . '/media/plg_fields_aggpxtrack/Leaflet.Elevation-master/leaflet.elevation-0.0.4.css');
+		$document->addScript(URI::root(true) . '/media/plg_fields_aggpxtrack/d3/d3.v3.min.js');
+		$document->addScript(URI::root(true) . '/media/plg_fields_aggpxtrack/Leaflet.Elevation-master/leaflet.elevation-0.0.4.src.js');
+		$document->addStyleSheet(URI::root(true) . '/media/plg_fields_aggpxtrack/Leaflet.Elevation-master/leaflet.elevation-0.0.4.css');
 	}
 
 	if ($fieldParams->get('show_fullscreencontrol', 0)) {
-		$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/Leaflet.fullscreen/Leaflet.fullscreen.js');
-		$document->addStyleSheet(JURI::root(true) . '/media/plg_fields_aggpxtrack/Leaflet.fullscreen/leaflet.fullscreen.css');
+		$document->addScript(URI::root(true) . '/media/plg_fields_aggpxtrack/Leaflet.fullscreen/Leaflet.fullscreen.js');
+		$document->addStyleSheet(URI::root(true) . '/media/plg_fields_aggpxtrack/Leaflet.fullscreen/leaflet.fullscreen.css');
 	}
 
 	if ($fieldParams->get('show_currentposition', 0)) {
-		$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/L.Control.Locate/L.Control.Locate.min.js');
-		$document->addStyleSheet(JURI::root(true) . '/media/plg_fields_aggpxtrack/L.Control.Locate/L.Control.Locate.css');
+		$document->addScript(URI::root(true) . '/media/plg_fields_aggpxtrack/L.Control.Locate/L.Control.Locate.min.js');
+		$document->addStyleSheet(URI::root(true) . '/media/plg_fields_aggpxtrack/L.Control.Locate/L.Control.Locate.css');
 	}
 
 	if ($fieldParams->get('show_currentposition', 0) || $fieldParams->get('custom_icons', 0) || $fieldParams->get('show_omnivore', 0)) {
-		$document->addStyleSheet(JURI::root(true) . '/media/plg_fields_aggpxtrack/L.Control.Locate/font-awesome.min.css');
+		$document->addStyleSheet(URI::root(true) . '/media/plg_fields_aggpxtrack/L.Control.Locate/font-awesome.min.css');
 	}
 
 	if ($fieldParams->get('custom_icons', 0) || $fieldParams->get('show_omnivore', 0)) {
-		$document->addStyleSheet(JURI::root(true) . '/media/plg_fields_aggpxtrack/Leaflet.awesome-markers/leaflet.awesome-markers.css');
-		$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/Leaflet.awesome-markers/leaflet.awesome-markers.js');
+		$document->addStyleSheet(URI::root(true) . '/media/plg_fields_aggpxtrack/Leaflet.awesome-markers/leaflet.awesome-markers.css');
+		$document->addScript(URI::root(true) . '/media/plg_fields_aggpxtrack/Leaflet.awesome-markers/leaflet.awesome-markers.js');
 	}
 
 	if ($fieldParams->get('show_omnivore', 0)) {
-		$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/leaflet-omnivore/leaflet-omnivore.js');
+		$document->addScript(URI::root(true) . '/media/plg_fields_aggpxtrack/leaflet-omnivore/leaflet-omnivore.js');
 	}
 
 	if ($fieldParams->get('easyprint_position', 0)) {
-		$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/leaflet-easyPrint/bundle.js');
+		$document->addScript(URI::root(true) . '/media/plg_fields_aggpxtrack/leaflet-easyPrint/bundle.js');
 	}
 
 	if ($fieldParams->get('show_panelLayers', 0)) {
-		$document->addStyleSheet(JURI::root(true) . '/media/plg_fields_aggpxtrack/leaflet-panel-layers/leaflet-panel-layers.min.css');
-		$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/leaflet-panel-layers/leaflet-panel-layers.min.js');
+		$document->addStyleSheet(URI::root(true) . '/media/plg_fields_aggpxtrack/leaflet-panel-layers/leaflet-panel-layers.min.css');
+		$document->addScript(URI::root(true) . '/media/plg_fields_aggpxtrack/leaflet-panel-layers/leaflet-panel-layers.min.js');
 	}
 
 	if ($fieldParams->get('maptype', 'osm') == 'google') {
 		$document->addScript('https://maps.googleapis.com/maps/api/js?key=' . $fieldParams->get('googlekey', ''));
-		$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/GoogleMutant/Leaflet.GoogleMutant.js');
+		$document->addScript(URI::root(true) . '/media/plg_fields_aggpxtrack/GoogleMutant/Leaflet.GoogleMutant.js');
 	}
 
 	if ($fieldParams->get('addlayertree', '0') == 1) {
-		$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/layerstree/L.Control.Layers.Tree.js');
-		$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/layerstree/L.Control.Layers.Tree.css');
+		$document->addScript(URI::root(true) . '/media/plg_fields_aggpxtrack/layerstree/L.Control.Layers.Tree.js');
+		$document->addScript(URI::root(true) . '/media/plg_fields_aggpxtrack/layerstree/L.Control.Layers.Tree.css');
 	}
 	
-	$document->addScript(JURI::root(true) . '/media/plg_fields_aggpxtrack/js/aggpxtrack.js');
+	$document->addScript(URI::root(true) . '/media/plg_fields_aggpxtrack/js/aggpxtrack.js');
 
 	foreach ($value as $path) {
 		if (!$path) {
@@ -108,11 +112,11 @@ if ($fieldParams->get('show_inactivefirst', 0) && !$jinput->get('aggpxtrackshow'
 		}
 
 		$unique = $field->id . '_' . uniqid();
-		$path = JURI::base() . $path;
-		$startIconUrl = JURI::base() . 'media/plg_fields_aggpxtrack/leaflet-gpx/pin-icon-start.png';
-		$endIconUrl = JURI::base() . 'media/plg_fields_aggpxtrack/leaflet-gpx/pin-icon-end.png';
-		$shadowUrl = JURI::base() . 'media/plg_fields_aggpxtrack/leaflet-gpx/pin-shadow.png';
-		$wptIconUrls = JURI::base() . 'media/plg_fields_aggpxtrack/leaflet-gpx/pin-icon-wpt.png';
+		$path = URI::base() . $path;
+		$startIconUrl = URI::base() . 'media/plg_fields_aggpxtrack/leaflet-gpx/pin-icon-start.png';
+		$endIconUrl = URI::base() . 'media/plg_fields_aggpxtrack/leaflet-gpx/pin-icon-end.png';
+		$shadowUrl = URI::base() . 'media/plg_fields_aggpxtrack/leaflet-gpx/pin-shadow.png';
+		$wptIconUrls = URI::base() . 'media/plg_fields_aggpxtrack/leaflet-gpx/pin-icon-wpt.png';
 
 		$defaultArray = [];
 
@@ -140,13 +144,13 @@ if ($fieldParams->get('show_inactivefirst', 0) && !$jinput->get('aggpxtrackshow'
 			$skriptstring .= " data-omnivore_iconcolor='" . $fieldParams->get('omnivore_iconcolor', '#ffffff') . "' ";
 			$skriptstring .= " data-omnivore_spin='" . $fieldParams->get('omnivore_spin', 'false') . "' ";
 			$skriptstring .= " data-omnivore_extraclasses='" . $fieldParams->get('omnivore_extraclasses', '') . "' ";
-			$skriptstring .= " data-omnivore_file='" . JURI::base() . "images/com_aggpxtrack/" . $fieldParams->get('omnivore_file', '') . "' ";
+			$skriptstring .= " data-omnivore_file='" . URI::base() . "images/com_aggpxtrack/" . $fieldParams->get('omnivore_file', '') . "' ";
 		}
 
 		$skriptstring .= " data-show_fullscreencontrol='" . $fieldParams->get('show_fullscreencontrol', 0) . "' ";
 		if ($fieldParams->get('show_fullscreencontrol', 0)) {
-			$skriptstring .= " data-fullscreencontrol_viewfullscreen='" . JText::_('PLG_AGGPXTRACK_VIEW_FULLSCREEN') . "' ";
-			$skriptstring .= " data-fullscreencontrol_exitfullscreen='" . JText::_('PLG_AGGPXTRACK_EXIT_FULLSCREEN') . "' ";
+			$skriptstring .= " data-fullscreencontrol_viewfullscreen='" . Text::_('PLG_AGGPXTRACK_VIEW_FULLSCREEN') . "' ";
+			$skriptstring .= " data-fullscreencontrol_exitfullscreen='" . Text::_('PLG_AGGPXTRACK_EXIT_FULLSCREEN') . "' ";
 			$skriptstring .= " data-fullscreencontrol_position='" . $fieldParams->get('fullscreencontrol_position', 'topleft') . "' ";
 		}
 
@@ -214,7 +218,7 @@ if ($fieldParams->get('show_inactivefirst', 0) && !$jinput->get('aggpxtrackshow'
 		$skriptstring .= "</div>";
 		$skriptstring .= "<div class='aggpxtrackunder' id='aggpxtrackunder" . $unique . "'></div>";
 
-		JText::script('PLG_AGGPXTRACK_CURRENTPOSITION_STRING');
+		Text::script('PLG_AGGPXTRACK_CURRENTPOSITION_STRING');
 
 		$buffer .= sprintf(
 			$skriptstring,
@@ -228,8 +232,8 @@ if ($fieldParams->get('show_inactivefirst', 0) && !$jinput->get('aggpxtrackshow'
 
 		$buttonstyle = '';
 		if ($fieldParams->get('show_downloadlink', 0) == 'text') {
-			$buffer .= '<p class="agbutton_p' . $unique . '"><span>' . JText::_('PLG_AGGPXTRACK_DOWNLOAD_LABEL') . '</span>'
-				. '<a href="' . $path . '" download>' . JText::_('PLG_AGGPXTRACK_DOWNLOAD_LINKTEXT') . '</a></p>';
+			$buffer .= '<p class="agbutton_p' . $unique . '"><span>' . Text::_('PLG_AGGPXTRACK_DOWNLOAD_LABEL') . '</span>'
+				. '<a href="' . $path . '" download>' . Text::_('PLG_AGGPXTRACK_DOWNLOAD_LINKTEXT') . '</a></p>';
 			$buttonstyle .= '.agbutton_p' . $unique . ' {';
 			$buttonstyle .= 'margin: 2%;';
 			$buttonstyle .= '}';
@@ -239,9 +243,9 @@ if ($fieldParams->get('show_inactivefirst', 0) && !$jinput->get('aggpxtrackshow'
 			$buffer .= '<p class="agbutton_p' . $unique . '"><a class="agbutton' . $unique . '" '
 				. 'href="' . $path . '" '
 				. 'download>'
-				. JText::_('PLG_AGGPXTRACK_DOWNLOAD_LABEL')
+				. Text::_('PLG_AGGPXTRACK_DOWNLOAD_LABEL')
 				. ' '
-				. JText::_('PLG_AGGPXTRACK_DOWNLOAD_LINKTEXT')
+				. Text::_('PLG_AGGPXTRACK_DOWNLOAD_LINKTEXT')
 				. '</a></p>';
 
 			$downloadbuttoncolor = $fieldParams->get('downloadbuttoncolor', '#cadea5');
@@ -291,11 +295,11 @@ if ($fieldParams->get('show_inactivefirst', 0) && !$jinput->get('aggpxtrackshow'
 					$buffer_info .= ''
 						. '<tr>'
 						. '<td>'
-						. '<span class="' . $value . '_name" id="' . $value . '_name' . $unique . '">' . JText::_('PLG_AGGPXTRACK_' . $value . '_NAME') . '</span>'
+						. '<span class="' . $value . '_name" id="' . $value . '_name' . $unique . '">' . Text::_('PLG_AGGPXTRACK_' . $value . '_NAME') . '</span>'
 						. '</td>'
 						. '<td>'
 						. '<span class="' . $value . '_value" id="' . $value . '_value' . $unique . '"></span>'
-						. '<span class="' . $value . '_unit" id="' . $value . '_unit' . $unique . '">' . JText::_('PLG_AGGPXTRACK_' . $value . '_UNIT') . '</span>'
+						. '<span class="' . $value . '_unit" id="' . $value . '_unit' . $unique . '">' . Text::_('PLG_AGGPXTRACK_' . $value . '_UNIT') . '</span>'
 						. '</td>'
 						. '</tr>';
 				}

@@ -3,12 +3,12 @@
  * @package     Joomla.Site
  * @subpackage  pkg_aggpxtrack
  *
- * @copyright   Copyright (C) 2005 - 2018 Astrid Günther, Inc. All rights reserved.
+ * @copyright   Copyright (C) 2005 - 2018 Astrid GÃ¼nther, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later;
  * @link        astrid-guenther.de
  */
 defined('_JEXEC') or die;
-
+use Joomla\CMS\Plugin\CMSPlugin;
 /**
  * FolderInstaller Plugin.
  *
@@ -16,7 +16,7 @@ defined('_JEXEC') or die;
  *
  * @since  1.0.0
  */
-class PlgInstallerAggpxtrackInstaller extends JPlugin
+class PlgInstallerAggpxtrackInstaller extends CMSPlugin
 {
 	  /**
 	   * @var    string  base update url, to decide whether to process the event or not
